@@ -58,8 +58,8 @@ function renderUI(){
 }
 function renderContext(){
  $('#workshop').dataset.reading=String(contextOpen);$('#contextBody').hidden=!contextOpen;$('#contextToggle').setAttribute('aria-expanded',String(contextOpen));if(!contextOpen)return;
- const part=mode==='blend'?['杯中的咖啡','原液已经萃取完成。加水会稀释，加奶会改变配方与颜色；不会从粉层再萃取出更多咖啡。']:components[inspectedPart],copy=view==='structure'||inspectedPart?`<h3>${part[0]}</h3><p>${part[1]}</p>`:'';
- $('#contextBody').innerHTML=copy+(mode==='blend'?'<p>加奶改变配方与示意颜色，不会再次萃取咖啡粉。摩卡原液与意式浓缩采用不同器具；未制作奶泡，就不会自动出现拉花。</p>':'')+(mode==='blend'?'<p>这把铝制壶冷却后再拆开，弃粉渣，用清水手洗并晾干各部件，拆开放置。清洁方式按对应器具说明。</p>':'')+'<p class="reading-pause">阅读中 · 虚拟制作暂停，收起继续。</p><p>实物按器具说明操作。火焰留在壶底，安全阀不要朝向人；移壶握手柄，充分冷却后才能拆洗。</p><p class="small">内腔、容量和流量为教学示意，加热时间已压缩。</p><a href="https://www.bialetti.com/media/manual/caffettiere/MOKA_EXPRESS-manual.pdf" target="_blank" rel="noopener">查看器具使用说明 ↗</a>';
+ const blending=mode==='blend'&&view!=='structure',part=blending?['杯中的咖啡','原液已经萃取完成。加水会稀释，加奶会改变配方与颜色；不会从粉层再萃取出更多咖啡。']:components[inspectedPart],copy=view==='structure'||inspectedPart?`<h3>${part[0]}</h3><p>${part[1]}</p>`:'';
+ $('#contextBody').innerHTML=copy+(blending?'<p>加奶改变配方与示意颜色，不会再次萃取咖啡粉。摩卡原液与意式浓缩采用不同器具；未制作奶泡，就不会自动出现拉花。</p>':'')+(blending?'<p>这把铝制壶冷却后再拆开，弃粉渣，用清水手洗并晾干各部件，拆开放置。清洁方式按对应器具说明。</p>':'')+'<p class="reading-pause">阅读中 · 虚拟制作暂停，收起继续。</p><p>实物按器具说明操作。火焰留在壶底，安全阀不要朝向人；移壶握手柄，充分冷却后才能拆洗。</p><p class="small">内腔、容量和流量为教学示意，加热时间已压缩。</p><a href="https://www.bialetti.com/media/manual/caffettiere/MOKA_EXPRESS-manual.pdf" target="_blank" rel="noopener">查看器具使用说明 ↗</a>';
 }
 function inspect(part){if(!components[part])return;inspectedPart=part;contextOpen=true;$('#cutaway').dataset.selected=part;$('#contextToggle').textContent='收起说明 ↙';renderContext();status('正在了解：'+components[part][0]);}
 function closeContext(){view='';contextOpen=false;delete $('#workshop').dataset.view;delete $('#cutaway').dataset.selected;scene.focus(mode);renderUI();}
