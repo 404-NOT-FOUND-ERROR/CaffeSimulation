@@ -1,0 +1,17 @@
+* text=auto eol=lf
+vendor/** whitespace=-blank-at-eof,-space-before-tab
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.webp binary
+*.glb binary
+*.blend binary

@@ -1,0 +1,822 @@
+{
+  "file": "D:\\502 Bad Gateway\\Codex Project\\Fasiontoy Workflow\\model\\手冲.blend",
+  "reader": "4.5.3 LTS",
+  "objects": [
+    {
+      "name": "blenderco.cn",
+      "type": "MESH",
+      "hidden": false,
+      "collections": [
+        "blender布的"
+      ],
+      "instance_collection": null,
+      "vertices": 4,
+      "polygons": 1,
+      "materials": [],
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.09696241468191147,
+          99.12592315673828,
+          0.0
+        ],
+        [
+          0.09696241468191147,
+          99.18109893798828,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "布的网站免费资源",
+      "type": "EMPTY",
+      "hidden": false,
+      "collections": [
+        "blender布的"
+      ],
+      "instance_collection": "blenderco.cn"
+    },
+    {
+      "name": "搬运到卖必究，网站部分模型以申请版权",
+      "type": "CAMERA",
+      "hidden": false,
+      "collections": [
+        "blender布的"
+      ],
+      "instance_collection": null,
+      "location": [
+        0.0,
+        -2.211993455886841,
+        0.9357292652130127
+      ],
+      "rotation": [
+        1.228711724281311,
+        -3.0333966449802574e-09,
+        -0.0276526790112257
+      ],
+      "lens": 36.27422332763672
+    },
+    {
+      "name": "stx",
+      "type": "FONT",
+      "hidden": false,
+      "collections": [
+        "blender布的"
+      ],
+      "instance_collection": null
+    },
+    {
+      "name": "Chemex玻璃咖啡壶【blender布的】",
+      "type": "EMPTY",
+      "hidden": false,
+      "collections": [
+        "blender布的"
+      ],
+      "instance_collection": "Chemex玻璃咖啡壶【blender布的】"
+    }
+  ],
+  "materials": [
+    {
+      "name": "BG",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "BSDF_PRINCIPLED"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "Dots Stroke",
+      "nodes": [],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "Glass",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "BSDF_GLASS",
+        "BSDF_TRANSPARENT",
+        "MATH",
+        "LIGHT_PATH",
+        "MIX_SHADER",
+        "MATH",
+        "VALUE"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "Leather",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "BSDF_PRINCIPLED",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "NORMAL_MAP",
+        "MAPPING",
+        "REROUTE",
+        "TEX_COORD",
+        "FRAME",
+        "FRAME"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "Material.019",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "METAL",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "BSDF_PRINCIPLED",
+        "TEX_IMAGE",
+        "DISPLACEMENT",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "NORMAL_MAP",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "MAPPING",
+        "REROUTE",
+        "TEX_COORD",
+        "FRAME",
+        "FRAME"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "metal",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "BSDF_PRINCIPLED",
+        "TEX_IMAGE",
+        "DISPLACEMENT",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "NORMAL_MAP",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "MAPPING",
+        "REROUTE",
+        "TEX_COORD",
+        "FRAME",
+        "FRAME"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "tree_3.002",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "BSDF_PRINCIPLED",
+        "MAPPING",
+        "TEX_IMAGE"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "wood",
+      "nodes": [
+        "FRAME",
+        "FRAME",
+        "OUTPUT_MATERIAL",
+        "TEX_IMAGE",
+        "DISPLACEMENT",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "NORMAL_MAP",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "MAPPING",
+        "REROUTE",
+        "TEX_COORD",
+        "BSDF_PRINCIPLED"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "Wood",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "BSDF_PRINCIPLED",
+        "TEX_IMAGE",
+        "DISPLACEMENT",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "TEX_IMAGE",
+        "NORMAL_MAP",
+        "MAPPING",
+        "REROUTE",
+        "TEX_COORD",
+        "FRAME",
+        "FRAME"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "name": "到卖转发请投诉差评",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "FabricLeatherBuffaloRustic001_Darkbrown_Color.jpg",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\..\\..\\..\\flow\\Flow Library\\models\\装饰\\节日装饰\\Chemex玻璃咖啡壶【blender布的】\\textures\\FabricLeatherBuffaloRustic001_Darkbrown_Color.jpg",
+      "size": [
+        1536,
+        1536
+      ],
+      "exists": true
+    },
+    {
+      "name": "FabricLeatherBuffaloRustic001_Normal.jpg",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\..\\..\\..\\flow\\Flow Library\\models\\装饰\\节日装饰\\Chemex玻璃咖啡壶【blender布的】\\textures\\FabricLeatherBuffaloRustic001_Normal.jpg",
+      "size": [
+        1536,
+        1536
+      ],
+      "exists": true
+    },
+    {
+      "name": "FabricLeatherBuffaloRustic001_Roughness.jpg",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\..\\..\\..\\flow\\Flow Library\\models\\装饰\\节日装饰\\Chemex玻璃咖啡壶【blender布的】\\textures\\FabricLeatherBuffaloRustic001_Roughness.jpg",
+      "size": [
+        1536,
+        1536
+      ],
+      "exists": true
+    },
+    {
+      "name": "LightWoodBase_Color.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\..\\..\\..\\flow\\Flow Library\\models\\装饰\\节日装饰\\Chemex玻璃咖啡壶【blender布的】\\textures\\LightWoodBase_Color.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "LightWoodHeight.jpg",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\..\\..\\..\\flow\\Flow Library\\models\\装饰\\节日装饰\\Chemex玻璃咖啡壶【blender布的】\\textures\\LightWoodHeight.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "LightWoodNormal.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\..\\..\\..\\flow\\Flow Library\\models\\装饰\\节日装饰\\Chemex玻璃咖啡壶【blender布的】\\textures\\LightWoodNormal.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "LightWoodRoughness.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\..\\..\\..\\flow\\Flow Library\\models\\装饰\\节日装饰\\Chemex玻璃咖啡壶【blender布的】\\textures\\LightWoodRoughness.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "METAL_Alpha.1001.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\METAL_Alpha.1001.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "metal_Alpha.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\metal_Alpha.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "METAL_BaseColor.1001.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\METAL_BaseColor.1001.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "metal_BaseColor.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\metal_BaseColor.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "METAL_Displacement.1001.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\METAL_Displacement.1001.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "metal_Displacement.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\metal_Displacement.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "METAL_Emission.1001.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\METAL_Emission.1001.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "metal_Emission.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\metal_Emission.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "METAL_Metallic.1001.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\METAL_Metallic.1001.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "metal_Metallic.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\metal_Metallic.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "METAL_Normal.1001.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\METAL_Normal.1001.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "metal_Normal.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\metal_Normal.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "METAL_Roughness.1001.jpg.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\METAL_Roughness.1001.jpg",
+      "size": [
+        256,
+        256
+      ],
+      "exists": true
+    },
+    {
+      "name": "metal_Roughness.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\metal_Roughness.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "tree4.png",
+      "source": "FILE",
+      "packed": true,
+      "path": "e:\\blender\\Quick BLighting dKit\\Tree Data\\tree4.png",
+      "size": [
+        1920,
+        1920
+      ],
+      "exists": true
+    },
+    {
+      "name": "wood_Alpha.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\wood_Alpha.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "wood_BaseColor.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\wood_BaseColor.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "wood_Displacement.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\wood_Displacement.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "wood_Emission.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\wood_Emission.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "wood_Metallic.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\wood_Metallic.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "wood_Normal.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\wood_Normal.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    },
+    {
+      "name": "wood_Roughness.1001.tga.001",
+      "source": "FILE",
+      "packed": true,
+      "path": "//..\\flow\\Flow Library\\models\\字符\\辅料\\中世纪盾牌【-布的】\\textures\\wood_Roughness.1001.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "exists": true
+    }
+  ],
+  "collections": [
+    {
+      "name": "blenderco.cn",
+      "objects": [
+        "Sun.024",
+        "Plane.013",
+        "tree_4",
+        "blenderco_cn.008"
+      ]
+    },
+    {
+      "name": "blender布的",
+      "objects": [
+        "blenderco.cn",
+        "布的网站免费资源",
+        "搬运到卖必究，网站部分模型以申请版权",
+        "stx",
+        "Chemex玻璃咖啡壶【blender布的】"
+      ]
+    },
+    {
+      "name": "Chemex玻璃咖啡壶【blender布的】",
+      "objects": [
+        "Wooden Sleeve",
+        "Wooden Ring",
+        "Cube.061",
+        "Chemex Glass"
+      ]
+    }
+  ],
+  "evaluated_meshes": [
+    {
+      "name": "blenderco.cn",
+      "instance": false,
+      "materials": [],
+      "polygons": 1,
+      "bounds": [
+        [
+          -0.09696241468191147,
+          99.12592315673828,
+          0.0
+        ],
+        [
+          0.09696241468191147,
+          99.18109893798828,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "Plane.013",
+      "instance": true,
+      "materials": [
+        "Material.019"
+      ],
+      "polygons": 1,
+      "bounds": [
+        [
+          -17.001598358154297,
+          -17.444637298583984,
+          21.006166458129883
+        ],
+        [
+          28.33609962463379,
+          27.8930606842041,
+          21.006193161010742
+        ]
+      ]
+    },
+    {
+      "name": "tree_4",
+      "instance": true,
+      "materials": [
+        "tree_3.002"
+      ],
+      "polygons": 1,
+      "bounds": [
+        [
+          -21.514442443847656,
+          -22.345745086669922,
+          8.166080474853516
+        ],
+        [
+          -21.514442443847656,
+          8.18917465209961,
+          38.700992584228516
+        ]
+      ]
+    },
+    {
+      "name": "blenderco_cn.008",
+      "instance": true,
+      "materials": [
+        "BG"
+      ],
+      "polygons": 5,
+      "bounds": [
+        [
+          -15.080907821655273,
+          -23.594263076782227,
+          -0.1071023941040039
+        ],
+        [
+          15.494789123535156,
+          7.297184467315674,
+          16.839069366455078
+        ]
+      ]
+    },
+    {
+      "name": "stx",
+      "instance": true,
+      "materials": [
+        "到卖转发请投诉差评"
+      ],
+      "polygons": 15941,
+      "bounds": [
+        [
+          0.09380411356687546,
+          25.147146224975586,
+          0.0
+        ],
+        [
+          42.9857292175293,
+          27.026838302612305,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "Wooden Sleeve",
+      "instance": true,
+      "materials": [
+        "Wood"
+      ],
+      "polygons": 2362,
+      "bounds": [
+        [
+          -1.393004059791565,
+          4.1968841552734375,
+          1.5889209508895874
+        ],
+        [
+          0.06406915187835693,
+          5.606151580810547,
+          2.617506265640259
+        ]
+      ]
+    },
+    {
+      "name": "Wooden Ring",
+      "instance": true,
+      "materials": [
+        "Wood"
+      ],
+      "polygons": 2048,
+      "bounds": [
+        [
+          -0.7796428799629211,
+          4.091963291168213,
+          1.8700882196426392
+        ],
+        [
+          -0.5469021797180176,
+          4.437650203704834,
+          2.2157750129699707
+        ]
+      ]
+    },
+    {
+      "name": "Cube.061",
+      "instance": true,
+      "materials": [
+        "Leather"
+      ],
+      "polygons": 2528,
+      "bounds": [
+        [
+          -1.2341256141662598,
+          3.876106023788452,
+          0.37539899349212646
+        ],
+        [
+          -0.09551697969436646,
+          5.445262432098389,
+          2.119084119796753
+        ]
+      ]
+    },
+    {
+      "name": "Chemex Glass",
+      "instance": true,
+      "materials": [
+        "Glass"
+      ],
+      "polygons": 17024,
+      "bounds": [
+        [
+          -1.6825270652770996,
+          3.682366371154785,
+          0.050550322979688644
+        ],
+        [
+          0.35341787338256836,
+          5.894257068634033,
+          3.403887987136841
+        ]
+      ]
+    }
+  ]
+}

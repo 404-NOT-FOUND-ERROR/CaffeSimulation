@@ -1,0 +1,20 @@
+{
+  "blender": "4.5.3 LTS",
+  "source_folder": "../model",
+  "renders": [
+    {
+      "key": "pour",
+      "source": "手冲.blend",
+      "parts": 4,
+      "device": "OPTIX",
+      "height": 3.0,
+      "camera": [
+        3.200000047683716,
+        -9.0,
+        4.599999904632568
+      ],
+      "orthographic_scale": 3.8499999046325684,
+      "output": "D:\\502 Bad Gateway\\Codex Project\\Fasiontoy Workflow\\moka-lab\\assets\\cafe\\supplied\\pour-preview.png"
+    }
+  ]
+}

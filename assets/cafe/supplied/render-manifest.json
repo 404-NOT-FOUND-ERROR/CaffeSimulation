@@ -1,0 +1,62 @@
+{
+  "blender": "4.5.3 LTS",
+  "source_folder": "../model",
+  "renders": [
+    {
+      "key": "moka",
+      "source": "摩卡壶.blend",
+      "parts": 1,
+      "device": "OPTIX",
+      "height": 3.0,
+      "camera": [
+        3.200000047683716,
+        -9.0,
+        4.599999904632568
+      ],
+      "orthographic_scale": 3.700000047683716,
+      "output": "D:\\502 Bad Gateway\\Codex Project\\Fasiontoy Workflow\\moka-lab\\assets\\cafe\\supplied\\moka.png"
+    },
+    {
+      "key": "cup-snack",
+      "source": "咖啡杯配零食.blend",
+      "parts": 1,
+      "device": "OPTIX",
+      "height": 1.35,
+      "camera": [
+        2.200000047683716,
+        -7.0,
+        5.0
+      ],
+      "orthographic_scale": 2.799999952316284,
+      "output": "D:\\502 Bad Gateway\\Codex Project\\Fasiontoy Workflow\\moka-lab\\assets\\cafe\\supplied\\cup-snack.png"
+    },
+    {
+      "key": "espresso",
+      "source": "咖啡机.blend",
+      "parts": 35,
+      "device": "OPTIX",
+      "height": 3.0,
+      "camera": [
+        3.200000047683716,
+        -9.0,
+        4.599999904632568
+      ],
+      "orthographic_scale": 4.699999809265137,
+      "output": "D:\\502 Bad Gateway\\Codex Project\\Fasiontoy Workflow\\moka-lab\\assets\\cafe\\supplied\\espresso.png"
+    },
+    {
+      "key": "pour",
+      "source": "手冲.blend",
+      "parts": 4,
+      "device": "OPTIX",
+      "height": 3.0,
+      "camera": [
+        3.200000047683716,
+        -9.0,
+        4.599999904632568
+      ],
+      "orthographic_scale": 3.8499999046325684,
+      "output": "D:\\502 Bad Gateway\\Codex Project\\Fasiontoy Workflow\\moka-lab\\assets\\cafe\\supplied\\pour.png"
+    }
+  ]
+}

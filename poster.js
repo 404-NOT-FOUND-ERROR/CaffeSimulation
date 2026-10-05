@@ -1,0 +1,39 @@
+export const PALETTES=[
+ {id:'copper',name:'奶油铜',bg:'#f5efe3',ink:'#2d1d15',accent:'#b96139'},
+ {id:'torino',name:'都灵蓝',bg:'#f2e8d1',ink:'#18305e',accent:'#cd3f35'},
+ {id:'limone',name:'柠檬绿',bg:'#f3cd51',ink:'#164c43',accent:'#d85530'},
+ {id:'rosso',name:'朱红夜',bg:'#b82439',ink:'#f5e8d0',accent:'#18394d'},
+ {id:'notte',name:'夜咖蓝',bg:'#193345',ink:'#ecdcbf',accent:'#ce9158'},
+ {id:'rosa',name:'玫瑰棕',bg:'#e5b7b0',ink:'#503445',accent:'#bb5040'}
+];
+export const STYLES=[{id:'diagonal',name:'透视大字'},{id:'sunrise',name:'晨光拱形'},{id:'type',name:'字体海报'}];
+const mix=(a,b,t)=>{const x=a.match(/\w\w/g).map(v=>parseInt(v,16)),y=b.match(/\w\w/g).map(v=>parseInt(v,16));return '#'+x.map((n,i)=>Math.round(n+(y[i]-n)*t).toString(16).padStart(2,'0')).join('')};
+export const DRINK_NAMES={black:'小杯黑咖',long:'加水黑咖',milk:'摩卡奶咖'};
+export function liquidColor(drink){return drink.type==='milk'?mix('382015','f0dcbc',drink.ratio/(1+drink.ratio)*.97):drink.type==='long'?mix('382015','9b642b',drink.ratio/(1+drink.ratio)*.6):'#382015'}
+let cupId=0;
+export function cupSVG(drink,{width=240,height=310}={}){
+ const clipId=`cup-fill-${++cupId}`;
+ const black=drink.type==='black',color=liquidColor(drink),level=black?63:Math.max(55,170-38*drink.ratio),body=black?'M30 45 Q34 160 98 169 Q166 160 170 45 Z':'M38 30 L52 259 Q100 280 148 259 L163 30 Z';
+ const handle=black?'<path d="M167 68 C229 40 226 150 164 133" fill="none" stroke="#f5efe3" stroke-width="20"/><path d="M168 69 C216 52 216 140 168 128" fill="none" stroke="#bca890" stroke-width="2"/>':'';
+ return `<svg viewBox="0 0 240 310" width="${width}" height="${height}" role="img" aria-label="${DRINK_NAMES[drink.type]}成杯示意"><defs><clipPath id="${clipId}"><path d="${body}"/></clipPath></defs>${handle}<path d="${body}" fill="${black?'#f5efe3':'#f5efe326'}" stroke="#f5efe3" stroke-width="3"/><g clip-path="url(#${clipId})">${black?'':`<rect x="20" y="${level}" width="170" height="270" fill="${color}"/><ellipse cx="101" cy="${level}" rx="68" ry="12" fill="${color}" stroke="#cfad85" stroke-width="2"/>`}<path d="M49 40 L61 260 L78 266 L69 40" fill="#ffffff21"/><path d="M146 40 L133 260 L142 257 L154 40" fill="#ffffff29"/></g><ellipse cx="${black?100:101}" cy="${black?45:30}" rx="${black?70:62}" ry="14" fill="${black?color:'#f5efe32b'}" stroke="#f5efe3" stroke-width="3"/>${black?'<ellipse cx="100" cy="177" rx="86" ry="10" fill="#f5efe3"/>':'<path d="M54 256 Q101 278 148 256 L150 274 Q101 289 52 274 Z" fill="#f5efe340" stroke="#f5efe3" stroke-width="2"/>'}</svg>`;
+}
+function text(ctx,str,x,y,size,color,weight='700',max=1060){ctx.fillStyle=color;ctx.font=`${weight} ${size}px "Microsoft YaHei",sans-serif`;while(ctx.measureText(str).width>max&&size>14){size-=2;ctx.font=`${weight} ${size}px "Microsoft YaHei",sans-serif`}ctx.fillText(str,x,y)}
+function polygon(ctx,points,color){ctx.fillStyle=color;ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.closePath();ctx.fill()}
+function drawCup(ctx,d,x,y,w,h,p){ctx.save();ctx.translate(x,y);ctx.scale(w/240,h/310);const black=d.type==='black',color=liquidColor(d),level=black?45:Math.max(55,170-38*d.ratio);if(black){ctx.strokeStyle=p.bg;ctx.lineWidth=18;ctx.beginPath();ctx.ellipse(178,101,39,45,0,0,Math.PI*2);ctx.stroke()}const shape=new Path2D(black?'M30 45 Q34 160 98 169 Q166 160 170 45 Z':'M38 30 L52 259 Q100 280 148 259 L163 30 Z');ctx.fillStyle=black?p.bg:mix(p.bg.replace('#',''),'ffffff',.13);ctx.globalAlpha=black?1:.5;ctx.fill(shape);ctx.globalAlpha=1;ctx.strokeStyle=p.bg;ctx.lineWidth=3;ctx.stroke(shape);ctx.save();ctx.clip(shape);if(!black){ctx.fillStyle=color;ctx.fillRect(20,level,170,270);ctx.strokeStyle=mix(color.replace('#',''),'eee2c9',.35);ctx.beginPath();ctx.ellipse(101,level,68,12,0,0,Math.PI*2);ctx.stroke()}ctx.fillStyle='#ffffff2d';ctx.fillRect(52,35,15,240);ctx.fillStyle='#ffffff18';ctx.fillRect(132,35,9,240);ctx.restore();ctx.beginPath();ctx.ellipse(black?100:101,black?45:30,black?70:62,14,0,0,Math.PI*2);ctx.fillStyle=black?color:'#f5efe322';ctx.fill();ctx.strokeStyle=p.bg;ctx.stroke();if(black){ctx.beginPath();ctx.ellipse(100,177,89,13,0,0,Math.PI*2);ctx.fillStyle=p.bg;ctx.fill();ctx.beginPath();ctx.ellipse(100,175,72,8,0,0,Math.PI*2);ctx.strokeStyle=mix(p.bg.replace('#',''),p.ink.replace('#',''),.2);ctx.stroke()}else{ctx.strokeStyle=p.bg;ctx.beginPath();ctx.moveTo(54,259);ctx.quadraticCurveTo(101,280,148,259);ctx.stroke()}ctx.restore()}
+function titleLines(title){const chars=Array.from(title.trim()||'我的这一杯');if(chars.length<=5)return [chars.join('')];const per=chars.length>12?7:Math.ceil(chars.length/2),lines=[];for(let i=0;i<chars.length;i+=per)lines.push(chars.slice(i,i+per).join(''));return lines}
+export function drawPoster(canvas,{style='diagonal',palette='copper',title='我的这一杯',drink,includeRecipe=true,settings={}}){
+ const ctx=canvas.getContext('2d'),p=PALETTES.find(x=>x.id===palette)||PALETTES[0],W=1200,H=1800;canvas.width=W;canvas.height=H;ctx.fillStyle=p.bg;ctx.fillRect(0,0,W,H);const latin=drink.type==='milk'?'LATTE':drink.type==='long'?'PAUSA':'MOKA',lines=titleLines(title);
+ if(style==='diagonal'){
+  polygon(ctx,[[1200,280],[1200,1640],[0,1640],[0,1120]],p.accent);polygon(ctx,[[650,830],[1200,1190],[1200,1635],[0,1635]],p.ink);ctx.globalAlpha=.15;ctx.beginPath();ctx.arc(840,885,330,0,Math.PI*2);ctx.fillStyle=p.bg;ctx.fill();ctx.globalAlpha=1;
+  ctx.save();ctx.translate(60,1500);ctx.transform(1,-.16,.02,1,0,0);ctx.font='900 270px Impact,"Arial Black",sans-serif';let scale=Math.min(1,1100/ctx.measureText(latin).width);ctx.scale(scale,1);for(let i=45;i>0;i-=3){ctx.fillStyle=p.ink;ctx.fillText(latin,-i,i)}ctx.fillStyle=p.bg;ctx.fillText(latin,0,0);ctx.restore();
+  const f=lines.length>2?118:170;lines.forEach((l,i)=>text(ctx,l,70,180+i*(f+22),f,p.ink,'900',1050));drawCup(ctx,drink,480,600,650,drink.type==='black'?1000:950,p);
+ }else if(style==='sunrise'){
+  ctx.fillStyle=p.ink;ctx.fillRect(0,0,230,1630);ctx.fillStyle=p.accent;ctx.beginPath();ctx.arc(630,760,420,0,Math.PI*2);ctx.fill();ctx.strokeStyle=p.accent;ctx.lineWidth=5;ctx.beginPath();ctx.arc(630,760,447,Math.PI,Math.PI*2);ctx.stroke();for(let i=0;i<8;i++){const a=Math.PI+.25+i*.37;ctx.lineWidth=15;ctx.beginPath();ctx.moveTo(630+480*Math.cos(a),760+480*Math.sin(a));ctx.lineTo(630+610*Math.cos(a),760+610*Math.sin(a));ctx.stroke()}
+  ctx.fillStyle=p.bg;ctx.font='900 185px Impact,"Arial Black",sans-serif';Array.from(latin).forEach((c,i)=>ctx.fillText(c,50,240+i*255));const f=lines.length>2?90:132;lines.forEach((l,i)=>text(ctx,l,285,155+i*(f+18),f,p.ink,'900',850));polygon(ctx,[[580,1050],[1050,1300],[1200,1630],[250,1630]],p.accent);drawCup(ctx,drink,400,630,640,drink.type==='black'?1150:1010,p);
+ }else{
+  ctx.fillStyle=p.accent;ctx.fillRect(0,1150,W,485);ctx.strokeStyle=p.ink;ctx.lineWidth=5;ctx.beginPath();ctx.arc(1000,280,120,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.moveTo(1000,190);ctx.lineTo(1000,280);ctx.lineTo(1080,280);ctx.stroke();const f=lines.length>2?118:185;lines.forEach((l,i)=>text(ctx,l,65,190+i*(f+20),f,p.ink,'900',1050));ctx.font='900 270px Impact,"Arial Black",sans-serif';ctx.fillStyle=p.ink;ctx.fillText(latin,30,1580);drawCup(ctx,drink,560,630,610,1000,p);
+ }
+ ctx.fillStyle=p.bg;ctx.fillRect(0,1630,W,170);text(ctx,'虚拟冲煮 / 日常科学',65,1770,25,p.ink,'400');
+ if(includeRecipe){const r=drink.ratio,recipe=drink.type==='black'?'原液':`咖啡 1 : ${drink.type==='milk'?'牛奶':'水'} ${r.toFixed(1).replace('.0','')} · 按质量`;text(ctx,`${DRINK_NAMES[drink.type]} · ${recipe}`,65,1676,32,p.ink);const insight=drink.type==='black'?'我保留了这一锅的咖啡基底。':drink.type==='milk'?'加奶改变成杯比例，不会继续萃取咖啡粉。':'加水降低浓度，已溶出的咖啡成分总量不变。';text(ctx,insight,65,1720,28,p.ink,'400');text(ctx,`研磨${['较粗','中等','较细'][settings.grind??1]} / 热量${['','低','中','高'][Math.round(settings.heat??2)]}`,690,1770,23,p.ink,'400',450)}
+ return {style,palette,drink};
+}

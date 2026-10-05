@@ -1,0 +1,26 @@
+[
+  {
+    "name": "lower-shell",
+    "part": "lower",
+    "vertices": 782,
+    "finish": "cast"
+  },
+  {
+    "name": "upper-collar",
+    "part": "upper",
+    "vertices": 1187,
+    "finish": "polished"
+  },
+  {
+    "name": "upper-shell",
+    "part": "upper",
+    "vertices": 2108,
+    "finish": "cast"
+  },
+  {
+    "name": "lid-plate",
+    "part": "lid",
+    "vertices": 1211,
+    "finish": "cast"
+  }
+]

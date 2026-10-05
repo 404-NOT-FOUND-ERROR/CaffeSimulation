@@ -1,0 +1,17 @@
+# 水位页面概念图 · 2026-10-04
+
+使用内置 image_gen 生图工具，参考当前水位页面和先前的银色摩卡壶概念图。概念图用于指导实际 HTML、SVG 和 Three.js 设计；页面不是整张生图。
+
+## 最终提示词
+
+```
+Use case: ui-mockup.
+Create one high-fidelity, wide desktop WEB PAGE CONCEPT for an interactive Moka coffee science workbench. Use input 1 as the CURRENT PAGE to redesign; use input 2 only as reference for elegant silver aluminium and the precision of the coffee equipment. Preserve input 1's bold Italian advertising poster art direction, warm ivory paper, burnt sienna diagonal, espresso typography, breathing room, large perspective ACQUA word, modest order ticket. No top navigation bar. Design a real implementable HTML/Three.js/SVG interface, not a physical café diorama.
+
+Main request: radically improve the LEFT CUTAWAY. The current polygonal wire diagram looks crude. Replace it with a refined compact product cutaway illustration: a upright silver octagonal LOWER CHAMBER shown in a front three-quarter sectional view. Its front wall is neatly cut away, showing real wall thickness, a lightly blue-tinted body of water, a legible horizontal water surface, the air space above water, and a small brass safety valve through the right wall ABOVE the water. Beautiful restrained satin-metal facets and soft edge highlights, a precise clean technical illustration with enough volume. Thin elegant copper/graphite details, not heavy outlines. No full upper pot, handle, floating tubes or spaghetti leaders in this small water-level detail. Illustrate the lower chamber alone, with the funnel temporarily removed during filling. One fine dashed safe-level line and one simple readable label '安全阀下缘'. Put a subtle draggable water-level marker alongside the water surface, and a fine discrete graduation rail. Leave generous negative space. This detail must look visually related to the realistic main pot while remaining easy to rebuild using SVG paths, gradients and a fluid clipping mask. This is a beautiful functioning diagram, not a sticker or decorative logo.
+
+Composition: left column about 29 percent wide, broad clear gap, big photorealistic-but-WebGL-realizable lower chamber and small water jug on the right; main objects stay comfortably INSIDE the canvas. The small cutaway is part of a balanced left-side control composition UNDER the headline, never overlaps it. Refine spacing and typography. Left cutaway occupies about 200 x 155 logical CSS pixels. Below it compact actual dose readout and a subtle suggested-water action, followed by a modest dark espresso button. Nothing crowded or a dense dashboard. Main product has softly brushed aluminium, restrained soft-box highlights, gentle grounded shadow, no mirror chrome or hard rectangle shadow. No obsolete fake giant mechanical controls. The full viewport is visible, about 16:9 landscape.
+
+Exact UI text: headline '水，\n留点空间。'; eyebrow 'OFFICINA / 摩卡壶'; back '← 咖啡工作室'; subtitle '让水面留在安全阀下缘以下。'; small tabs '水位' and '装粉'; small action '展开结构 ↗'; actual dose '120 g'; subtle action '加到建议水位'; button '装粉 →'. Top-right small ticket: '来单 03' and '吧台小杯'. Main background word 'ACQUA'. Use intentional Chinese lettering, professional typography, limited annotation. All coffee objects upright and scientifically plausible. No added menus, rewards, quiz, topbar, marble table, ornate café scenery, grainy distress or excessive skeuomorphism.
+Output one polished implementable redesign concept image, not a collage.
+```

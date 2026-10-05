@@ -1,0 +1,1 @@
+{"name":"moka-lab-prototype","private":true,"type":"module","scripts":{"start":"node serve.cjs","test":"node qa/preparation-motion-test.mjs && node qa/workshop-controls-test.mjs && node qa/workshop-flow-audit-test.mjs && node qa/workshop-state-test.mjs && node qa/studio-model-test.mjs && node qa/studio-preparation-test.mjs && node qa/model-test.mjs"}}

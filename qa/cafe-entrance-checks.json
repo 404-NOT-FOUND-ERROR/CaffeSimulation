@@ -1,0 +1,87 @@
+[
+  {
+    "label": "已接下来单 / 03",
+    "order": "share",
+    "test": "reload preserves order and ticket"
+  },
+  {
+    "order": null,
+    "test": "free removes order",
+    "title": "自由\n发挥"
+  },
+  {
+    "test": "refresh gives a fresh batch",
+    "before": [
+      "01自己的小杯小杯黑咖 · 器具随你→",
+      "02双人分享手冲黑咖 · 一壶两人→",
+      "03泡沫早餐意式奶咖 · 加奶泡→"
+    ],
+    "after": [
+      "01吧台小杯意式浓缩 · 保留原液→",
+      "02早餐搭档热奶咖 · 牛奶多一些→",
+      "03窗边的长杯热黑咖 · 不加奶 · 慢慢喝→"
+    ],
+    "pass": true
+  },
+  {
+    "images": [
+      {
+        "file": "assets/cafe/cup-milk.png",
+        "loaded": true
+      },
+      {
+        "file": "assets/cafe/moka.png",
+        "loaded": true
+      },
+      {
+        "file": "assets/cafe/pour.png",
+        "loaded": true
+      },
+      {
+        "file": "assets/cafe/espresso.png",
+        "loaded": true
+      }
+    ],
+    "label": "已接下来单 / 02",
+    "overflow": false,
+    "test": "desktop equipment layout"
+  },
+  {
+    "footerGap": 48.79997634887695,
+    "overflow": false,
+    "test": "final equipment spacing"
+  },
+  {
+    "asset": "moka-silver-v2",
+    "test": "order and ticket reach Moka",
+    "ticket": "来单 02\n\n早餐搭档\n热奶咖，牛奶多一些，约 200 g。",
+    "url": "http://127.0.0.1:4186/moka.html?order=breakfast&ticket=2"
+  },
+  {
+    "order": "breakfast",
+    "test": "return preserves accepted order",
+    "ticket": "2"
+  },
+  {
+    "id": "breakfast",
+    "test": "accepted menu slot survives reload"
+  },
+  {
+    "scrollWidth": 375,
+    "test": "mobile home",
+    "width": 390
+  },
+  {
+    "backUncovered": false,
+    "scrollWidth": 375,
+    "test": "mobile choose before scroll reset fix",
+    "width": 390
+  },
+  {
+    "backUncovered": true,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "test": "final mobile choose",
+    "width": 390
+  }
+]

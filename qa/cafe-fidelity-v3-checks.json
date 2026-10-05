@@ -1,0 +1,106 @@
+{
+  "homeWide": {
+    "freeEntryHit": true,
+    "images": [
+      {
+        "loaded": true,
+        "natural": [
+          1585,
+          992
+        ],
+        "src": "assets/cafe/host-v3.webp"
+      },
+      {
+        "loaded": true,
+        "natural": [
+          2379,
+          840
+        ],
+        "src": "assets/cafe/foreground-v3.webp"
+      }
+    ],
+    "overflow": false,
+    "size": [
+      1586,
+      990
+    ]
+  },
+  "homeDesktop": {
+    "freeNote": {
+      "bottom": 346.7356185913086,
+      "height": 244.17124938964844,
+      "left": 917.7681884765624,
+      "right": 1235.2193603515625,
+      "top": 102.56436920166016,
+      "width": 317.451171875,
+      "x": 917.7681884765624,
+      "y": 102.56436920166016
+    },
+    "menu": {
+      "bottom": 643.8905181884766,
+      "height": 439.3232421875,
+      "left": 48.63750076293945,
+      "right": 461.74907302856445,
+      "top": 204.56727600097656,
+      "width": 413.111572265625,
+      "x": 48.63750076293945,
+      "y": 204.56727600097656
+    },
+    "overflow": false,
+    "size": [
+      1280,
+      720
+    ]
+  },
+  "homeMobile": {
+    "imagesLoaded": true,
+    "overflow": false,
+    "size": [
+      390,
+      844
+    ]
+  },
+  "choiceWide": {
+    "cup": "assets/cafe/v3/cup-black.webp",
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/cafe/v3/cup-black.webp"
+      },
+      {
+        "loaded": true,
+        "src": "assets/cafe/v3/moka.webp"
+      },
+      {
+        "loaded": true,
+        "src": "assets/cafe/v3/pour.webp"
+      },
+      {
+        "loaded": true,
+        "src": "assets/cafe/v3/espresso.webp"
+      }
+    ],
+    "order": "窗边的长杯",
+    "overflow": false,
+    "size": [
+      1586,
+      990
+    ]
+  },
+  "choiceMobile": {
+    "imagesLoaded": true,
+    "overflow": false,
+    "size": [
+      390,
+      844
+    ]
+  },
+  "flows": {
+    "freeCreationToChoice": true,
+    "incomingOrderToChoice": true,
+    "mokaReached": "moka.html?order=window&ticket=3",
+    "mokaControlsReady": true,
+    "orderAndTicketPreserved": true
+  },
+  "console": []
+}

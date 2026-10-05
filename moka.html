@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>摩卡工作台 · 看见这一杯</title><meta name="description" content="调水位、选研磨、看咖啡沿压力差上升。左侧实时剖面，右侧摩卡壶自动演示，完成你的意式特刊。"><link rel="stylesheet" href="workshop.css"><link rel="stylesheet" href="workshop-refinement.css"></head>
+<body>
+<main id="workshop" class="workshop" data-scene="open">
+ <div class="poster-field" aria-hidden="true"></div><div class="poster-orb" aria-hidden="true"></div><div id="latin" class="poster-latin" aria-hidden="true">MOKA</div>
+ <header class="scene-copy"><a class="back" href="studio.html">← 咖啡工作室</a><p class="eyebrow">OFFICINA / 摩卡壶</p><h1 id="sceneTitle">水，<br>留点空间。</h1><p id="sceneHint" class="scene-hint">改变水位，看看安全阀与水面的关系。</p><p id="microHint" class="micro-hint">调节用量，器具会自动演示。</p></header>
+ <section id="cutawayPanel" class="cutaway-panel" aria-label="实时摩卡壶剖面"><div id="sectionHeading" class="cutaway-heading"><span id="sectionHeadingLabel">SEZIONE / 实时剖面</span><button id="structureToggle" aria-pressed="false">展开结构 ↗</button></div><svg id="cutaway" viewBox="50 8 280 242" role="group" aria-labelledby="cutawayTitle"><title id="cutawayTitle">摩卡壶内的水位、粉层和咖啡路径</title></svg><p id="sectionNote" class="section-note" aria-live="polite"></p><div id="prepareControlsHost"></div></section>
+ <aside id="ticket" class="ticket" aria-label="当前来单"></aside>
+ <section id="stage" class="stage model-loading" aria-busy="true" aria-label="摩卡壶演示工作台"><canvas id="workshopCanvas" aria-label="摩卡壶自动演示；点击零件查看说明"></canvas><div id="objectReadout" class="object-readout" aria-live="off"></div><div id="localWarning" class="local-warning" role="status" aria-live="polite"></div></section>
+ <section id="context" class="context" aria-label="当前对象的说明"><button id="contextToggle" class="context-toggle" aria-expanded="false">这里为什么要留空间？ ↗</button><div id="contextBody" class="context-body" hidden></div></section>
+ <div id="controlsDock"><section id="controls" class="controls" aria-label="配方与火候"><nav id="tools" class="tools" aria-label="当前制作"></nav><div id="controlBody"></div><p id="controlFeedback" class="control-feedback" role="status"></p><button id="primaryAction" class="primary-action">装粉 →</button></section></div>
+ <div id="recipe" class="recipe" hidden></div>
+ <div class="corner-tools"><button id="soundToggle" aria-label="打开冲煮声音" aria-pressed="false">声音 关</button><button id="fullscreen" aria-label="全屏工作台">⤢</button></div>
+ <p id="sessionStatus" class="session-status" role="status" aria-live="polite">正在摆好工作台…</p>
+ <button id="finishCup" class="finish-cup" hidden>这杯完成了 →</button>
+ <button id="newBatch" class="new-batch" hidden>保留这一杯，再做一锅 ↗</button>
+</main>
+<dialog id="posterDialog" class="poster-dialog" aria-labelledby="posterTitle"><button class="close" data-poster="close" aria-label="返回工作台">×</button><div class="poster-preview"><canvas id="posterCanvas" width="1200" height="1800" aria-label="本杯意式特刊，可拖动杯子改变构图"></canvas></div><section class="poster-editor"><p class="eyebrow">GAZZETTA DEL CAFFÈ</p><h2 id="posterTitle">这一杯，<br>值得一期。</h2><label class="poster-label">本期标题<input id="posterName" maxlength="20"></label><p class="poster-label">选一种构图</p><div id="posterStyles" class="poster-options"></div><p class="poster-label">这一期的色彩</p><div id="posterPalettes" class="poster-palettes"></div><article id="posterStory"></article><button class="save-poster" data-poster="save">保存本期 PNG ↗</button><button class="poster-back" data-poster="close">回到这杯，继续调配</button><p class="fine">切换海报只改变表现，杯子与制作记录保持不变。</p></section></dialog>
+<noscript>此互动工作台需要启用 JavaScript。</noscript><script type="module" src="workshop-experience.js"></script>
+</body></html>
