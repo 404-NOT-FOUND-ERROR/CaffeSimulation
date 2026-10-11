@@ -1,0 +1,229 @@
+{
+  "version": "2026-10-11",
+  "file": "index.html",
+  "bytes": 41754324,
+  "sha256": "4b4cff8701edc15a5b3f0fac9785ae7300be4ef32e137319f2516a23ca7bba51",
+  "screens": [
+    "studio",
+    "brew",
+    "mix"
+  ],
+  "assetCount": 43,
+  "assets": [
+    {
+      "path": "assets/cafe/cup-ice.png",
+      "bytes": 621913,
+      "sha256": "0bb320f12e0493d46ebac529cc7426fbc01b4e129ffdeb1fa44c33c3739a0a72"
+    },
+    {
+      "path": "assets/cafe/foreground-v3.webp",
+      "bytes": 70856,
+      "sha256": "0412c43a3663b08ec59511134003e1360fe6cd509e451eab89a4d257b9eaa54d"
+    },
+    {
+      "path": "assets/cafe/host-v3.webp",
+      "bytes": 209130,
+      "sha256": "2d9a4fd4a574beabef74d598b9160b4d747008761f312f021101d1f65e7a254f"
+    },
+    {
+      "path": "assets/cafe/paper-grain.svg",
+      "bytes": 419,
+      "sha256": "d41a56d4ea40173a70a75cb4ec8dc2259ab1c2d0651591735f649aa2d687c13b"
+    },
+    {
+      "path": "assets/cafe/v3/cup-black.webp",
+      "bytes": 44726,
+      "sha256": "021ce07ac2f2ff8078cf284ac322cbec8e262518de9a853fb3050c827685e377"
+    },
+    {
+      "path": "assets/cafe/v3/cup-milk.webp",
+      "bytes": 44482,
+      "sha256": "b600a79fcce2dd14ec2266fb934ba71f373e3095118f32860c57c25a3b0db086"
+    },
+    {
+      "path": "assets/cafe/v3/espresso.webp",
+      "bytes": 97938,
+      "sha256": "e65843ac829096f0137f0f0a05b5ac7e53e64e3d138dcc632e0ba4afd2d08110"
+    },
+    {
+      "path": "assets/cafe/v3/moka.webp",
+      "bytes": 115118,
+      "sha256": "1551f8106b41fa81a0543b0939569d0c689c07d511b1e21314432858fd4458f3"
+    },
+    {
+      "path": "assets/cafe/v3/pour.webp",
+      "bytes": 78906,
+      "sha256": "2e22334934412ee4d05171ab5848ee3097ea5fe4dbb0509a8684027aea39b961"
+    },
+    {
+      "path": "assets/gazette-v2/coast.png",
+      "bytes": 2590842,
+      "sha256": "84c04adc1f20cab4cdb882cf27405d89a5bf330b789b0a424ace9e592076c806"
+    },
+    {
+      "path": "assets/gazette-v2/person.png",
+      "bytes": 2368882,
+      "sha256": "c41c40d94f81e781d66cdf607349852d63420233fe2d381a9178d297b4bd78e1"
+    },
+    {
+      "path": "assets/gazette-v2/provenance.json",
+      "bytes": 2960,
+      "sha256": "510ac201e92ade2778ed71acfc6d76365fd5ce861ab55e95319933a403d60596"
+    },
+    {
+      "path": "assets/hybrid/italian-atlas.svg",
+      "bytes": 1685,
+      "sha256": "a1e2c1f6022b4f0b64f3860a27e7ab7b6956ed90cd015519b570266d42e54660"
+    },
+    {
+      "path": "assets/hybrid/moka-v1.glb",
+      "bytes": 2747304,
+      "sha256": "88eaff000a7b76f2442e49e2adc58a38d94378278179a91a77d3b975201ec14e"
+    },
+    {
+      "path": "assets/moka-silver-v2.glb",
+      "bytes": 277040,
+      "sha256": "2cff247266604f908dc7fed17157c9d1d4cce0d50644a75a2742babc5c255724"
+    },
+    {
+      "path": "assets/poster-workbench/basket.webp",
+      "bytes": 8546,
+      "sha256": "feab16d2288e8b03bf135bfe2ad5bfec8ecf125900ed930884aff5c4939e17ad"
+    },
+    {
+      "path": "assets/poster-workbench/burner.webp",
+      "bytes": 19704,
+      "sha256": "5f8d50ce6ce951c69be3477d42b3a60933abdd64692a5f72ef4a298f28a2733e"
+    },
+    {
+      "path": "assets/poster-workbench/cup-black-low.webp",
+      "bytes": 14504,
+      "sha256": "488934ac193799cca0b447cdb7203802ca4143fc554ee4d86a1dbfad0c5c99ff"
+    },
+    {
+      "path": "assets/poster-workbench/cup-black-mid.webp",
+      "bytes": 14908,
+      "sha256": "ae666c9dfa710192c44fa440c4d91c5b50da15fae37b49105b01c02e94ebfba0"
+    },
+    {
+      "path": "assets/poster-workbench/cup-black.webp",
+      "bytes": 15858,
+      "sha256": "cd45320c3131a577d95e5f2f8a189aa5d04d65913f691f215c57cd6d6de52eb5"
+    },
+    {
+      "path": "assets/poster-workbench/cup-empty.webp",
+      "bytes": 14506,
+      "sha256": "bc0e352ed9be71342f231d4bd387485ede5e25c1680ed50337c45af3ce656337"
+    },
+    {
+      "path": "assets/poster-workbench/cup-milk-low.webp",
+      "bytes": 14494,
+      "sha256": "94cba1a1f4c97f1c68956967678f47ed417b6a32ad790ab3c90b81461cada5bb"
+    },
+    {
+      "path": "assets/poster-workbench/cup-milk-mid.webp",
+      "bytes": 14880,
+      "sha256": "2fc76edf31bdc01604b86ea53f260c9516a7aea3f32f2dc8820afc0cc2bc3faa"
+    },
+    {
+      "path": "assets/poster-workbench/cup-milk.webp",
+      "bytes": 15860,
+      "sha256": "e9a14165b6dec0b11284bc588eb0a617c9dd2502c89aee0e5d93d40915ac8c08"
+    },
+    {
+      "path": "assets/poster-workbench/filter.webp",
+      "bytes": 7106,
+      "sha256": "bdfd4855504e45ab2c955a05a3c8b03f7da4f4871180952d2d7a5be1478e2807"
+    },
+    {
+      "path": "assets/poster-workbench/gasket.webp",
+      "bytes": 7964,
+      "sha256": "c3fb0b2f637c1324f83b1a55e2700133b40d84752cb9257dd319eccfcc97b8cb"
+    },
+    {
+      "path": "assets/poster-workbench/grounds.webp",
+      "bytes": 4754,
+      "sha256": "05c8a785de16c52a4dedce913a8a4438191ae181c0d68a3499ed90ab3109f164"
+    },
+    {
+      "path": "assets/poster-workbench/lid.webp",
+      "bytes": 9700,
+      "sha256": "b600b31f520bd9f9868c0e454566e9d718bdf0cac2b5c45ce95539d0b29aa75b"
+    },
+    {
+      "path": "assets/poster-workbench/lower.webp",
+      "bytes": 14508,
+      "sha256": "194beaf6f3eee3171828eb47def705697f0a3db41a4b68ff567e0fdf7866081c"
+    },
+    {
+      "path": "assets/poster-workbench/upper.webp",
+      "bytes": 17792,
+      "sha256": "8ee5054072dc6c72f6eac4368a2c6bfc67bad3920661641f72ba6d4f8c7b1099"
+    },
+    {
+      "path": "assets/recipe-lab/corner-still-life.png",
+      "bytes": 1858539,
+      "sha256": "cee2cf5a3dff6cca47878c288a7aa7666e7392221454b769f49a9a15556d7829"
+    },
+    {
+      "path": "assets/reference-room/assembled-moka.png",
+      "bytes": 1685251,
+      "sha256": "95c427fb529163ee1bb0c0d1803e68a8b6b480e396a505f879d7d693bdecdbd8"
+    },
+    {
+      "path": "assets/reference-room/basket-photo.png",
+      "bytes": 889551,
+      "sha256": "a0ad2e63a9043cb3c68e8f984e0921b5a742d24b7336c55f0a6494e979a707ce"
+    },
+    {
+      "path": "assets/reference-room/brew-plate.png",
+      "bytes": 1588206,
+      "sha256": "780333a11e360de7159a25c132bc7e9272c83b5c64ec1561c7957f2f0130cb8e"
+    },
+    {
+      "path": "assets/reference-room/cafe-home.png",
+      "bytes": 2083663,
+      "sha256": "82065aebbf87f5ab26fcdc98d8178bbf387625493d2bd7204e9e45c610f621b8"
+    },
+    {
+      "path": "assets/reference-room/compare-room.png",
+      "bytes": 1732499,
+      "sha256": "ae0cdcafe642a2330948352ac576760f2c39546dd1d8e5f48af2fe89a850da5a"
+    },
+    {
+      "path": "assets/reference-room/gazette-room.png",
+      "bytes": 1759415,
+      "sha256": "3925b5ad924d4c5ad0513b0b006a91d709ede7f02755826eb4f9c0aa12e82e7a"
+    },
+    {
+      "path": "assets/reference-room/glass-frame.png",
+      "bytes": 1127823,
+      "sha256": "15ab3ec0bcc617c587e7ac61e2833a3129a2909c6c9449c1484a7a1c7477ed32"
+    },
+    {
+      "path": "assets/reference-room/ingredient-strip.png",
+      "bytes": 809666,
+      "sha256": "557444b4664b912945665c15f359bc60a807ff8303ae188d23d0ce639aeb0425"
+    },
+    {
+      "path": "assets/reference-room/lower-plate.png",
+      "bytes": 1354836,
+      "sha256": "96809ec5d6aed939e304cff7b0905bf596d031f7ac89cccba23247d35e419b01"
+    },
+    {
+      "path": "assets/reference-room/mixing-room.png",
+      "bytes": 1947863,
+      "sha256": "97b1f876517be2640d184b72fd96e4b1ac78589f5348c37377c4724a8a7f7c3c"
+    },
+    {
+      "path": "assets/reference-room/prepare-room.png",
+      "bytes": 1842655,
+      "sha256": "005a696618b562460f441adee200f3a4999a941ad24d1d2bef0872a0779f8d82"
+    },
+    {
+      "path": "assets/reference-room/workroom.png",
+      "bytes": 1899530,
+      "sha256": "e1054072ad8c61f3e0ad57aeb9df1ce8c02367ec59e01ca561505efc34120433"
+    }
+  ]
+}
