@@ -1,0 +1,3971 @@
+[
+  {
+    "label": "1920x1080 recipe-expanded",
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "scene": "recipe",
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 512,
+        "y": 839,
+        "right": 576,
+        "bottom": 879
+      },
+      {
+        "name": "搅拌",
+        "x": 588,
+        "y": 839,
+        "right": 652,
+        "bottom": 879
+      },
+      {
+        "name": "分成两杯",
+        "x": 664,
+        "y": 839,
+        "right": 754,
+        "bottom": 879
+      },
+      {
+        "name": "清空当前杯",
+        "x": 766,
+        "y": 842,
+        "right": 826,
+        "bottom": 876
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1743,
+        "y": 839,
+        "right": 1854,
+        "bottom": 879
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 512,
+        "y": 929,
+        "right": 727,
+        "bottom": 1034
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 737,
+        "y": 929,
+        "right": 953,
+        "bottom": 1034
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 963,
+        "y": 929,
+        "right": 1178,
+        "bottom": 1034
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 1188,
+        "y": 929,
+        "right": 1403,
+        "bottom": 1034
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 1413,
+        "y": 929,
+        "right": 1629,
+        "bottom": 1034
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1639,
+        "y": 929,
+        "right": 1854,
+        "bottom": 1034
+      }
+    ],
+    "art": [
+      {
+        "name": "我的第一杯，总量 172 克，成分比例示意",
+        "x": 629,
+        "y": 222,
+        "right": 1189,
+        "bottom": 722
+      }
+    ],
+    "panels": [
+      {
+        "name": "这一杯，由你调。PICCOLI ESPERIMENTI今日来单 / 0",
+        "x": 66,
+        "y": 89,
+        "right": 476,
+        "bottom": 638,
+        "scrollHeight": 549,
+        "clientHeight": 549
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1342,
+        "y": 89,
+        "right": 1854,
+        "bottom": 766,
+        "scrollHeight": 677,
+        "clientHeight": 677
+      }
+    ]
+  },
+  {
+    "label": "1920x1080 compare-expanded",
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "scene": "compare",
+    "controls": [
+      {
+        "name": "选择A杯",
+        "x": 629,
+        "y": 99,
+        "right": 909,
+        "bottom": 774
+      },
+      {
+        "name": "选择B杯",
+        "x": 909,
+        "y": 99,
+        "right": 1189,
+        "bottom": 774
+      },
+      {
+        "name": "撤销",
+        "x": 512,
+        "y": 839,
+        "right": 576,
+        "bottom": 879
+      },
+      {
+        "name": "搅拌",
+        "x": 588,
+        "y": 839,
+        "right": 652,
+        "bottom": 879
+      },
+      {
+        "name": "清空当前杯",
+        "x": 664,
+        "y": 842,
+        "right": 724,
+        "bottom": 876
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1715,
+        "y": 839,
+        "right": 1854,
+        "bottom": 879
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 512,
+        "y": 929,
+        "right": 727,
+        "bottom": 1034
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 737,
+        "y": 929,
+        "right": 953,
+        "bottom": 1034
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 963,
+        "y": 929,
+        "right": 1178,
+        "bottom": 1034
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 1188,
+        "y": 929,
+        "right": 1403,
+        "bottom": 1034
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 1413,
+        "y": 929,
+        "right": 1629,
+        "bottom": 1034
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1639,
+        "y": 929,
+        "right": 1854,
+        "bottom": 1034
+      }
+    ],
+    "art": [
+      {
+        "name": "A · 我的配方，总量 86 克，成品示意",
+        "x": 629,
+        "y": 99,
+        "right": 909,
+        "bottom": 549
+      },
+      {
+        "name": "B · 我的配方，总量 86 克，成品示意",
+        "x": 909,
+        "y": 99,
+        "right": 1189,
+        "bottom": 549
+      }
+    ],
+    "panels": [
+      {
+        "name": "同一份咖啡，两种可能。DUE TAZZE, DUE IDEE同一批摩卡",
+        "x": 66,
+        "y": 89,
+        "right": 476,
+        "bottom": 716,
+        "scrollHeight": 626,
+        "clientHeight": 626
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1342,
+        "y": 89,
+        "right": 1854,
+        "bottom": 599,
+        "scrollHeight": 510,
+        "clientHeight": 510
+      }
+    ]
+  },
+  {
+    "label": "1920x1080 prepare",
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "scene": "prepare",
+    "controls": [
+      {
+        "name": "下壶水量",
+        "x": 724,
+        "y": 902,
+        "right": 1094,
+        "bottom": 907
+      },
+      {
+        "name": "演示安全水位",
+        "x": 564,
+        "y": 978,
+        "right": 680,
+        "bottom": 1018
+      },
+      {
+        "name": "装粉",
+        "x": 692,
+        "y": 978,
+        "right": 756,
+        "bottom": 1018
+      },
+      {
+        "name": "准备好，开始冲煮 →",
+        "x": 1687,
+        "y": 978,
+        "right": 1854,
+        "bottom": 1018
+      }
+    ],
+    "art": [
+      {
+        "name": "下壶水位 120 克，低于安全阀下缘",
+        "x": 659,
+        "y": 244,
+        "right": 1159,
+        "bottom": 714
+      }
+    ],
+    "panels": [
+      {
+        "name": "做一份，自己的摩卡。PREPARA LA BASE这一杯，仍在桌面B ",
+        "x": 66,
+        "y": 89,
+        "right": 476,
+        "bottom": 794,
+        "scrollHeight": 705,
+        "clientHeight": 705
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1342,
+        "y": 89,
+        "right": 1854,
+        "bottom": 417,
+        "scrollHeight": 328,
+        "clientHeight": 328
+      }
+    ]
+  },
+  {
+    "label": "1920x1080 structure",
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "scene": "structure",
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 512,
+        "y": 986,
+        "right": 540,
+        "bottom": 1012
+      },
+      {
+        "name": "零件",
+        "x": 560,
+        "y": 986,
+        "right": 588,
+        "bottom": 1012
+      },
+      {
+        "name": "壶盖",
+        "x": 600,
+        "y": 982,
+        "right": 640,
+        "bottom": 1014
+      },
+      {
+        "name": "上壶",
+        "x": 640,
+        "y": 982,
+        "right": 680,
+        "bottom": 1014
+      },
+      {
+        "name": "上滤网",
+        "x": 680,
+        "y": 982,
+        "right": 731,
+        "bottom": 1014
+      },
+      {
+        "name": "密封圈",
+        "x": 731,
+        "y": 982,
+        "right": 782,
+        "bottom": 1014
+      },
+      {
+        "name": "粉篮",
+        "x": 782,
+        "y": 982,
+        "right": 822,
+        "bottom": 1014
+      },
+      {
+        "name": "下壶",
+        "x": 822,
+        "y": 982,
+        "right": 862,
+        "bottom": 1014
+      },
+      {
+        "name": "收起，继续制作 →",
+        "x": 1701,
+        "y": 978,
+        "right": 1854,
+        "bottom": 1018
+      }
+    ],
+    "art": [
+      {
+        "name": "同一摩卡模型沿装配轴展开的六个零件",
+        "x": 512,
+        "y": 242,
+        "right": 1306,
+        "bottom": 822
+      }
+    ],
+    "panels": [
+      {
+        "name": "拆开，理解这一份。DENTRO LA MOKA这一杯，仍在桌面B · ",
+        "x": 66,
+        "y": 89,
+        "right": 476,
+        "bottom": 794,
+        "scrollHeight": 705,
+        "clientHeight": 705
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1342,
+        "y": 89,
+        "right": 1854,
+        "bottom": 524,
+        "scrollHeight": 435,
+        "clientHeight": 435
+      }
+    ]
+  },
+  {
+    "label": "1920x1080 brewing",
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "scene": "brewing",
+    "controls": [
+      {
+        "name": "微火",
+        "x": 564,
+        "y": 978,
+        "right": 618,
+        "bottom": 1018
+      },
+      {
+        "name": "小火",
+        "x": 626,
+        "y": 978,
+        "right": 680,
+        "bottom": 1018
+      },
+      {
+        "name": "关火观察",
+        "x": 688,
+        "y": 978,
+        "right": 766,
+        "bottom": 1018
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 1743,
+        "y": 978,
+        "right": 1854,
+        "bottom": 1018
+      }
+    ],
+    "art": [
+      {
+        "name": "摩卡壶冲煮剖面，已出液 0.0 克",
+        "x": 704,
+        "y": 230,
+        "right": 1114,
+        "bottom": 810
+      }
+    ],
+    "panels": [
+      {
+        "name": "慢慢出液，何时收杯？OSSERVA E SCEGLI这一杯，仍在桌面B",
+        "x": 66,
+        "y": 89,
+        "right": 476,
+        "bottom": 712,
+        "scrollHeight": 623,
+        "clientHeight": 623
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1342,
+        "y": 89,
+        "right": 1854,
+        "bottom": 514,
+        "scrollHeight": 425,
+        "clientHeight": 425
+      }
+    ]
+  },
+  {
+    "label": "1920x1080 gazette",
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "scene": "gazette",
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 913,
+        "y": 983,
+        "right": 1060,
+        "bottom": 1023
+      },
+      {
+        "name": "回到调配",
+        "x": 1070,
+        "y": 983,
+        "right": 1160,
+        "bottom": 1023
+      }
+    ],
+    "art": [
+      {
+        "name": "本期特刊，1200乘1800像素",
+        "x": 317,
+        "y": 167,
+        "right": 848,
+        "bottom": 959
+      }
+    ],
+    "panels": [
+      {
+        "name": "本期记录示例摩卡基底A / 摩卡 20g + 水 15g + 牛奶 4",
+        "x": 1272,
+        "y": 331,
+        "right": 1610,
+        "bottom": 951,
+        "scrollHeight": 619,
+        "clientHeight": 619
+      }
+    ]
+  },
+  {
+    "label": "1920x1080 lobby",
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "scene": "lobby",
+    "controls": [
+      {
+        "name": "接下来单：自己的小杯，热黑咖，100–170 g，比例由你。",
+        "x": 90,
+        "y": 420,
+        "right": 572,
+        "bottom": 557
+      },
+      {
+        "name": "接下来单：早餐搭档，热奶咖，牛奶多一些，约 200 g。",
+        "x": 97,
+        "y": 527,
+        "right": 579,
+        "bottom": 664
+      },
+      {
+        "name": "接下来单：窗边的长杯，热黑咖，不加奶，180–270 g。",
+        "x": 105,
+        "y": 634,
+        "right": 587,
+        "bottom": 771
+      },
+      {
+        "name": "自由发挥不用接单，做自己的配方。开始创作 ↗",
+        "x": 1381,
+        "y": 175,
+        "right": 1848,
+        "bottom": 440
+      }
+    ],
+    "art": [],
+    "panels": []
+  },
+  {
+    "label": "1536x864 recipe-expanded",
+    "width": 1536,
+    "height": 864,
+    "scrollWidth": 1536,
+    "scrollHeight": 864,
+    "scene": "recipe",
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 407,
+        "y": 633,
+        "right": 471,
+        "bottom": 673
+      },
+      {
+        "name": "搅拌",
+        "x": 483,
+        "y": 633,
+        "right": 547,
+        "bottom": 673
+      },
+      {
+        "name": "分成两杯",
+        "x": 559,
+        "y": 633,
+        "right": 649,
+        "bottom": 673
+      },
+      {
+        "name": "清空当前杯",
+        "x": 661,
+        "y": 636,
+        "right": 721,
+        "bottom": 670
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1379,
+        "y": 633,
+        "right": 1490,
+        "bottom": 673
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 407,
+        "y": 723,
+        "right": 579,
+        "bottom": 823
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 589,
+        "y": 723,
+        "right": 761,
+        "bottom": 823
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 771,
+        "y": 723,
+        "right": 943,
+        "bottom": 823
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 953,
+        "y": 723,
+        "right": 1126,
+        "bottom": 823
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 1136,
+        "y": 723,
+        "right": 1308,
+        "bottom": 823
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1318,
+        "y": 723,
+        "right": 1490,
+        "bottom": 823
+      }
+    ],
+    "art": [
+      {
+        "name": "我的第一杯，总量 172 克，成分比例示意",
+        "x": 447,
+        "y": 168,
+        "right": 1007,
+        "bottom": 559
+      }
+    ],
+    "panels": [
+      {
+        "name": "这一杯，由你调。PICCOLI ESPERIMENTI今日来单 / 0",
+        "x": 46,
+        "y": 78,
+        "right": 376,
+        "bottom": 602,
+        "scrollHeight": 524,
+        "clientHeight": 524
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1077,
+        "y": 78,
+        "right": 1490,
+        "bottom": 620,
+        "scrollHeight": 668,
+        "clientHeight": 542
+      }
+    ]
+  },
+  {
+    "label": "1536x864 compare-expanded",
+    "width": 1536,
+    "height": 864,
+    "scrollWidth": 1536,
+    "scrollHeight": 864,
+    "scene": "compare",
+    "controls": [
+      {
+        "name": "选择A杯",
+        "x": 447,
+        "y": 90,
+        "right": 727,
+        "bottom": 571
+      },
+      {
+        "name": "选择B杯",
+        "x": 727,
+        "y": 90,
+        "right": 1007,
+        "bottom": 571
+      },
+      {
+        "name": "撤销",
+        "x": 407,
+        "y": 633,
+        "right": 471,
+        "bottom": 673
+      },
+      {
+        "name": "搅拌",
+        "x": 483,
+        "y": 633,
+        "right": 547,
+        "bottom": 673
+      },
+      {
+        "name": "清空当前杯",
+        "x": 559,
+        "y": 636,
+        "right": 619,
+        "bottom": 670
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1351,
+        "y": 633,
+        "right": 1490,
+        "bottom": 673
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 407,
+        "y": 723,
+        "right": 579,
+        "bottom": 823
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 589,
+        "y": 723,
+        "right": 761,
+        "bottom": 823
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 771,
+        "y": 723,
+        "right": 943,
+        "bottom": 823
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 953,
+        "y": 723,
+        "right": 1126,
+        "bottom": 823
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 1136,
+        "y": 723,
+        "right": 1308,
+        "bottom": 823
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1318,
+        "y": 723,
+        "right": 1490,
+        "bottom": 823
+      }
+    ],
+    "art": [
+      {
+        "name": "A · 我的配方，总量 86 克，成品示意",
+        "x": 447,
+        "y": 90,
+        "right": 727,
+        "bottom": 484
+      },
+      {
+        "name": "B · 我的配方，总量 86 克，成品示意",
+        "x": 727,
+        "y": 90,
+        "right": 1007,
+        "bottom": 484
+      }
+    ],
+    "panels": [
+      {
+        "name": "同一份咖啡，两种可能。DUE TAZZE, DUE IDEE同一批摩卡",
+        "x": 46,
+        "y": 78,
+        "right": 376,
+        "bottom": 675,
+        "scrollHeight": 597,
+        "clientHeight": 597
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1077,
+        "y": 78,
+        "right": 1490,
+        "bottom": 601,
+        "scrollHeight": 523,
+        "clientHeight": 523
+      }
+    ]
+  },
+  {
+    "label": "1536x864 prepare",
+    "width": 1536,
+    "height": 864,
+    "scrollWidth": 1536,
+    "scrollHeight": 864,
+    "scene": "prepare",
+    "controls": [
+      {
+        "name": "下壶水量",
+        "x": 542,
+        "y": 691,
+        "right": 912,
+        "bottom": 696
+      },
+      {
+        "name": "演示安全水位",
+        "x": 459,
+        "y": 767,
+        "right": 575,
+        "bottom": 807
+      },
+      {
+        "name": "装粉",
+        "x": 587,
+        "y": 767,
+        "right": 651,
+        "bottom": 807
+      },
+      {
+        "name": "准备好，开始冲煮 →",
+        "x": 1323,
+        "y": 767,
+        "right": 1490,
+        "bottom": 807
+      }
+    ],
+    "art": [
+      {
+        "name": "下壶水位 120 克，低于安全阀下缘",
+        "x": 477,
+        "y": 133,
+        "right": 977,
+        "bottom": 603
+      }
+    ],
+    "panels": [
+      {
+        "name": "做一份，自己的摩卡。PREPARA LA BASE这一杯，仍在桌面B ",
+        "x": 46,
+        "y": 78,
+        "right": 376,
+        "bottom": 754,
+        "scrollHeight": 676,
+        "clientHeight": 676
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1077,
+        "y": 78,
+        "right": 1490,
+        "bottom": 420,
+        "scrollHeight": 342,
+        "clientHeight": 342
+      }
+    ]
+  },
+  {
+    "label": "1536x864 structure",
+    "width": 1536,
+    "height": 864,
+    "scrollWidth": 1536,
+    "scrollHeight": 864,
+    "scene": "structure",
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 407,
+        "y": 775,
+        "right": 435,
+        "bottom": 801
+      },
+      {
+        "name": "零件",
+        "x": 455,
+        "y": 775,
+        "right": 483,
+        "bottom": 801
+      },
+      {
+        "name": "壶盖",
+        "x": 495,
+        "y": 771,
+        "right": 535,
+        "bottom": 803
+      },
+      {
+        "name": "上壶",
+        "x": 535,
+        "y": 771,
+        "right": 575,
+        "bottom": 803
+      },
+      {
+        "name": "上滤网",
+        "x": 575,
+        "y": 771,
+        "right": 626,
+        "bottom": 803
+      },
+      {
+        "name": "密封圈",
+        "x": 626,
+        "y": 771,
+        "right": 677,
+        "bottom": 803
+      },
+      {
+        "name": "粉篮",
+        "x": 677,
+        "y": 771,
+        "right": 717,
+        "bottom": 803
+      },
+      {
+        "name": "下壶",
+        "x": 717,
+        "y": 771,
+        "right": 757,
+        "bottom": 803
+      },
+      {
+        "name": "收起，继续制作 →",
+        "x": 1337,
+        "y": 767,
+        "right": 1490,
+        "bottom": 807
+      }
+    ],
+    "art": [
+      {
+        "name": "同一摩卡模型沿装配轴展开的六个零件",
+        "x": 407,
+        "y": 131,
+        "right": 1047,
+        "bottom": 711
+      }
+    ],
+    "panels": [
+      {
+        "name": "拆开，理解这一份。DENTRO LA MOKA这一杯，仍在桌面B · ",
+        "x": 46,
+        "y": 78,
+        "right": 376,
+        "bottom": 754,
+        "scrollHeight": 676,
+        "clientHeight": 676
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1077,
+        "y": 78,
+        "right": 1490,
+        "bottom": 526,
+        "scrollHeight": 448,
+        "clientHeight": 448
+      }
+    ]
+  },
+  {
+    "label": "1536x864 brewing",
+    "width": 1536,
+    "height": 864,
+    "scrollWidth": 1536,
+    "scrollHeight": 864,
+    "scene": "brewing",
+    "controls": [
+      {
+        "name": "微火",
+        "x": 459,
+        "y": 767,
+        "right": 513,
+        "bottom": 807
+      },
+      {
+        "name": "小火",
+        "x": 521,
+        "y": 767,
+        "right": 575,
+        "bottom": 807
+      },
+      {
+        "name": "关火观察",
+        "x": 583,
+        "y": 767,
+        "right": 661,
+        "bottom": 807
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 1379,
+        "y": 767,
+        "right": 1490,
+        "bottom": 807
+      }
+    ],
+    "art": [
+      {
+        "name": "摩卡壶冲煮剖面，已出液 0.0 克",
+        "x": 522,
+        "y": 119,
+        "right": 932,
+        "bottom": 699
+      }
+    ],
+    "panels": [
+      {
+        "name": "慢慢出液，何时收杯？OSSERVA E SCEGLI这一杯，仍在桌面B",
+        "x": 46,
+        "y": 78,
+        "right": 376,
+        "bottom": 676,
+        "scrollHeight": 598,
+        "clientHeight": 598
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 1077,
+        "y": 78,
+        "right": 1490,
+        "bottom": 493,
+        "scrollHeight": 415,
+        "clientHeight": 415
+      }
+    ]
+  },
+  {
+    "label": "1536x864 gazette",
+    "width": 1536,
+    "height": 864,
+    "scrollWidth": 1536,
+    "scrollHeight": 864,
+    "scene": "gazette",
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 715,
+        "y": 772,
+        "right": 861,
+        "bottom": 812
+      },
+      {
+        "name": "回到调配",
+        "x": 871,
+        "y": 772,
+        "right": 961,
+        "bottom": 812
+      }
+    ],
+    "art": [
+      {
+        "name": "本期特刊，1200乘1800像素",
+        "x": 139,
+        "y": 76,
+        "right": 647,
+        "bottom": 834
+      }
+    ],
+    "panels": [
+      {
+        "name": "本期记录示例摩卡基底A / 摩卡 20g + 水 15g + 牛奶 4",
+        "x": 1076,
+        "y": 322,
+        "right": 1418,
+        "bottom": 740,
+        "scrollHeight": 418,
+        "clientHeight": 418
+      }
+    ]
+  },
+  {
+    "label": "1536x864 lobby",
+    "width": 1536,
+    "height": 864,
+    "scrollWidth": 1536,
+    "scrollHeight": 864,
+    "scene": "lobby",
+    "controls": [
+      {
+        "name": "接下来单：双人分享，同一份基底，两杯不同搭配；每杯 90–200 g。",
+        "x": 75,
+        "y": 343,
+        "right": 520,
+        "bottom": 466
+      },
+      {
+        "name": "接下来单：泡沫早餐，牛奶与奶泡都加入，180–260 g。",
+        "x": 82,
+        "y": 439,
+        "right": 526,
+        "bottom": 562
+      },
+      {
+        "name": "接下来单：自己的小杯，热黑咖，100–170 g，比例由你。",
+        "x": 88,
+        "y": 534,
+        "right": 533,
+        "bottom": 658
+      },
+      {
+        "name": "自由发挥不用接单，做自己的配方。开始创作 ↗",
+        "x": 1103,
+        "y": 140,
+        "right": 1480,
+        "bottom": 389
+      }
+    ],
+    "art": [],
+    "panels": []
+  },
+  {
+    "label": "1366x768 recipe-expanded",
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "scene": "recipe",
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 362,
+        "y": 547,
+        "right": 426,
+        "bottom": 587
+      },
+      {
+        "name": "搅拌",
+        "x": 438,
+        "y": 547,
+        "right": 502,
+        "bottom": 587
+      },
+      {
+        "name": "分成两杯",
+        "x": 514,
+        "y": 547,
+        "right": 604,
+        "bottom": 587
+      },
+      {
+        "name": "清空当前杯",
+        "x": 616,
+        "y": 550,
+        "right": 676,
+        "bottom": 584
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1214,
+        "y": 547,
+        "right": 1325,
+        "bottom": 587
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 362,
+        "y": 637,
+        "right": 514,
+        "bottom": 730
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 524,
+        "y": 637,
+        "right": 676,
+        "bottom": 730
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 686,
+        "y": 637,
+        "right": 838,
+        "bottom": 730
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 848,
+        "y": 637,
+        "right": 1001,
+        "bottom": 730
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 1011,
+        "y": 637,
+        "right": 1163,
+        "bottom": 730
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1173,
+        "y": 637,
+        "right": 1325,
+        "bottom": 730
+      }
+    ],
+    "art": [
+      {
+        "name": "我的第一杯，总量 172 克，成分比例示意",
+        "x": 366,
+        "y": 160,
+        "right": 926,
+        "bottom": 473
+      }
+    ],
+    "panels": [
+      {
+        "name": "这一杯，由你调。PICCOLI ESPERIMENTI今日来单 / 0",
+        "x": 41,
+        "y": 73,
+        "right": 335,
+        "bottom": 566,
+        "scrollHeight": 493,
+        "clientHeight": 493
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 958,
+        "y": 73,
+        "right": 1325,
+        "bottom": 534,
+        "scrollHeight": 660,
+        "clientHeight": 461
+      }
+    ]
+  },
+  {
+    "label": "1366x768 compare-expanded",
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "scene": "compare",
+    "controls": [
+      {
+        "name": "选择A杯",
+        "x": 366,
+        "y": 84,
+        "right": 646,
+        "bottom": 484
+      },
+      {
+        "name": "选择B杯",
+        "x": 646,
+        "y": 84,
+        "right": 926,
+        "bottom": 484
+      },
+      {
+        "name": "撤销",
+        "x": 362,
+        "y": 547,
+        "right": 426,
+        "bottom": 587
+      },
+      {
+        "name": "搅拌",
+        "x": 438,
+        "y": 547,
+        "right": 502,
+        "bottom": 587
+      },
+      {
+        "name": "清空当前杯",
+        "x": 514,
+        "y": 550,
+        "right": 574,
+        "bottom": 584
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1186,
+        "y": 547,
+        "right": 1325,
+        "bottom": 587
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 362,
+        "y": 637,
+        "right": 514,
+        "bottom": 730
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 524,
+        "y": 637,
+        "right": 676,
+        "bottom": 730
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 686,
+        "y": 637,
+        "right": 838,
+        "bottom": 730
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 848,
+        "y": 637,
+        "right": 1001,
+        "bottom": 730
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 1011,
+        "y": 637,
+        "right": 1163,
+        "bottom": 730
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1173,
+        "y": 637,
+        "right": 1325,
+        "bottom": 730
+      }
+    ],
+    "art": [
+      {
+        "name": "A · 我的配方，总量 86 克，成品示意",
+        "x": 366,
+        "y": 84,
+        "right": 646,
+        "bottom": 397
+      },
+      {
+        "name": "B · 我的配方，总量 86 克，成品示意",
+        "x": 646,
+        "y": 84,
+        "right": 926,
+        "bottom": 397
+      }
+    ],
+    "panels": [
+      {
+        "name": "同一份咖啡，两种可能。DUE TAZZE, DUE IDEE同一批摩卡",
+        "x": 41,
+        "y": 73,
+        "right": 335,
+        "bottom": 631,
+        "scrollHeight": 558,
+        "clientHeight": 558
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 958,
+        "y": 73,
+        "right": 1325,
+        "bottom": 534,
+        "scrollHeight": 519,
+        "clientHeight": 461
+      }
+    ]
+  },
+  {
+    "label": "1366x768 prepare",
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "scene": "prepare",
+    "controls": [
+      {
+        "name": "下壶水量",
+        "x": 461,
+        "y": 598,
+        "right": 831,
+        "bottom": 603
+      },
+      {
+        "name": "演示安全水位",
+        "x": 414,
+        "y": 674,
+        "right": 530,
+        "bottom": 714
+      },
+      {
+        "name": "装粉",
+        "x": 542,
+        "y": 674,
+        "right": 606,
+        "bottom": 714
+      },
+      {
+        "name": "准备好，开始冲煮 →",
+        "x": 1158,
+        "y": 674,
+        "right": 1325,
+        "bottom": 714
+      }
+    ],
+    "art": [
+      {
+        "name": "下壶水位 120 克，低于安全阀下缘",
+        "x": 396,
+        "y": 85,
+        "right": 896,
+        "bottom": 553
+      }
+    ],
+    "panels": [
+      {
+        "name": "做一份，自己的摩卡。PREPARA LA BASE这一杯，仍在桌面B ",
+        "x": 41,
+        "y": 73,
+        "right": 335,
+        "bottom": 710,
+        "scrollHeight": 636,
+        "clientHeight": 636
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 958,
+        "y": 73,
+        "right": 1325,
+        "bottom": 407,
+        "scrollHeight": 334,
+        "clientHeight": 334
+      }
+    ]
+  },
+  {
+    "label": "1366x768 structure",
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "scene": "structure",
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 362,
+        "y": 682,
+        "right": 390,
+        "bottom": 708
+      },
+      {
+        "name": "零件",
+        "x": 410,
+        "y": 682,
+        "right": 438,
+        "bottom": 708
+      },
+      {
+        "name": "壶盖",
+        "x": 450,
+        "y": 678,
+        "right": 490,
+        "bottom": 710
+      },
+      {
+        "name": "上壶",
+        "x": 490,
+        "y": 678,
+        "right": 530,
+        "bottom": 710
+      },
+      {
+        "name": "上滤网",
+        "x": 530,
+        "y": 678,
+        "right": 581,
+        "bottom": 710
+      },
+      {
+        "name": "密封圈",
+        "x": 581,
+        "y": 678,
+        "right": 632,
+        "bottom": 710
+      },
+      {
+        "name": "粉篮",
+        "x": 632,
+        "y": 678,
+        "right": 672,
+        "bottom": 710
+      },
+      {
+        "name": "下壶",
+        "x": 672,
+        "y": 678,
+        "right": 712,
+        "bottom": 710
+      },
+      {
+        "name": "收起，继续制作 →",
+        "x": 1172,
+        "y": 674,
+        "right": 1325,
+        "bottom": 714
+      }
+    ],
+    "art": [
+      {
+        "name": "同一摩卡模型沿装配轴展开的六个零件",
+        "x": 362,
+        "y": 85,
+        "right": 931,
+        "bottom": 659
+      }
+    ],
+    "panels": [
+      {
+        "name": "拆开，理解这一份。DENTRO LA MOKA这一杯，仍在桌面B · ",
+        "x": 41,
+        "y": 73,
+        "right": 335,
+        "bottom": 710,
+        "scrollHeight": 636,
+        "clientHeight": 636
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 958,
+        "y": 73,
+        "right": 1325,
+        "bottom": 496,
+        "scrollHeight": 423,
+        "clientHeight": 423
+      }
+    ]
+  },
+  {
+    "label": "1366x768 brewing",
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "scene": "brewing",
+    "controls": [
+      {
+        "name": "微火",
+        "x": 414,
+        "y": 674,
+        "right": 468,
+        "bottom": 714
+      },
+      {
+        "name": "小火",
+        "x": 476,
+        "y": 674,
+        "right": 530,
+        "bottom": 714
+      },
+      {
+        "name": "关火观察",
+        "x": 538,
+        "y": 674,
+        "right": 616,
+        "bottom": 714
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 1214,
+        "y": 674,
+        "right": 1325,
+        "bottom": 714
+      }
+    ],
+    "art": [
+      {
+        "name": "摩卡壶冲煮剖面，已出液 0.0 克",
+        "x": 441,
+        "y": 73,
+        "right": 851,
+        "bottom": 647
+      }
+    ],
+    "panels": [
+      {
+        "name": "慢慢出液，何时收杯？OSSERVA E SCEGLI这一杯，仍在桌面B",
+        "x": 41,
+        "y": 73,
+        "right": 335,
+        "bottom": 640,
+        "scrollHeight": 567,
+        "clientHeight": 567
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 958,
+        "y": 73,
+        "right": 1325,
+        "bottom": 494,
+        "scrollHeight": 421,
+        "clientHeight": 421
+      }
+    ]
+  },
+  {
+    "label": "1366x768 gazette",
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "scene": "gazette",
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 628,
+        "y": 679,
+        "right": 775,
+        "bottom": 719
+      },
+      {
+        "name": "回到调配",
+        "x": 785,
+        "y": 679,
+        "right": 875,
+        "bottom": 719
+      }
+    ],
+    "art": [
+      {
+        "name": "本期特刊，1200乘1800像素",
+        "x": 90,
+        "y": 74,
+        "right": 537,
+        "bottom": 740
+      }
+    ],
+    "panels": [
+      {
+        "name": "本期记录示例摩卡基底A / 摩卡 20g + 水 15g + 牛奶 4",
+        "x": 986,
+        "y": 314,
+        "right": 1325,
+        "bottom": 647,
+        "scrollHeight": 332,
+        "clientHeight": 332
+      }
+    ]
+  },
+  {
+    "label": "1366x768 lobby",
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "scene": "lobby",
+    "controls": [
+      {
+        "name": "接下来单：吧台小杯，小杯摩卡原液，30–80 g。",
+        "x": 67,
+        "y": 305,
+        "right": 462,
+        "bottom": 416
+      },
+      {
+        "name": "接下来单：自己的小杯，热黑咖，100–170 g，比例由你。",
+        "x": 73,
+        "y": 392,
+        "right": 468,
+        "bottom": 503
+      },
+      {
+        "name": "接下来单：泡沫早餐，牛奶与奶泡都加入，180–260 g。",
+        "x": 79,
+        "y": 479,
+        "right": 474,
+        "bottom": 590
+      },
+      {
+        "name": "自由发挥不用接单，做自己的配方。开始创作 ↗",
+        "x": 981,
+        "y": 125,
+        "right": 1317,
+        "bottom": 355
+      }
+    ],
+    "art": [],
+    "panels": []
+  },
+  {
+    "label": "1280x720 recipe-expanded",
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "scrollHeight": 720,
+    "scene": "recipe",
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 339,
+        "y": 519,
+        "right": 393,
+        "bottom": 557
+      },
+      {
+        "name": "搅拌",
+        "x": 403,
+        "y": 519,
+        "right": 457,
+        "bottom": 557
+      },
+      {
+        "name": "分成两杯",
+        "x": 467,
+        "y": 519,
+        "right": 545,
+        "bottom": 557
+      },
+      {
+        "name": "清空当前杯",
+        "x": 555,
+        "y": 521,
+        "right": 615,
+        "bottom": 555
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1144,
+        "y": 519,
+        "right": 1242,
+        "bottom": 557
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 339,
+        "y": 604,
+        "right": 481,
+        "bottom": 685
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 491,
+        "y": 604,
+        "right": 633,
+        "bottom": 685
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 643,
+        "y": 604,
+        "right": 785,
+        "bottom": 685
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 795,
+        "y": 604,
+        "right": 937,
+        "bottom": 685
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 947,
+        "y": 604,
+        "right": 1090,
+        "bottom": 685
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1100,
+        "y": 604,
+        "right": 1242,
+        "bottom": 685
+      }
+    ],
+    "art": [
+      {
+        "name": "我的第一杯，总量 172 克，成分比例示意",
+        "x": 339,
+        "y": 148,
+        "right": 872,
+        "bottom": 448
+      }
+    ],
+    "panels": [
+      {
+        "name": "这一杯，由你调。PICCOLI ESPERIMENTI今日来单 / 0",
+        "x": 38,
+        "y": 64,
+        "right": 314,
+        "bottom": 520,
+        "scrollHeight": 456,
+        "clientHeight": 456
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 898,
+        "y": 64,
+        "right": 1242,
+        "bottom": 509,
+        "scrollHeight": 526,
+        "clientHeight": 445
+      }
+    ]
+  },
+  {
+    "label": "1280x720 compare-expanded",
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "scrollHeight": 720,
+    "scene": "compare",
+    "controls": [
+      {
+        "name": "选择A杯",
+        "x": 339,
+        "y": 75,
+        "right": 606,
+        "bottom": 459
+      },
+      {
+        "name": "选择B杯",
+        "x": 606,
+        "y": 75,
+        "right": 872,
+        "bottom": 459
+      },
+      {
+        "name": "撤销",
+        "x": 339,
+        "y": 519,
+        "right": 393,
+        "bottom": 557
+      },
+      {
+        "name": "搅拌",
+        "x": 403,
+        "y": 519,
+        "right": 457,
+        "bottom": 557
+      },
+      {
+        "name": "清空当前杯",
+        "x": 467,
+        "y": 521,
+        "right": 527,
+        "bottom": 555
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1118,
+        "y": 519,
+        "right": 1242,
+        "bottom": 557
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 339,
+        "y": 604,
+        "right": 481,
+        "bottom": 685
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 491,
+        "y": 604,
+        "right": 633,
+        "bottom": 685
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 643,
+        "y": 604,
+        "right": 785,
+        "bottom": 685
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 795,
+        "y": 604,
+        "right": 937,
+        "bottom": 685
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 947,
+        "y": 604,
+        "right": 1090,
+        "bottom": 685
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 1100,
+        "y": 604,
+        "right": 1242,
+        "bottom": 685
+      }
+    ],
+    "art": [
+      {
+        "name": "A · 我的配方，总量 86 克，成品示意",
+        "x": 339,
+        "y": 75,
+        "right": 606,
+        "bottom": 356
+      },
+      {
+        "name": "B · 我的配方，总量 86 克，成品示意",
+        "x": 606,
+        "y": 75,
+        "right": 872,
+        "bottom": 356
+      }
+    ],
+    "panels": [
+      {
+        "name": "同一份咖啡，两种可能。DUE TAZZE, DUE IDEE同一批摩卡",
+        "x": 38,
+        "y": 64,
+        "right": 314,
+        "bottom": 578,
+        "scrollHeight": 514,
+        "clientHeight": 514
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 898,
+        "y": 64,
+        "right": 1242,
+        "bottom": 509,
+        "scrollHeight": 500,
+        "clientHeight": 445
+      }
+    ]
+  },
+  {
+    "label": "1280x720 prepare",
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "scrollHeight": 720,
+    "scene": "prepare",
+    "controls": [
+      {
+        "name": "下壶水量",
+        "x": 421,
+        "y": 558,
+        "right": 791,
+        "bottom": 563
+      },
+      {
+        "name": "演示安全水位",
+        "x": 389,
+        "y": 631,
+        "right": 491,
+        "bottom": 669
+      },
+      {
+        "name": "装粉",
+        "x": 501,
+        "y": 631,
+        "right": 555,
+        "bottom": 669
+      },
+      {
+        "name": "准备好，开始冲煮 →",
+        "x": 1092,
+        "y": 631,
+        "right": 1242,
+        "bottom": 669
+      }
+    ],
+    "art": [
+      {
+        "name": "下壶水位 120 克，低于安全阀下缘",
+        "x": 356,
+        "y": 76,
+        "right": 856,
+        "bottom": 513
+      }
+    ],
+    "panels": [
+      {
+        "name": "做一份，自己的摩卡。PREPARA LA BASE这一杯，仍在桌面B ",
+        "x": 38,
+        "y": 64,
+        "right": 314,
+        "bottom": 657,
+        "scrollHeight": 592,
+        "clientHeight": 592
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 898,
+        "y": 64,
+        "right": 1242,
+        "bottom": 384,
+        "scrollHeight": 320,
+        "clientHeight": 320
+      }
+    ]
+  },
+  {
+    "label": "1280x720 structure",
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "scrollHeight": 720,
+    "scene": "structure",
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 339,
+        "y": 638,
+        "right": 367,
+        "bottom": 664
+      },
+      {
+        "name": "零件",
+        "x": 387,
+        "y": 638,
+        "right": 415,
+        "bottom": 664
+      },
+      {
+        "name": "壶盖",
+        "x": 425,
+        "y": 634,
+        "right": 465,
+        "bottom": 666
+      },
+      {
+        "name": "上壶",
+        "x": 465,
+        "y": 634,
+        "right": 505,
+        "bottom": 666
+      },
+      {
+        "name": "上滤网",
+        "x": 505,
+        "y": 634,
+        "right": 556,
+        "bottom": 666
+      },
+      {
+        "name": "密封圈",
+        "x": 556,
+        "y": 634,
+        "right": 607,
+        "bottom": 666
+      },
+      {
+        "name": "粉篮",
+        "x": 607,
+        "y": 634,
+        "right": 647,
+        "bottom": 666
+      },
+      {
+        "name": "下壶",
+        "x": 647,
+        "y": 634,
+        "right": 687,
+        "bottom": 666
+      },
+      {
+        "name": "收起，继续制作 →",
+        "x": 1105,
+        "y": 631,
+        "right": 1242,
+        "bottom": 669
+      }
+    ],
+    "art": [
+      {
+        "name": "同一摩卡模型沿装配轴展开的六个零件",
+        "x": 339,
+        "y": 76,
+        "right": 872,
+        "bottom": 619
+      }
+    ],
+    "panels": [
+      {
+        "name": "拆开，理解这一份。DENTRO LA MOKA这一杯，仍在桌面B · ",
+        "x": 38,
+        "y": 64,
+        "right": 314,
+        "bottom": 657,
+        "scrollHeight": 592,
+        "clientHeight": 592
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 898,
+        "y": 64,
+        "right": 1242,
+        "bottom": 413,
+        "scrollHeight": 349,
+        "clientHeight": 349
+      }
+    ]
+  },
+  {
+    "label": "1280x720 brewing",
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "scrollHeight": 720,
+    "scene": "brewing",
+    "controls": [
+      {
+        "name": "微火",
+        "x": 389,
+        "y": 629,
+        "right": 443,
+        "bottom": 669
+      },
+      {
+        "name": "小火",
+        "x": 451,
+        "y": 629,
+        "right": 505,
+        "bottom": 669
+      },
+      {
+        "name": "关火观察",
+        "x": 513,
+        "y": 629,
+        "right": 591,
+        "bottom": 669
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 1144,
+        "y": 630,
+        "right": 1242,
+        "bottom": 668
+      }
+    ],
+    "art": [
+      {
+        "name": "摩卡壶冲煮剖面，已出液 0.0 克",
+        "x": 401,
+        "y": 64,
+        "right": 811,
+        "bottom": 605
+      }
+    ],
+    "panels": [
+      {
+        "name": "慢慢出液，何时收杯？OSSERVA E SCEGLI这一杯，仍在桌面B",
+        "x": 38,
+        "y": 64,
+        "right": 314,
+        "bottom": 594,
+        "scrollHeight": 530,
+        "clientHeight": 530
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 898,
+        "y": 64,
+        "right": 1242,
+        "bottom": 431,
+        "scrollHeight": 367,
+        "clientHeight": 367
+      }
+    ]
+  },
+  {
+    "label": "1280x720 gazette",
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "scrollHeight": 720,
+    "scene": "gazette",
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 543,
+        "y": 633,
+        "right": 674,
+        "bottom": 673
+      },
+      {
+        "name": "回到调配",
+        "x": 684,
+        "y": 633,
+        "right": 762,
+        "bottom": 673
+      }
+    ],
+    "art": [
+      {
+        "name": "本期特刊，1200乘1800像素",
+        "x": 62,
+        "y": 69,
+        "right": 481,
+        "bottom": 693
+      }
+    ],
+    "panels": [
+      {
+        "name": "本期记录示例摩卡基底A / 摩卡 20g + 水 15g + 牛奶 4",
+        "x": 900,
+        "y": 294,
+        "right": 1242,
+        "bottom": 603,
+        "scrollHeight": 308,
+        "clientHeight": 308
+      }
+    ]
+  },
+  {
+    "label": "1280x720 lobby",
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "scrollHeight": 720,
+    "scene": "lobby",
+    "controls": [
+      {
+        "name": "接下来单：吧台小杯，小杯摩卡原液，30–80 g。",
+        "x": 75,
+        "y": 270,
+        "right": 446,
+        "bottom": 374
+      },
+      {
+        "name": "接下来单：早餐搭档，热奶咖，牛奶多一些，约 200 g。",
+        "x": 81,
+        "y": 351,
+        "right": 451,
+        "bottom": 455
+      },
+      {
+        "name": "接下来单：自己的小杯，热黑咖，100–170 g，比例由你。",
+        "x": 86,
+        "y": 432,
+        "right": 457,
+        "bottom": 535
+      },
+      {
+        "name": "自由发挥不用接单，做自己的配方。开始创作 ↗",
+        "x": 919,
+        "y": 117,
+        "right": 1234,
+        "bottom": 338
+      }
+    ],
+    "art": [],
+    "panels": []
+  },
+  {
+    "label": "1024x600 recipe-expanded",
+    "width": 1024,
+    "height": 600,
+    "scrollWidth": 1024,
+    "scrollHeight": 600,
+    "scene": "recipe",
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 271,
+        "y": 410,
+        "right": 325,
+        "bottom": 448
+      },
+      {
+        "name": "搅拌",
+        "x": 335,
+        "y": 410,
+        "right": 389,
+        "bottom": 448
+      },
+      {
+        "name": "分成两杯",
+        "x": 399,
+        "y": 410,
+        "right": 477,
+        "bottom": 448
+      },
+      {
+        "name": "清空当前杯",
+        "x": 487,
+        "y": 412,
+        "right": 547,
+        "bottom": 446
+      },
+      {
+        "name": "保存作品 →",
+        "x": 896,
+        "y": 410,
+        "right": 993,
+        "bottom": 448
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 271,
+        "y": 495,
+        "right": 383,
+        "bottom": 568
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 393,
+        "y": 495,
+        "right": 505,
+        "bottom": 568
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 515,
+        "y": 495,
+        "right": 627,
+        "bottom": 568
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 637,
+        "y": 495,
+        "right": 749,
+        "bottom": 568
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 759,
+        "y": 495,
+        "right": 871,
+        "bottom": 568
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 881,
+        "y": 495,
+        "right": 993,
+        "bottom": 568
+      }
+    ],
+    "art": [
+      {
+        "name": "我的第一杯，总量 172 克，成分比例示意",
+        "x": 271,
+        "y": 143,
+        "right": 698,
+        "bottom": 339
+      }
+    ],
+    "panels": [
+      {
+        "name": "这一杯，由你调。PICCOLI ESPERIMENTI今日来单 / 0",
+        "x": 31,
+        "y": 61,
+        "right": 251,
+        "bottom": 515,
+        "scrollHeight": 454,
+        "clientHeight": 454
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 718,
+        "y": 61,
+        "right": 993,
+        "bottom": 400,
+        "scrollHeight": 546,
+        "clientHeight": 339
+      }
+    ]
+  },
+  {
+    "label": "1024x600 compare-expanded",
+    "width": 1024,
+    "height": 600,
+    "scrollWidth": 1024,
+    "scrollHeight": 600,
+    "scene": "compare",
+    "controls": [
+      {
+        "name": "选择A杯",
+        "x": 271,
+        "y": 72,
+        "right": 484,
+        "bottom": 350
+      },
+      {
+        "name": "选择B杯",
+        "x": 484,
+        "y": 72,
+        "right": 698,
+        "bottom": 350
+      },
+      {
+        "name": "撤销",
+        "x": 271,
+        "y": 410,
+        "right": 325,
+        "bottom": 448
+      },
+      {
+        "name": "搅拌",
+        "x": 335,
+        "y": 410,
+        "right": 389,
+        "bottom": 448
+      },
+      {
+        "name": "清空当前杯",
+        "x": 399,
+        "y": 412,
+        "right": 459,
+        "bottom": 446
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 870,
+        "y": 410,
+        "right": 993,
+        "bottom": 448
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 271,
+        "y": 495,
+        "right": 383,
+        "bottom": 568
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 393,
+        "y": 495,
+        "right": 505,
+        "bottom": 568
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 515,
+        "y": 495,
+        "right": 627,
+        "bottom": 568
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 637,
+        "y": 495,
+        "right": 749,
+        "bottom": 568
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 759,
+        "y": 495,
+        "right": 871,
+        "bottom": 568
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 881,
+        "y": 495,
+        "right": 993,
+        "bottom": 568
+      }
+    ],
+    "art": [
+      {
+        "name": "A · 我的配方，总量 86 克，成品示意",
+        "x": 271,
+        "y": 72,
+        "right": 484,
+        "bottom": 247
+      },
+      {
+        "name": "B · 我的配方，总量 86 克，成品示意",
+        "x": 484,
+        "y": 72,
+        "right": 698,
+        "bottom": 247
+      }
+    ],
+    "panels": [
+      {
+        "name": "同一份咖啡，两种可能。DUE TAZZE, DUE IDEE同一批摩卡",
+        "x": 31,
+        "y": 61,
+        "right": 251,
+        "bottom": 585,
+        "scrollHeight": 557,
+        "clientHeight": 524
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 718,
+        "y": 61,
+        "right": 993,
+        "bottom": 400,
+        "scrollHeight": 520,
+        "clientHeight": 339
+      }
+    ]
+  },
+  {
+    "label": "1024x600 prepare",
+    "width": 1024,
+    "height": 600,
+    "scrollWidth": 1024,
+    "scrollHeight": 600,
+    "scene": "prepare",
+    "controls": [
+      {
+        "name": "下壶水量",
+        "x": 299,
+        "y": 441,
+        "right": 669,
+        "bottom": 446
+      },
+      {
+        "name": "演示安全水位",
+        "x": 321,
+        "y": 514,
+        "right": 423,
+        "bottom": 552
+      },
+      {
+        "name": "装粉",
+        "x": 433,
+        "y": 514,
+        "right": 487,
+        "bottom": 552
+      },
+      {
+        "name": "准备好，开始冲煮 →",
+        "x": 844,
+        "y": 514,
+        "right": 993,
+        "bottom": 552
+      }
+    ],
+    "art": [
+      {
+        "name": "下壶水位 120 克，低于安全阀下缘",
+        "x": 271,
+        "y": 73,
+        "right": 698,
+        "bottom": 396
+      }
+    ],
+    "panels": [
+      {
+        "name": "做一份，自己的摩卡。PREPARA LA BASE这一杯，仍在桌面B ",
+        "x": 31,
+        "y": 61,
+        "right": 251,
+        "bottom": 585,
+        "scrollHeight": 582,
+        "clientHeight": 524
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 718,
+        "y": 61,
+        "right": 993,
+        "bottom": 381,
+        "scrollHeight": 320,
+        "clientHeight": 320
+      }
+    ]
+  },
+  {
+    "label": "1024x600 structure",
+    "width": 1024,
+    "height": 600,
+    "scrollWidth": 1024,
+    "scrollHeight": 600,
+    "scene": "structure",
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 271,
+        "y": 521,
+        "right": 299,
+        "bottom": 547
+      },
+      {
+        "name": "零件",
+        "x": 319,
+        "y": 521,
+        "right": 347,
+        "bottom": 547
+      },
+      {
+        "name": "壶盖",
+        "x": 357,
+        "y": 517,
+        "right": 397,
+        "bottom": 549
+      },
+      {
+        "name": "上壶",
+        "x": 397,
+        "y": 517,
+        "right": 437,
+        "bottom": 549
+      },
+      {
+        "name": "上滤网",
+        "x": 437,
+        "y": 517,
+        "right": 488,
+        "bottom": 549
+      },
+      {
+        "name": "密封圈",
+        "x": 488,
+        "y": 517,
+        "right": 539,
+        "bottom": 549
+      },
+      {
+        "name": "粉篮",
+        "x": 539,
+        "y": 517,
+        "right": 579,
+        "bottom": 549
+      },
+      {
+        "name": "下壶",
+        "x": 579,
+        "y": 517,
+        "right": 619,
+        "bottom": 549
+      },
+      {
+        "name": "收起，继续制作 →",
+        "x": 857,
+        "y": 514,
+        "right": 993,
+        "bottom": 552
+      }
+    ],
+    "art": [
+      {
+        "name": "同一摩卡模型沿装配轴展开的六个零件",
+        "x": 271,
+        "y": 73,
+        "right": 698,
+        "bottom": 502
+      }
+    ],
+    "panels": [
+      {
+        "name": "拆开，理解这一份。DENTRO LA MOKA这一杯，仍在桌面B · ",
+        "x": 31,
+        "y": 61,
+        "right": 251,
+        "bottom": 585,
+        "scrollHeight": 582,
+        "clientHeight": 524
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 718,
+        "y": 61,
+        "right": 993,
+        "bottom": 405,
+        "scrollHeight": 344,
+        "clientHeight": 344
+      }
+    ]
+  },
+  {
+    "label": "1024x600 brewing",
+    "width": 1024,
+    "height": 600,
+    "scrollWidth": 1024,
+    "scrollHeight": 600,
+    "scene": "brewing",
+    "controls": [
+      {
+        "name": "微火",
+        "x": 321,
+        "y": 512,
+        "right": 375,
+        "bottom": 552
+      },
+      {
+        "name": "小火",
+        "x": 383,
+        "y": 512,
+        "right": 437,
+        "bottom": 552
+      },
+      {
+        "name": "关火观察",
+        "x": 445,
+        "y": 512,
+        "right": 523,
+        "bottom": 552
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 896,
+        "y": 513,
+        "right": 993,
+        "bottom": 551
+      }
+    ],
+    "art": [
+      {
+        "name": "摩卡壶冲煮剖面，已出液 0.0 克",
+        "x": 279,
+        "y": 61,
+        "right": 689,
+        "bottom": 488
+      }
+    ],
+    "panels": [
+      {
+        "name": "慢慢出液，何时收杯？OSSERVA E SCEGLI这一杯，仍在桌面B",
+        "x": 31,
+        "y": 61,
+        "right": 251,
+        "bottom": 585,
+        "scrollHeight": 636,
+        "clientHeight": 524
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 718,
+        "y": 61,
+        "right": 993,
+        "bottom": 467,
+        "scrollHeight": 406,
+        "clientHeight": 406
+      }
+    ]
+  },
+  {
+    "label": "1024x600 gazette",
+    "width": 1024,
+    "height": 600,
+    "scrollWidth": 1024,
+    "scrollHeight": 600,
+    "scene": "gazette",
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 434,
+        "y": 516,
+        "right": 565,
+        "bottom": 556
+      },
+      {
+        "name": "回到调配",
+        "x": 575,
+        "y": 516,
+        "right": 653,
+        "bottom": 556
+      }
+    ],
+    "art": [
+      {
+        "name": "本期特刊，1200乘1800像素",
+        "x": 46,
+        "y": 66,
+        "right": 388,
+        "bottom": 576
+      }
+    ],
+    "panels": [
+      {
+        "name": "本期记录示例摩卡基底A / 摩卡 20g + 水 15g + 牛奶 4",
+        "x": 721,
+        "y": 291,
+        "right": 993,
+        "bottom": 486,
+        "scrollHeight": 194,
+        "clientHeight": 194
+      }
+    ]
+  },
+  {
+    "label": "1024x600 lobby",
+    "width": 1024,
+    "height": 600,
+    "scrollWidth": 1024,
+    "scrollHeight": 600,
+    "scene": "lobby",
+    "controls": [
+      {
+        "name": "接下来单：吧台小杯，小杯摩卡原液，30–80 g。",
+        "x": 61,
+        "y": 233,
+        "right": 357,
+        "bottom": 320
+      },
+      {
+        "name": "接下来单：早餐搭档，热奶咖，牛奶多一些，约 200 g。",
+        "x": 66,
+        "y": 303,
+        "right": 362,
+        "bottom": 389
+      },
+      {
+        "name": "接下来单：清爽冰咖，冰黑咖，不加奶，180–280 g。",
+        "x": 70,
+        "y": 372,
+        "right": 367,
+        "bottom": 459
+      },
+      {
+        "name": "自由发挥不用接单，做自己的配方。开始创作 ↗",
+        "x": 734,
+        "y": 98,
+        "right": 988,
+        "bottom": 294
+      }
+    ],
+    "art": [],
+    "panels": []
+  },
+  {
+    "label": "844x390 recipe-expanded",
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "scene": "recipe",
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 207,
+        "y": 247,
+        "right": 249,
+        "bottom": 279
+      },
+      {
+        "name": "搅拌",
+        "x": 256,
+        "y": 247,
+        "right": 298,
+        "bottom": 279
+      },
+      {
+        "name": "分成两杯",
+        "x": 305,
+        "y": 247,
+        "right": 369,
+        "bottom": 279
+      },
+      {
+        "name": "清空当前杯",
+        "x": 376,
+        "y": 248,
+        "right": 426,
+        "bottom": 279
+      },
+      {
+        "name": "保存作品 →",
+        "x": 752,
+        "y": 247,
+        "right": 828,
+        "bottom": 279
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 207,
+        "y": 313,
+        "right": 306,
+        "bottom": 368
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 312,
+        "y": 313,
+        "right": 410,
+        "bottom": 368
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 416,
+        "y": 313,
+        "right": 515,
+        "bottom": 368
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 521,
+        "y": 313,
+        "right": 619,
+        "bottom": 368
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 625,
+        "y": 313,
+        "right": 724,
+        "bottom": 368
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 730,
+        "y": 313,
+        "right": 828,
+        "bottom": 368
+      }
+    ],
+    "art": [
+      {
+        "name": "我的第一杯，总量 172 克，成分比例示意",
+        "x": 207,
+        "y": 129,
+        "right": 561,
+        "bottom": 196
+      }
+    ],
+    "panels": [
+      {
+        "name": "这一杯，由你调。PICCOLI ESPERIMENTI今日来单 / 0",
+        "x": 16,
+        "y": 50,
+        "right": 193,
+        "bottom": 374,
+        "scrollHeight": 324,
+        "clientHeight": 324
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 575,
+        "y": 50,
+        "right": 828,
+        "bottom": 240,
+        "scrollHeight": 494,
+        "clientHeight": 190
+      }
+    ]
+  },
+  {
+    "label": "844x390 compare-expanded",
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "scene": "compare",
+    "controls": [
+      {
+        "name": "选择A杯",
+        "x": 207,
+        "y": 61,
+        "right": 384,
+        "bottom": 207
+      },
+      {
+        "name": "选择B杯",
+        "x": 384,
+        "y": 61,
+        "right": 561,
+        "bottom": 207
+      },
+      {
+        "name": "撤销",
+        "x": 207,
+        "y": 247,
+        "right": 249,
+        "bottom": 279
+      },
+      {
+        "name": "搅拌",
+        "x": 256,
+        "y": 247,
+        "right": 298,
+        "bottom": 279
+      },
+      {
+        "name": "清空当前杯",
+        "x": 305,
+        "y": 248,
+        "right": 355,
+        "bottom": 279
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 730,
+        "y": 247,
+        "right": 828,
+        "bottom": 279
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 207,
+        "y": 313,
+        "right": 306,
+        "bottom": 368
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 312,
+        "y": 313,
+        "right": 410,
+        "bottom": 368
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 416,
+        "y": 313,
+        "right": 515,
+        "bottom": 368
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 521,
+        "y": 313,
+        "right": 619,
+        "bottom": 368
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 625,
+        "y": 313,
+        "right": 724,
+        "bottom": 368
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 730,
+        "y": 313,
+        "right": 828,
+        "bottom": 368
+      }
+    ],
+    "art": [
+      {
+        "name": "A · 我的配方，总量 86 克，成品示意",
+        "x": 207,
+        "y": 61,
+        "right": 384,
+        "bottom": 121
+      },
+      {
+        "name": "B · 我的配方，总量 86 克，成品示意",
+        "x": 384,
+        "y": 61,
+        "right": 561,
+        "bottom": 121
+      }
+    ],
+    "panels": [
+      {
+        "name": "同一份咖啡，两种可能。DUE TAZZE, DUE IDEE同一批摩卡",
+        "x": 16,
+        "y": 50,
+        "right": 193,
+        "bottom": 382,
+        "scrollHeight": 332,
+        "clientHeight": 332
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 575,
+        "y": 50,
+        "right": 828,
+        "bottom": 240,
+        "scrollHeight": 466,
+        "clientHeight": 190
+      }
+    ]
+  },
+  {
+    "label": "844x390 prepare",
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "scene": "prepare",
+    "controls": [
+      {
+        "name": "下壶水量",
+        "x": 207,
+        "y": 268,
+        "right": 561,
+        "bottom": 273
+      },
+      {
+        "name": "演示安全水位",
+        "x": 248,
+        "y": 324,
+        "right": 334,
+        "bottom": 356
+      },
+      {
+        "name": "装粉",
+        "x": 341,
+        "y": 324,
+        "right": 383,
+        "bottom": 356
+      },
+      {
+        "name": "准备好，开始冲煮 →",
+        "x": 708,
+        "y": 324,
+        "right": 828,
+        "bottom": 356
+      }
+    ],
+    "art": [
+      {
+        "name": "下壶水位 120 克，低于安全阀下缘",
+        "x": 207,
+        "y": 62,
+        "right": 561,
+        "bottom": 229
+      }
+    ],
+    "panels": [
+      {
+        "name": "做一份，自己的摩卡。PREPARA LA BASE这一杯，仍在桌面B ",
+        "x": 16,
+        "y": 50,
+        "right": 193,
+        "bottom": 382,
+        "scrollHeight": 393,
+        "clientHeight": 332
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 575,
+        "y": 50,
+        "right": 828,
+        "bottom": 317,
+        "scrollHeight": 294,
+        "clientHeight": 267
+      }
+    ]
+  },
+  {
+    "label": "844x390 structure",
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "scene": "structure",
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 207,
+        "y": 330,
+        "right": 233,
+        "bottom": 351
+      },
+      {
+        "name": "零件",
+        "x": 242,
+        "y": 330,
+        "right": 268,
+        "bottom": 351
+      },
+      {
+        "name": "壶盖",
+        "x": 275,
+        "y": 325,
+        "right": 305,
+        "bottom": 354
+      },
+      {
+        "name": "上壶",
+        "x": 305,
+        "y": 325,
+        "right": 335,
+        "bottom": 354
+      },
+      {
+        "name": "上滤网",
+        "x": 335,
+        "y": 325,
+        "right": 375,
+        "bottom": 354
+      },
+      {
+        "name": "密封圈",
+        "x": 375,
+        "y": 325,
+        "right": 415,
+        "bottom": 354
+      },
+      {
+        "name": "粉篮",
+        "x": 415,
+        "y": 325,
+        "right": 445,
+        "bottom": 354
+      },
+      {
+        "name": "下壶",
+        "x": 445,
+        "y": 325,
+        "right": 475,
+        "bottom": 354
+      },
+      {
+        "name": "收起，继续制作 →",
+        "x": 719,
+        "y": 324,
+        "right": 828,
+        "bottom": 356
+      }
+    ],
+    "art": [
+      {
+        "name": "同一摩卡模型沿装配轴展开的六个零件",
+        "x": 207,
+        "y": 62,
+        "right": 561,
+        "bottom": 323
+      }
+    ],
+    "panels": [
+      {
+        "name": "拆开，理解这一份。DENTRO LA MOKA这一杯，仍在桌面B · ",
+        "x": 16,
+        "y": 50,
+        "right": 193,
+        "bottom": 382,
+        "scrollHeight": 393,
+        "clientHeight": 332
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 575,
+        "y": 50,
+        "right": 828,
+        "bottom": 317,
+        "scrollHeight": 319,
+        "clientHeight": 267
+      }
+    ]
+  },
+  {
+    "label": "844x390 brewing",
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "scene": "brewing",
+    "controls": [
+      {
+        "name": "微火",
+        "x": 248,
+        "y": 324,
+        "right": 290,
+        "bottom": 356
+      },
+      {
+        "name": "小火",
+        "x": 295,
+        "y": 324,
+        "right": 337,
+        "bottom": 356
+      },
+      {
+        "name": "关火观察",
+        "x": 342,
+        "y": 324,
+        "right": 406,
+        "bottom": 356
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 752,
+        "y": 324,
+        "right": 828,
+        "bottom": 356
+      }
+    ],
+    "art": [
+      {
+        "name": "摩卡壶冲煮剖面，已出液 0.0 克",
+        "x": 207,
+        "y": 50,
+        "right": 561,
+        "bottom": 311
+      }
+    ],
+    "panels": [
+      {
+        "name": "慢慢出液，何时收杯？OSSERVA E SCEGLI这一杯，仍在桌面B",
+        "x": 16,
+        "y": 50,
+        "right": 193,
+        "bottom": 382,
+        "scrollHeight": 393,
+        "clientHeight": 332
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 575,
+        "y": 50,
+        "right": 828,
+        "bottom": 317,
+        "scrollHeight": 366,
+        "clientHeight": 267
+      }
+    ]
+  },
+  {
+    "label": "844x390 gazette",
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "scene": "gazette",
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 297,
+        "y": 332,
+        "right": 401,
+        "bottom": 364
+      },
+      {
+        "name": "回到调配",
+        "x": 411,
+        "y": 332,
+        "right": 475,
+        "bottom": 364
+      }
+    ],
+    "art": [
+      {
+        "name": "本期特刊，1200乘1800像素",
+        "x": 42,
+        "y": 55,
+        "right": 255,
+        "bottom": 373
+      }
+    ],
+    "panels": [
+      {
+        "name": "本期记录示例摩卡基底A / 摩卡 20g + 水 15g + 牛奶 4",
+        "x": 569,
+        "y": 219,
+        "right": 828,
+        "bottom": 309,
+        "scrollHeight": 163,
+        "clientHeight": 89
+      }
+    ]
+  },
+  {
+    "label": "844x390 lobby",
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "scene": "lobby",
+    "controls": [
+      {
+        "name": "接下来单：双人分享，同一份基底，两杯不同搭配；每杯 90–200 g。",
+        "x": 38,
+        "y": 153,
+        "right": 304,
+        "bottom": 225
+      },
+      {
+        "name": "接下来单：早餐搭档，热奶咖，牛奶多一些，约 200 g。",
+        "x": 42,
+        "y": 210,
+        "right": 308,
+        "bottom": 283
+      },
+      {
+        "name": "接下来单：吧台小杯，小杯摩卡原液，30–80 g。",
+        "x": 46,
+        "y": 267,
+        "right": 312,
+        "bottom": 340
+      },
+      {
+        "name": "自由发挥不用接单，做自己的配方。开始创作 ↗",
+        "x": 585,
+        "y": 50,
+        "right": 807,
+        "bottom": 200
+      }
+    ],
+    "art": [],
+    "panels": []
+  },
+  {
+    "label": "667x375 recipe-expanded",
+    "width": 667,
+    "height": 375,
+    "scrollWidth": 667,
+    "scrollHeight": 375,
+    "scene": "recipe",
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 167,
+        "y": 232,
+        "right": 209,
+        "bottom": 264
+      },
+      {
+        "name": "搅拌",
+        "x": 216,
+        "y": 232,
+        "right": 258,
+        "bottom": 264
+      },
+      {
+        "name": "分成两杯",
+        "x": 265,
+        "y": 232,
+        "right": 329,
+        "bottom": 264
+      },
+      {
+        "name": "清空当前杯",
+        "x": 336,
+        "y": 233,
+        "right": 386,
+        "bottom": 264
+      },
+      {
+        "name": "保存作品 →",
+        "x": 575,
+        "y": 232,
+        "right": 651,
+        "bottom": 264
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 167,
+        "y": 298,
+        "right": 243,
+        "bottom": 353
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 249,
+        "y": 298,
+        "right": 324,
+        "bottom": 353
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 330,
+        "y": 298,
+        "right": 406,
+        "bottom": 353
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 412,
+        "y": 298,
+        "right": 488,
+        "bottom": 353
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 494,
+        "y": 298,
+        "right": 569,
+        "bottom": 353
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 575,
+        "y": 298,
+        "right": 651,
+        "bottom": 353
+      }
+    ],
+    "art": [
+      {
+        "name": "我的第一杯，总量 172 克，成分比例示意",
+        "x": 167,
+        "y": 129,
+        "right": 441,
+        "bottom": 181
+      }
+    ],
+    "panels": [
+      {
+        "name": "这一杯，由你调。PICCOLI ESPERIMENTI今日来单 / 0",
+        "x": 16,
+        "y": 50,
+        "right": 153,
+        "bottom": 367,
+        "scrollHeight": 343,
+        "clientHeight": 317
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 455,
+        "y": 50,
+        "right": 651,
+        "bottom": 225,
+        "scrollHeight": 602,
+        "clientHeight": 175
+      }
+    ]
+  },
+  {
+    "label": "667x375 compare-expanded",
+    "width": 667,
+    "height": 375,
+    "scrollWidth": 667,
+    "scrollHeight": 375,
+    "scene": "compare",
+    "controls": [
+      {
+        "name": "选择A杯",
+        "x": 167,
+        "y": 61,
+        "right": 304,
+        "bottom": 192
+      },
+      {
+        "name": "选择B杯",
+        "x": 304,
+        "y": 61,
+        "right": 441,
+        "bottom": 192
+      },
+      {
+        "name": "撤销",
+        "x": 167,
+        "y": 232,
+        "right": 209,
+        "bottom": 264
+      },
+      {
+        "name": "搅拌",
+        "x": 216,
+        "y": 232,
+        "right": 258,
+        "bottom": 264
+      },
+      {
+        "name": "清空当前杯",
+        "x": 265,
+        "y": 233,
+        "right": 315,
+        "bottom": 264
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 553,
+        "y": 232,
+        "right": 651,
+        "bottom": 264
+      },
+      {
+        "name": "添加咖啡基底，按住持续添加",
+        "x": 167,
+        "y": 298,
+        "right": 243,
+        "bottom": 353
+      },
+      {
+        "name": "添加水，按住持续添加",
+        "x": 249,
+        "y": 298,
+        "right": 324,
+        "bottom": 353
+      },
+      {
+        "name": "添加牛奶，按住持续添加",
+        "x": 330,
+        "y": 298,
+        "right": 406,
+        "bottom": 353
+      },
+      {
+        "name": "添加奶泡，按住持续添加",
+        "x": 412,
+        "y": 298,
+        "right": 488,
+        "bottom": 353
+      },
+      {
+        "name": "添加冰，按住持续添加",
+        "x": 494,
+        "y": 298,
+        "right": 569,
+        "bottom": 353
+      },
+      {
+        "name": "添加糖浆，按住持续添加",
+        "x": 575,
+        "y": 298,
+        "right": 651,
+        "bottom": 353
+      }
+    ],
+    "art": [
+      {
+        "name": "A · 我的配方，总量 86 克，成品示意",
+        "x": 167,
+        "y": 61,
+        "right": 304,
+        "bottom": 106
+      },
+      {
+        "name": "B · 我的配方，总量 86 克，成品示意",
+        "x": 304,
+        "y": 61,
+        "right": 441,
+        "bottom": 106
+      }
+    ],
+    "panels": [
+      {
+        "name": "同一份咖啡，两种可能。DUE TAZZE, DUE IDEE同一批摩卡",
+        "x": 16,
+        "y": 50,
+        "right": 153,
+        "bottom": 367,
+        "scrollHeight": 419,
+        "clientHeight": 317
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 455,
+        "y": 50,
+        "right": 651,
+        "bottom": 225,
+        "scrollHeight": 524,
+        "clientHeight": 175
+      }
+    ]
+  },
+  {
+    "label": "667x375 prepare",
+    "width": 667,
+    "height": 375,
+    "scrollWidth": 667,
+    "scrollHeight": 375,
+    "scene": "prepare",
+    "controls": [
+      {
+        "name": "下壶水量",
+        "x": 167,
+        "y": 252,
+        "right": 441,
+        "bottom": 257
+      },
+      {
+        "name": "演示安全水位",
+        "x": 208,
+        "y": 309,
+        "right": 294,
+        "bottom": 341
+      },
+      {
+        "name": "装粉",
+        "x": 301,
+        "y": 309,
+        "right": 343,
+        "bottom": 341
+      },
+      {
+        "name": "准备好，开始冲煮 →",
+        "x": 531,
+        "y": 309,
+        "right": 651,
+        "bottom": 341
+      }
+    ],
+    "art": [
+      {
+        "name": "下壶水位 120 克，低于安全阀下缘",
+        "x": 167,
+        "y": 62,
+        "right": 441,
+        "bottom": 213
+      }
+    ],
+    "panels": [
+      {
+        "name": "做一份，自己的摩卡。PREPARA LA BASE这一杯，仍在桌面B ",
+        "x": 16,
+        "y": 50,
+        "right": 153,
+        "bottom": 367,
+        "scrollHeight": 428,
+        "clientHeight": 317
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 455,
+        "y": 50,
+        "right": 651,
+        "bottom": 302,
+        "scrollHeight": 336,
+        "clientHeight": 252
+      }
+    ]
+  },
+  {
+    "label": "667x375 structure",
+    "width": 667,
+    "height": 375,
+    "scrollWidth": 667,
+    "scrollHeight": 375,
+    "scene": "structure",
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 167,
+        "y": 315,
+        "right": 193,
+        "bottom": 336
+      },
+      {
+        "name": "零件",
+        "x": 202,
+        "y": 315,
+        "right": 228,
+        "bottom": 336
+      },
+      {
+        "name": "壶盖",
+        "x": 235,
+        "y": 310,
+        "right": 265,
+        "bottom": 339
+      },
+      {
+        "name": "上壶",
+        "x": 265,
+        "y": 310,
+        "right": 295,
+        "bottom": 339
+      },
+      {
+        "name": "上滤网",
+        "x": 295,
+        "y": 310,
+        "right": 335,
+        "bottom": 339
+      },
+      {
+        "name": "密封圈",
+        "x": 335,
+        "y": 310,
+        "right": 375,
+        "bottom": 339
+      },
+      {
+        "name": "粉篮",
+        "x": 375,
+        "y": 310,
+        "right": 405,
+        "bottom": 339
+      },
+      {
+        "name": "下壶",
+        "x": 405,
+        "y": 310,
+        "right": 435,
+        "bottom": 339
+      },
+      {
+        "name": "收起，继续制作 →",
+        "x": 542,
+        "y": 309,
+        "right": 651,
+        "bottom": 341
+      }
+    ],
+    "art": [
+      {
+        "name": "同一摩卡模型沿装配轴展开的六个零件",
+        "x": 167,
+        "y": 62,
+        "right": 441,
+        "bottom": 308
+      }
+    ],
+    "panels": [
+      {
+        "name": "拆开，理解这一份。DENTRO LA MOKA这一杯，仍在桌面B · ",
+        "x": 16,
+        "y": 50,
+        "right": 153,
+        "bottom": 367,
+        "scrollHeight": 428,
+        "clientHeight": 317
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 455,
+        "y": 50,
+        "right": 651,
+        "bottom": 302,
+        "scrollHeight": 340,
+        "clientHeight": 252
+      }
+    ]
+  },
+  {
+    "label": "667x375 brewing",
+    "width": 667,
+    "height": 375,
+    "scrollWidth": 667,
+    "scrollHeight": 375,
+    "scene": "brewing",
+    "controls": [
+      {
+        "name": "微火",
+        "x": 208,
+        "y": 309,
+        "right": 250,
+        "bottom": 341
+      },
+      {
+        "name": "小火",
+        "x": 255,
+        "y": 309,
+        "right": 297,
+        "bottom": 341
+      },
+      {
+        "name": "关火观察",
+        "x": 302,
+        "y": 309,
+        "right": 366,
+        "bottom": 341
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 575,
+        "y": 309,
+        "right": 651,
+        "bottom": 341
+      }
+    ],
+    "art": [
+      {
+        "name": "摩卡壶冲煮剖面，已出液 0.0 克",
+        "x": 167,
+        "y": 50,
+        "right": 441,
+        "bottom": 296
+      }
+    ],
+    "panels": [
+      {
+        "name": "慢慢出液，何时收杯？OSSERVA E SCEGLI这一杯，仍在桌面B",
+        "x": 16,
+        "y": 50,
+        "right": 153,
+        "bottom": 367,
+        "scrollHeight": 464,
+        "clientHeight": 317
+      },
+      {
+        "name": "当前配方与说明",
+        "x": 455,
+        "y": 50,
+        "right": 651,
+        "bottom": 302,
+        "scrollHeight": 366,
+        "clientHeight": 252
+      }
+    ]
+  },
+  {
+    "label": "667x375 gazette",
+    "width": 667,
+    "height": 375,
+    "scrollWidth": 667,
+    "scrollHeight": 375,
+    "scene": "gazette",
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 238,
+        "y": 317,
+        "right": 342,
+        "bottom": 349
+      },
+      {
+        "name": "回到调配",
+        "x": 352,
+        "y": 317,
+        "right": 416,
+        "bottom": 349
+      }
+    ],
+    "art": [
+      {
+        "name": "本期特刊，1200乘1800像素",
+        "x": 25,
+        "y": 66,
+        "right": 213,
+        "bottom": 347
+      }
+    ],
+    "panels": [
+      {
+        "name": "本期记录示例摩卡基底A / 摩卡 20g + 水 15g + 牛奶 4",
+        "x": 451,
+        "y": 219,
+        "right": 651,
+        "bottom": 294,
+        "scrollHeight": 163,
+        "clientHeight": 74
+      }
+    ]
+  },
+  {
+    "label": "667x375 lobby",
+    "width": 667,
+    "height": 375,
+    "scrollWidth": 667,
+    "scrollHeight": 375,
+    "scene": "lobby",
+    "controls": [
+      {
+        "name": "接下来单：泡沫早餐，牛奶与奶泡都加入，180–260 g。",
+        "x": 32,
+        "y": 151,
+        "right": 238,
+        "bottom": 218
+      },
+      {
+        "name": "接下来单：双人分享，同一份基底，两杯不同搭配；每杯 90–200 g。",
+        "x": 36,
+        "y": 207,
+        "right": 242,
+        "bottom": 275
+      },
+      {
+        "name": "接下来单：厨房来客，摩卡原液，70–110 g，不再加水。",
+        "x": 40,
+        "y": 264,
+        "right": 246,
+        "bottom": 332
+      },
+      {
+        "name": "自由发挥不用接单，做自己的配方。开始创作 ↗",
+        "x": 462,
+        "y": 51,
+        "right": 638,
+        "bottom": 195
+      }
+    ],
+    "art": [],
+    "panels": []
+  },
+  {
+    "label": "portrait",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 844,
+    "scrollHeight": 1821
+  }
+]

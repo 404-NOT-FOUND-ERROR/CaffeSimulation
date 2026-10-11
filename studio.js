@@ -1,5 +1,6 @@
 import {createMoka} from './moka-asset.js';
-import {GEARS,ORDERS,newProcess,tick,makeCup,cupFacts,drinkName,checkOrder,makeReport,recipeText,sanitizeCup,clamp} from './studio-model.mjs';
+import {GEARS,newProcess,tick,makeCup,cupFacts,drinkName,checkOrder,makeReport,recipeText,sanitizeCup,clamp} from './studio-model.mjs';
+import {RECIPE_ORDERS as ORDERS} from './recipe-orders.mjs';
 import {cupSVG,gearIcon,apparatusSVG,escapeHTML as esc,PALETTES,REPORT_STYLES,drawReport} from './studio-art.js';
 import {PREPARATION,newPreparation,targetFor,taskComplete,taskAllowed,preparationReady,nextPreparationTask,advancePreparation,quickPreparation} from './studio-steps.mjs';
 import {preparationSVG,prepToolIcon} from './studio-prep-art.js';
@@ -30,7 +31,7 @@ function renderEquipment(){
  $('#equipment').innerHTML=Object.entries(GEARS).map(([id,g])=>`<button data-gear="${id}" class="gear-button ${S.gear===id&&S.surface==='brew'?'active':''}" aria-pressed="${S.gear===id&&S.surface==='brew'}">${gearIcon(id)}<span><strong>${g.name}</strong><small>${g.tag}</small></span></button>`).join('');
 }
 const PAGES=['choose','prepare','brew','cup','publish'];
-function openMoka(){const target=new URL('moka.html',location.href);target.searchParams.set('new','1');if(S.order){target.searchParams.set('order',S.order.id);target.searchParams.set('ticket',S.ticket||1);}location.href=target.href;}
+function openMoka(){const target=new URL('moka-brew.html',location.href);target.searchParams.set('new','1');target.searchParams.set('session',crypto.randomUUID().replaceAll('-',''));if(S.order){target.searchParams.set('order',S.order.id);target.searchParams.set('ticket',S.ticket||1);}location.href=target.href;}
 function goPage(page,push=true){
  if(!['lobby',...PAGES].includes(page))return;
  if(S.gear==='moka'&&['prepare','brew'].includes(page)){openMoka();return;}
@@ -243,8 +244,9 @@ function info(gearOnly=false){
 }
 document.addEventListener('click',e=>{
  const b=e.target.closest('button');if(!b||b.disabled)return;
+ if(b.id==='cafeArchive'){const target=new URL('moka.html',location.href);target.searchParams.set('shelf','1');try{const previous=JSON.parse(localStorage.getItem('coffee-recipe-lab-v1'));if(previous?.orderId)target.searchParams.set('order',previous.orderId);}catch{}location.href=target.href;return;}
  if(b.dataset.page){goPage(b.dataset.page);return;}
- if(b.dataset.order){S.order=ORDERS.find(o=>o.id===b.dataset.order);S.ticket=S.offers.findIndex(o=>o.id===b.dataset.order)+1;goPage('choose');toast(`已接下「${S.order.title}」，做法由你选择。`);return;}
+ if(b.dataset.order){S.order=ORDERS.find(o=>o.id===b.dataset.order);S.ticket=S.offers.findIndex(o=>o.id===b.dataset.order)+1;goPage('choose');return;}
  if(b.dataset.gear){if(b.dataset.gear==='moka'){openMoka();return;}selectGear(b.dataset.gear);return;}
  if(b.dataset.surface){goPage(b.dataset.surface==='cup'?'cup':'brew');return;}
  if(b.dataset.prepTask){prepHold=null;S.prepTask=b.dataset.prepTask;renderBench();renderKnowledge();renderStage();return;}
@@ -261,7 +263,7 @@ document.addEventListener('click',e=>{
  if(b.dataset.reportPalette){S.palette=b.dataset.reportPalette;updateReport();return;}
  switch(b.dataset.action){
   case 'refresh-orders':pickOrders();renderOrders();break;
-  case 'free':S.order=null;if(['lobby','choose'].includes(S.page))goPage('choose');else{const url=new URL(location.href);url.searchParams.delete('order');history.replaceState({page:S.page,gear:S.gear},'',url);render();}toast('可以自由发挥，做自己的这一杯。');break;
+  case 'free':S.order=null;if(['lobby','choose'].includes(S.page)){goPage('choose');return;}else{const url=new URL(location.href);url.searchParams.delete('order');history.replaceState({page:S.page,gear:S.gear},'',url);render();}toast('可以自由发挥，做自己的这一杯。');break;
   case 'quick-prepare':if(['running','paused'].includes(process().status))return toast('这锅已开始冲煮，重新准备会用一份新原料。');if(process().status==='done')S.processes[S.gear]=newProcess(S.gear,settings());quickPreparation(S.gear,preparation(),settings());process().levelled=preparation().level>=1;process().tamped=preparation().tamp>=1;goPage('brew');toast('已按当前配方快速准备，可以开始冲煮。');break;
   case 'brew':begin();break;
   case 'pause':process().status=process().status==='running'?'paused':'running';process().holding=false;renderBench();updateLive();break;

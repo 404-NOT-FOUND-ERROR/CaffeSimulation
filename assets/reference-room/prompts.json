@@ -1,0 +1,157 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "documented": "2026-10-11",
+  "prompt_record_type": "summary",
+  "verbatim_prompts_available": false,
+  "record_note": "本文件记录本轮生成意图与已知源文件，不是逐字提示词档案；未保存的原始提示词不作推定。",
+  "approved_references": [
+    {
+      "id": "home",
+      "path": "C:/Users/502BAD~1/AppData/Local/Temp/codex-clipboard-b5fba901-5eac-4375-b1a8-78f59a85f7ff.png"
+    },
+    {
+      "id": "prepare",
+      "path": "C:/Users/502BAD~1/AppData/Local/Temp/codex-clipboard-4c8a6eec-513f-4c03-a0fb-1dfe4efb08c5.png"
+    },
+    {
+      "id": "merged-brew",
+      "path": "C:/Users/502BAD~1/AppData/Local/Temp/codex-clipboard-fb17fd41-308e-4303-a5f6-e8951c94e6ce.png"
+    },
+    {
+      "id": "single",
+      "path": "C:/Users/502BAD~1/AppData/Local/Temp/codex-clipboard-c2fbd5cd-748f-4e34-a623-c64e6dc1e8e7.png"
+    },
+    {
+      "id": "double",
+      "path": "C:/Users/502BAD~1/AppData/Local/Temp/codex-clipboard-3ca527f8-866d-496d-9069-f7da4df08cce.png"
+    },
+    {
+      "id": "gazette",
+      "path": "C:/Users/502BAD~1/AppData/Local/Temp/codex-clipboard-77206c6f-7f43-4d0c-9d44-942974750bfd.png"
+    }
+  ],
+  "shared_constraints": {
+    "room_backgrounds": "移除全部界面 UI；保留获批参考中的墙面、桌面、人物拼贴、海报、室内光照与构图，目标为 16:9 背景。",
+    "object_extractions": "从获批参考提取独立物件外观，目标为透明背景；界面、可变液体和操作反馈由网页代码实现。",
+    "runtime_boundary": "背景与物件图只作为装饰或外壳。按钮、输入、数值、注水、咖啡出液、粉粒、火焰、混合、冰块和勺子由原生 DOM/SVG 及状态系统驱动。"
+  },
+  "generated_assets": [
+    {
+      "id": "workroom",
+      "asset": "assets/reference-room/workroom.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-0f3a8813-7d32-46c2-8e4c-cd76f99a44d8.png",
+      "kind": "room-background",
+      "prompt_summary": "提取获批工作室的室内背景；移除全部 UI，保留墙面、桌面、人物拼贴、海报、光照与构图，目标 16:9。"
+    },
+    {
+      "id": "mixing-room",
+      "asset": "assets/reference-room/mixing-room.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-1926102b-3918-4ae4-b7ea-9be2cc7bdb58.png",
+      "kind": "room-background",
+      "prompt_summary": "提取获批调配桌的室内背景；移除全部 UI，保留墙面、桌面、人物拼贴、海报、光照与构图，目标 16:9。"
+    },
+    {
+      "id": "cafe-home",
+      "asset": "assets/reference-room/cafe-home.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-1c9c2de4-f8fb-4f77-8c29-11533d7feafa.png",
+      "kind": "room-background",
+      "prompt_summary": "提取获批首页小馆的室内背景；移除全部 UI，保留墙面、桌面、人物拼贴、海报、光照与构图，目标 16:9。"
+    },
+    {
+      "id": "prepare-room",
+      "asset": "assets/reference-room/prepare-room.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-5e80dcba-62bc-4dc4-8730-af98844e4938.png",
+      "kind": "room-background",
+      "prompt_summary": "提取获批准备页的室内背景；移除全部 UI，保留墙面、桌面、人物拼贴、海报、光照与构图，目标 16:9。"
+    },
+    {
+      "id": "compare-room",
+      "asset": "assets/reference-room/compare-room.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-14ed5254-f82a-42a8-a2b0-367a3a19fda4.png",
+      "kind": "room-background",
+      "prompt_summary": "提取获批双杯比较页的室内背景；移除全部 UI，保留墙面、桌面、人物拼贴、海报、光照与构图，目标 16:9。"
+    },
+    {
+      "id": "gazette-room",
+      "asset": "assets/reference-room/gazette-room.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-e1a16bc8-006f-4fd3-90a3-234740fec3e8.png",
+      "kind": "room-background",
+      "prompt_summary": "提取获批特刊页的室内背景；移除全部 UI，保留墙面、桌面、人物拼贴、海报、光照与构图，目标 16:9。"
+    },
+    {
+      "id": "lower-plate",
+      "asset": "assets/reference-room/lower-plate.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-8008b596-08be-47ab-8bdf-2e0d6289baa8.png",
+      "kind": "transparent-object-plate",
+      "prompt_summary": "从获批参考提取下壶剖面金属外观，作为独立透明物件外壳；网页另绘可变水位与标注。"
+    },
+    {
+      "id": "brew-plate",
+      "asset": "assets/reference-room/brew-plate.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-ba7d62ae-8b18-4245-8c09-edcbb8953373.png",
+      "kind": "transparent-object-plate",
+      "prompt_summary": "从获批参考提取冲煮剖面物件外观，作为独立透明外壳；网页另绘水、咖啡、出液路径与火焰。"
+    },
+    {
+      "id": "ingredient-strip",
+      "asset": "assets/reference-room/ingredient-strip.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-9f1ae4fc-c739-4b8f-a68e-864bf8a427a7.png",
+      "kind": "transparent-object-strip",
+      "prompt_summary": "从获批参考提取调配托盘的原料物件外观，形成透明物件条；原料选择、名称与用量控件保留为 DOM。"
+    },
+    {
+      "id": "assembled-moka",
+      "asset": "assets/reference-room/assembled-moka.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-c924ed6c-e227-479c-9db7-75b3875e160c.png",
+      "kind": "transparent-object-plate",
+      "prompt_summary": "从获批参考提取完整装配摩卡壶的外观，形成独立透明装饰物件。该图不提供实时六组件结构。"
+    },
+    {
+      "id": "basket-photo",
+      "asset": "assets/reference-room/basket-photo.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-70dc9900-7312-489d-9ba3-ad00824c10b1.png",
+      "kind": "transparent-object-plate",
+      "prompt_summary": "从获批参考提取粉篮的独立透明外观；粉量及粉粒由网页原生 SVG 绘制。"
+    },
+    {
+      "id": "glass-frame",
+      "asset": "assets/reference-room/glass-frame.png",
+      "original": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-885fd05f-2b83-4072-b3cf-6c8ceaa97023.png",
+      "kind": "glass-material-source",
+      "prompt_summary": "从获批参考提取透明玻璃杯外观，供网页杯缘与杯底使用。",
+      "runtime_restriction": "生成结果的杯内区域并非透明。运行时仅裁取杯缘与杯底，禁止使用该位图内部区域表现液体；液体、冰块、混合及勺子继续由原生 SVG 绘制。"
+    }
+  ],
+  "native_asset_sources": {
+    "reference_object_renders": {
+      "producer": "work/render_reference_objects.py",
+      "source_scene": "work/hybrid-moka-v1.blend",
+      "assets": [
+        "assets/reference-room/lower-section.png",
+        "assets/reference-room/basket.png",
+        "assets/reference-room/brew-section.png",
+        "assets/reference-room/closed-moka.png",
+        "assets/reference-room/ingredient-coffee.png",
+        "assets/reference-room/ingredient-water.png",
+        "assets/reference-room/ingredient-milk.png",
+        "assets/reference-room/ingredient-foam.png",
+        "assets/reference-room/ingredient-ice.png",
+        "assets/reference-room/ingredient-syrup.png"
+      ],
+      "geometry_records": [
+        "assets/reference-room/objects.json",
+        "assets/reference-room/object-geometry.mjs"
+      ],
+      "note": "这些是项目 Blender 几何的透明渲染及投影坐标记录，不是 imagegen 输出。"
+    },
+    "live_six_component_model": {
+      "producer": "work/build_hybrid_moka.py",
+      "source_scene": "work/poster-workbench-v1.blend",
+      "editable_scene": "work/hybrid-moka-v1.blend",
+      "model": "assets/hybrid/moka-v1.glb",
+      "geometry_record": "assets/hybrid/geometry.json",
+      "renderer": "hybrid-moka-viewer.mjs",
+      "note": "右侧实时六组件视图由原创 Blender 几何与 Three.js 实现，不由生成图片构成。"
+    }
+  }
+}

@@ -1,0 +1,4673 @@
+[
+  {
+    "label": "01-water",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1577.8125,
+        "y": 367.1875,
+        "right": 1630.78125,
+        "bottom": 390.1875,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1562.8125,
+        "y": 855.609375,
+        "right": 1655.78125,
+        "bottom": 885.609375,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 595.1875,
+        "y": 797.40625,
+        "right": 617.1875,
+        "bottom": 832.40625,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 637.1875,
+        "y": 797.40625,
+        "right": 659.1875,
+        "bottom": 832.40625,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "waterAmount",
+        "x": 595.1875,
+        "y": 872.40625,
+        "right": 1245.1875,
+        "bottom": 888.40625,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示安全水位 · 120 g ↗",
+        "x": 595.1875,
+        "y": 919.40625,
+        "right": 740.25,
+        "bottom": 952.40625,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "装粉 →",
+        "x": 595.1875,
+        "y": 964.40625,
+        "right": 765.1875,
+        "bottom": 1004.40625,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "01-water",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1207.25,
+        "y": 293.75,
+        "right": 1260.21875,
+        "bottom": 316.75,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1192.25,
+        "y": 678.484375,
+        "right": 1285.21875,
+        "bottom": 708.484375,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 476.15625,
+        "y": 596.53125,
+        "right": 498.15625,
+        "bottom": 631.53125,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 518.15625,
+        "y": 596.53125,
+        "right": 540.15625,
+        "bottom": 631.53125,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "waterAmount",
+        "x": 476.15625,
+        "y": 671.53125,
+        "right": 1126.15625,
+        "bottom": 687.53125,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示安全水位 · 120 g ↗",
+        "x": 476.15625,
+        "y": 718.53125,
+        "right": 621.21875,
+        "bottom": 751.53125,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "装粉 →",
+        "x": 476.15625,
+        "y": 763.53125,
+        "right": 646.15625,
+        "bottom": 803.53125,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "01-water",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1058.671875,
+        "y": 261.109375,
+        "right": 1111.640625,
+        "bottom": 284.109375,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1058.671875,
+        "y": 599.765625,
+        "right": 1151.640625,
+        "bottom": 629.765625,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 423.453125,
+        "y": 507.25,
+        "right": 445.453125,
+        "bottom": 542.25,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 465.453125,
+        "y": 507.25,
+        "right": 487.453125,
+        "bottom": 542.25,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "waterAmount",
+        "x": 423.453125,
+        "y": 582.25,
+        "right": 1010.828125,
+        "bottom": 598.25,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示安全水位 · 120 g ↗",
+        "x": 423.453125,
+        "y": 629.25,
+        "right": 568.515625,
+        "bottom": 662.25,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "装粉 →",
+        "x": 423.453125,
+        "y": 674.25,
+        "right": 593.453125,
+        "bottom": 714.25,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "01-water",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 992.015625,
+        "y": 244.796875,
+        "right": 1044.984375,
+        "bottom": 267.796875,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 992.015625,
+        "y": 560.40625,
+        "right": 1084.984375,
+        "bottom": 590.40625,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 396.796875,
+        "y": 468.609375,
+        "right": 418.796875,
+        "bottom": 503.609375,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 438.796875,
+        "y": 468.609375,
+        "right": 460.796875,
+        "bottom": 503.609375,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "waterAmount",
+        "x": 396.796875,
+        "y": 543.609375,
+        "right": 947.1875,
+        "bottom": 559.609375,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示安全水位 · 120 g ↗",
+        "x": 396.796875,
+        "y": 584.609375,
+        "right": 541.859375,
+        "bottom": 617.609375,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "装粉 →",
+        "x": 396.796875,
+        "y": 629.609375,
+        "right": 566.796875,
+        "bottom": 669.609375,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "01-water",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 783.375,
+        "y": 240,
+        "right": 831.046875,
+        "bottom": 261,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 793.625,
+        "y": 463.703125,
+        "right": 877.296875,
+        "bottom": 492,
+        "height": 28.296875,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 307.1875,
+        "y": 385,
+        "right": 325.1875,
+        "bottom": 417,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 341.1875,
+        "y": 385,
+        "right": 359.1875,
+        "bottom": 417,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "waterAmount",
+        "x": 307.1875,
+        "y": 453,
+        "right": 757.734375,
+        "bottom": 465,
+        "height": 12,
+        "clickable": true
+      },
+      {
+        "name": "演示安全水位 · 120 g ↗",
+        "x": 307.1875,
+        "y": 490,
+        "right": 424.609375,
+        "bottom": 516,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "装粉 →",
+        "x": 307.1875,
+        "y": 524,
+        "right": 437.1875,
+        "bottom": 558,
+        "height": 34,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "01-water",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 645.671875,
+        "y": 171.59375,
+        "right": 693.34375,
+        "bottom": 192.59375,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 253.1875,
+        "y": 227.8125,
+        "right": 271.1875,
+        "bottom": 259.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 287.1875,
+        "y": 227.8125,
+        "right": 305.1875,
+        "bottom": 259.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "waterAmount",
+        "x": 253.1875,
+        "y": 295.8125,
+        "right": 632.984375,
+        "bottom": 307.8125,
+        "height": 12,
+        "clickable": true
+      },
+      {
+        "name": "演示安全水位 · 120 g ↗",
+        "x": 253.1875,
+        "y": 332.8125,
+        "right": 370.609375,
+        "bottom": 358.8125,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "装粉 →",
+        "x": 640.578125,
+        "y": 324.8125,
+        "right": 739.3125,
+        "bottom": 358.8125,
+        "height": 34,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "01-water",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 510.265625,
+        "y": 172,
+        "right": 557.9375,
+        "bottom": 193,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 200.09375,
+        "y": 203.8125,
+        "right": 218.09375,
+        "bottom": 235.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 234.09375,
+        "y": 203.8125,
+        "right": 252.09375,
+        "bottom": 235.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "waterAmount",
+        "x": 200.09375,
+        "y": 271.8125,
+        "right": 500.234375,
+        "bottom": 283.8125,
+        "height": 12,
+        "clickable": true
+      },
+      {
+        "name": "演示安全水位 · 120 g ↗",
+        "x": 200.09375,
+        "y": 314.8125,
+        "right": 317.515625,
+        "bottom": 345,
+        "height": 30.1875,
+        "clickable": true
+      },
+      {
+        "name": "装粉 →",
+        "x": 506.234375,
+        "y": 311,
+        "right": 584.265625,
+        "bottom": 345,
+        "height": 34,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "02-powder",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1577.8125,
+        "y": 367.1875,
+        "right": 1630.78125,
+        "bottom": 390.1875,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1562.8125,
+        "y": 855.609375,
+        "right": 1655.78125,
+        "bottom": 885.609375,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 595.1875,
+        "y": 794.40625,
+        "right": 617.1875,
+        "bottom": 829.40625,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 637.1875,
+        "y": 794.40625,
+        "right": 659.1875,
+        "bottom": 829.40625,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "powderAmount",
+        "x": 595.1875,
+        "y": 869.40625,
+        "right": 1245.1875,
+        "bottom": 885.40625,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示装满粉篮 · 18 g ↗",
+        "x": 595.1875,
+        "y": 916.40625,
+        "right": 733.796875,
+        "bottom": 949.40625,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "偏粗颗粒示意",
+        "x": 595.1875,
+        "y": 959.40625,
+        "right": 695.1875,
+        "bottom": 1004.40625,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "中等颗粒示意",
+        "x": 707.1875,
+        "y": 959.40625,
+        "right": 807.1875,
+        "bottom": 1004.40625,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "合壶，开始冲煮 →",
+        "x": 1264.6875,
+        "y": 964.40625,
+        "right": 1400.25,
+        "bottom": 1004.40625,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "02-powder",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1207.25,
+        "y": 293.75,
+        "right": 1260.21875,
+        "bottom": 316.75,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1192.25,
+        "y": 678.484375,
+        "right": 1285.21875,
+        "bottom": 708.484375,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 476.15625,
+        "y": 593.53125,
+        "right": 498.15625,
+        "bottom": 628.53125,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 518.15625,
+        "y": 593.53125,
+        "right": 540.15625,
+        "bottom": 628.53125,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "powderAmount",
+        "x": 476.15625,
+        "y": 668.53125,
+        "right": 1126.15625,
+        "bottom": 684.53125,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示装满粉篮 · 18 g ↗",
+        "x": 476.15625,
+        "y": 715.53125,
+        "right": 614.765625,
+        "bottom": 748.53125,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "偏粗颗粒示意",
+        "x": 476.15625,
+        "y": 758.53125,
+        "right": 576.15625,
+        "bottom": 803.53125,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "中等颗粒示意",
+        "x": 588.15625,
+        "y": 758.53125,
+        "right": 688.15625,
+        "bottom": 803.53125,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "合壶，开始冲煮 →",
+        "x": 1145.65625,
+        "y": 763.53125,
+        "right": 1281.21875,
+        "bottom": 803.53125,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "02-powder",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1058.671875,
+        "y": 261.109375,
+        "right": 1111.640625,
+        "bottom": 284.109375,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1058.671875,
+        "y": 599.765625,
+        "right": 1151.640625,
+        "bottom": 629.765625,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 423.453125,
+        "y": 504.25,
+        "right": 445.453125,
+        "bottom": 539.25,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 465.453125,
+        "y": 504.25,
+        "right": 487.453125,
+        "bottom": 539.25,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "powderAmount",
+        "x": 423.453125,
+        "y": 579.25,
+        "right": 1010.828125,
+        "bottom": 595.25,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示装满粉篮 · 18 g ↗",
+        "x": 423.453125,
+        "y": 626.25,
+        "right": 562.0625,
+        "bottom": 659.25,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "偏粗颗粒示意",
+        "x": 423.453125,
+        "y": 669.25,
+        "right": 523.453125,
+        "bottom": 714.25,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "中等颗粒示意",
+        "x": 535.453125,
+        "y": 669.25,
+        "right": 635.453125,
+        "bottom": 714.25,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "合壶，开始冲煮 →",
+        "x": 1028.4375,
+        "y": 674.25,
+        "right": 1164,
+        "bottom": 714.25,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "02-powder",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 992.015625,
+        "y": 244.796875,
+        "right": 1044.984375,
+        "bottom": 267.796875,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 992.015625,
+        "y": 560.40625,
+        "right": 1084.984375,
+        "bottom": 590.40625,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 396.796875,
+        "y": 490.609375,
+        "right": 418.796875,
+        "bottom": 525.609375,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 438.796875,
+        "y": 490.609375,
+        "right": 460.796875,
+        "bottom": 525.609375,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "powderAmount",
+        "x": 396.796875,
+        "y": 565.609375,
+        "right": 947.1875,
+        "bottom": 581.609375,
+        "height": 16,
+        "clickable": true
+      },
+      {
+        "name": "演示装满粉篮 · 18 g ↗",
+        "x": 396.796875,
+        "y": 581.609375,
+        "right": 535.40625,
+        "bottom": 614.609375,
+        "height": 33,
+        "clickable": true
+      },
+      {
+        "name": "偏粗颗粒示意",
+        "x": 396.796875,
+        "y": 624.609375,
+        "right": 496.796875,
+        "bottom": 669.609375,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "中等颗粒示意",
+        "x": 508.796875,
+        "y": 624.609375,
+        "right": 608.796875,
+        "bottom": 669.609375,
+        "height": 45,
+        "clickable": true
+      },
+      {
+        "name": "合壶，开始冲煮 →",
+        "x": 963.6875,
+        "y": 629.609375,
+        "right": 1099.25,
+        "bottom": 669.609375,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "02-powder",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 783.375,
+        "y": 240,
+        "right": 831.046875,
+        "bottom": 261,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 793.625,
+        "y": 463.703125,
+        "right": 877.296875,
+        "bottom": 492,
+        "height": 28.296875,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 307.1875,
+        "y": 404,
+        "right": 325.1875,
+        "bottom": 436,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 341.1875,
+        "y": 404,
+        "right": 359.1875,
+        "bottom": 436,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "powderAmount",
+        "x": 307.1875,
+        "y": 472,
+        "right": 757.734375,
+        "bottom": 484,
+        "height": 12,
+        "clickable": true
+      },
+      {
+        "name": "演示装满粉篮 · 18 g ↗",
+        "x": 307.1875,
+        "y": 489,
+        "right": 419.328125,
+        "bottom": 515,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "偏粗颗粒示意",
+        "x": 307.1875,
+        "y": 521,
+        "right": 389.1875,
+        "bottom": 558,
+        "height": 37,
+        "clickable": true
+      },
+      {
+        "name": "中等颗粒示意",
+        "x": 397.1875,
+        "y": 521,
+        "right": 479.1875,
+        "bottom": 558,
+        "height": 37,
+        "clickable": true
+      },
+      {
+        "name": "合壶，开始冲煮 →",
+        "x": 771.25,
+        "y": 524,
+        "right": 878.21875,
+        "bottom": 558,
+        "height": 34,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "02-powder",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 645.671875,
+        "y": 171.59375,
+        "right": 693.34375,
+        "bottom": 192.59375,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 253.1875,
+        "y": 238.8125,
+        "right": 271.1875,
+        "bottom": 270.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 287.1875,
+        "y": 238.8125,
+        "right": 305.1875,
+        "bottom": 270.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "powderAmount",
+        "x": 253.1875,
+        "y": 306.8125,
+        "right": 438.078125,
+        "bottom": 318.8125,
+        "height": 12,
+        "clickable": true
+      },
+      {
+        "name": "演示装满粉篮 · 18 g ↗",
+        "x": 253.1875,
+        "y": 327.8125,
+        "right": 365.328125,
+        "bottom": 353.8125,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "偏粗颗粒示意",
+        "x": 448.078125,
+        "y": 280.8125,
+        "right": 632.984375,
+        "bottom": 316.8125,
+        "height": 36,
+        "clickable": true
+      },
+      {
+        "name": "中等颗粒示意",
+        "x": 448.078125,
+        "y": 321.8125,
+        "right": 632.984375,
+        "bottom": 358.8125,
+        "height": 37,
+        "clickable": true
+      },
+      {
+        "name": "合壶，开始冲煮 →",
+        "x": 640.578125,
+        "y": 328.8125,
+        "right": 784.890625,
+        "bottom": 358.8125,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "02-powder",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 510.265625,
+        "y": 172,
+        "right": 557.9375,
+        "bottom": 193,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "水位",
+        "x": 200.09375,
+        "y": 194.8125,
+        "right": 218.09375,
+        "bottom": 226.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "装粉",
+        "x": 234.09375,
+        "y": 194.8125,
+        "right": 252.09375,
+        "bottom": 226.8125,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "powderAmount",
+        "x": 200.09375,
+        "y": 262.8125,
+        "right": 345.15625,
+        "bottom": 274.8125,
+        "height": 12,
+        "clickable": true
+      },
+      {
+        "name": "演示装满粉篮 · 18 g ↗",
+        "x": 200.09375,
+        "y": 314.8125,
+        "right": 312.234375,
+        "bottom": 345,
+        "height": 30.1875,
+        "clickable": true
+      },
+      {
+        "name": "偏粗颗粒示意",
+        "x": 355.15625,
+        "y": 251.90625,
+        "right": 500.234375,
+        "bottom": 287.90625,
+        "height": 36,
+        "clickable": true
+      },
+      {
+        "name": "中等颗粒示意",
+        "x": 355.15625,
+        "y": 292.90625,
+        "right": 500.234375,
+        "bottom": 329.90625,
+        "height": 37,
+        "clickable": true
+      },
+      {
+        "name": "合壶，开始冲煮 →",
+        "x": 506.234375,
+        "y": 315,
+        "right": 620.28125,
+        "bottom": 345,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "03-brewing",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1577.8125,
+        "y": 367.1875,
+        "right": 1630.78125,
+        "bottom": 390.1875,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1562.8125,
+        "y": 855.609375,
+        "right": 1655.78125,
+        "bottom": 885.609375,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "火候",
+        "x": 595.1875,
+        "y": 826.21875,
+        "right": 617.1875,
+        "bottom": 861.21875,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "♨ 微火",
+        "x": 594.3641967773438,
+        "y": 875.2044067382812,
+        "right": 654.7451782226562,
+        "bottom": 911.2330932617188,
+        "height": 36.0286865234375,
+        "clickable": true
+      },
+      {
+        "name": "♨ 小火",
+        "x": 663.3638916015625,
+        "y": 875.7039184570312,
+        "right": 723.2142333984375,
+        "bottom": 910.7335815429688,
+        "height": 35.0296630859375,
+        "clickable": true
+      },
+      {
+        "name": "关火观察",
+        "x": 732.65625,
+        "y": 876.21875,
+        "right": 800.65625,
+        "bottom": 910.21875,
+        "height": 34,
+        "clickable": true
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 1110.1875,
+        "y": 964.40625,
+        "right": 1245.1875,
+        "bottom": 1004.40625,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "03-brewing",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1207.25,
+        "y": 293.75,
+        "right": 1260.21875,
+        "bottom": 316.75,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1192.25,
+        "y": 678.484375,
+        "right": 1285.21875,
+        "bottom": 708.484375,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "火候",
+        "x": 476.15625,
+        "y": 625.34375,
+        "right": 498.15625,
+        "bottom": 660.34375,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "♨ 微火",
+        "x": 475.33294677734375,
+        "y": 674.3294067382812,
+        "right": 535.7139282226562,
+        "bottom": 710.3580932617188,
+        "height": 36.0286865234375,
+        "clickable": true
+      },
+      {
+        "name": "♨ 小火",
+        "x": 544.3326416015625,
+        "y": 674.8289184570312,
+        "right": 604.1829833984375,
+        "bottom": 709.8585815429688,
+        "height": 35.0296630859375,
+        "clickable": true
+      },
+      {
+        "name": "关火观察",
+        "x": 613.625,
+        "y": 675.34375,
+        "right": 681.625,
+        "bottom": 709.34375,
+        "height": 34,
+        "clickable": true
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 991.15625,
+        "y": 763.53125,
+        "right": 1126.15625,
+        "bottom": 803.53125,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "03-brewing",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 1058.671875,
+        "y": 261.109375,
+        "right": 1111.640625,
+        "bottom": 284.109375,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 1058.671875,
+        "y": 599.765625,
+        "right": 1151.640625,
+        "bottom": 629.765625,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "火候",
+        "x": 423.453125,
+        "y": 536.0625,
+        "right": 445.453125,
+        "bottom": 571.0625,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "♨ 微火",
+        "x": 422.62982177734375,
+        "y": 585.0481567382812,
+        "right": 483.01080322265625,
+        "bottom": 621.0768432617188,
+        "height": 36.0286865234375,
+        "clickable": true
+      },
+      {
+        "name": "♨ 小火",
+        "x": 491.6295471191406,
+        "y": 585.5476684570312,
+        "right": 551.4798583984375,
+        "bottom": 620.5773315429688,
+        "height": 35.0296630859375,
+        "clickable": true
+      },
+      {
+        "name": "关火观察",
+        "x": 560.921875,
+        "y": 586.0625,
+        "right": 628.921875,
+        "bottom": 620.0625,
+        "height": 34,
+        "clickable": true
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 875.828125,
+        "y": 674.25,
+        "right": 1010.828125,
+        "bottom": 714.25,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "03-brewing",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 992.015625,
+        "y": 244.796875,
+        "right": 1044.984375,
+        "bottom": 267.796875,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 992.015625,
+        "y": 560.40625,
+        "right": 1084.984375,
+        "bottom": 590.40625,
+        "height": 30,
+        "clickable": true
+      },
+      {
+        "name": "火候",
+        "x": 396.796875,
+        "y": 491.421875,
+        "right": 418.796875,
+        "bottom": 526.421875,
+        "height": 35,
+        "clickable": true
+      },
+      {
+        "name": "♨ 微火",
+        "x": 395.97357177734375,
+        "y": 540.4075317382812,
+        "right": 456.35455322265625,
+        "bottom": 576.4362182617188,
+        "height": 36.0286865234375,
+        "clickable": true
+      },
+      {
+        "name": "♨ 小火",
+        "x": 464.9732971191406,
+        "y": 540.9070434570312,
+        "right": 524.8236083984375,
+        "bottom": 575.9367065429688,
+        "height": 35.0296630859375,
+        "clickable": true
+      },
+      {
+        "name": "关火观察",
+        "x": 534.265625,
+        "y": 541.421875,
+        "right": 602.265625,
+        "bottom": 575.421875,
+        "height": 34,
+        "clickable": true
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 812.1875,
+        "y": 629.609375,
+        "right": 947.1875,
+        "bottom": 669.609375,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "03-brewing",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 783.375,
+        "y": 240,
+        "right": 831.046875,
+        "bottom": 261,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "这一处，为什么？ ↗",
+        "x": 793.625,
+        "y": 463.703125,
+        "right": 877.296875,
+        "bottom": 492,
+        "height": 28.296875,
+        "clickable": true
+      },
+      {
+        "name": "火候",
+        "x": 307.1875,
+        "y": 402.40625,
+        "right": 325.1875,
+        "bottom": 434.40625,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "♨ 微火",
+        "x": 306.4873962402344,
+        "y": 443.680419921875,
+        "right": 355.4657287597656,
+        "bottom": 474.132080078125,
+        "height": 30.45166015625,
+        "clickable": true
+      },
+      {
+        "name": "♨ 小火",
+        "x": 362.2915344238281,
+        "y": 444.0845642089844,
+        "right": 410.8178405761719,
+        "bottom": 473.7279357910156,
+        "height": 29.64337158203125,
+        "clickable": true
+      },
+      {
+        "name": "关火观察",
+        "x": 418.34375,
+        "y": 444.40625,
+        "right": 474.34375,
+        "bottom": 473.40625,
+        "height": 29,
+        "clickable": true
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 642.734375,
+        "y": 524,
+        "right": 757.734375,
+        "bottom": 558,
+        "height": 34,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "03-brewing",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 645.671875,
+        "y": 171.59375,
+        "right": 693.34375,
+        "bottom": 192.59375,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "火候",
+        "x": 253.1875,
+        "y": 203.21875,
+        "right": 271.1875,
+        "bottom": 235.21875,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "♨ 微火",
+        "x": 252.48739624023438,
+        "y": 244.492919921875,
+        "right": 301.4657287597656,
+        "bottom": 274.944580078125,
+        "height": 30.45166015625,
+        "clickable": true
+      },
+      {
+        "name": "♨ 小火",
+        "x": 308.2915344238281,
+        "y": 244.8970489501953,
+        "right": 356.8178405761719,
+        "bottom": 274.5404357910156,
+        "height": 29.643386840820312,
+        "clickable": true
+      },
+      {
+        "name": "关火观察",
+        "x": 364.34375,
+        "y": 245.21875,
+        "right": 420.34375,
+        "bottom": 274.21875,
+        "height": 29,
+        "clickable": true
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 537.984375,
+        "y": 328.8125,
+        "right": 632.984375,
+        "bottom": 358.8125,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "03-brewing",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "看看里面 ↗",
+        "x": 510.265625,
+        "y": 172,
+        "right": 557.9375,
+        "bottom": 193,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "火候",
+        "x": 200.09375,
+        "y": 176.609375,
+        "right": 218.09375,
+        "bottom": 208.609375,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "♨ 微火",
+        "x": 199.39364624023438,
+        "y": 217.883544921875,
+        "right": 248.37197875976562,
+        "bottom": 248.335205078125,
+        "height": 30.45166015625,
+        "clickable": true
+      },
+      {
+        "name": "♨ 小火",
+        "x": 255.19776916503906,
+        "y": 218.2876739501953,
+        "right": 303.7240905761719,
+        "bottom": 247.9310760498047,
+        "height": 29.643402099609375,
+        "clickable": true
+      },
+      {
+        "name": "关火观察",
+        "x": 311.25,
+        "y": 218.609375,
+        "right": 367.25,
+        "bottom": 247.609375,
+        "height": 29,
+        "clickable": true
+      },
+      {
+        "name": "关火收杯 →",
+        "x": 405.234375,
+        "y": 315,
+        "right": 500.234375,
+        "bottom": 345,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "04-section",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "收起，继续制作 ↙",
+        "x": 537.59375,
+        "y": 54,
+        "right": 620.5625,
+        "bottom": 77,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "剖面",
+        "x": 595.1875,
+        "y": 906.40625,
+        "right": 651.1875,
+        "bottom": 937.40625,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 658.1875,
+        "y": 906.40625,
+        "right": 714.1875,
+        "bottom": 937.40625,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 595.1875,
+        "y": 949.40625,
+        "right": 615.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 629.1875,
+        "y": 949.40625,
+        "right": 649.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 663.1875,
+        "y": 949.40625,
+        "right": 683.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 697.1875,
+        "y": 949.40625,
+        "right": 727.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 741.1875,
+        "y": 949.40625,
+        "right": 761.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 775.1875,
+        "y": 949.40625,
+        "right": 795.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起结构，继续制作 ↙",
+        "x": 1502.8125,
+        "y": 291.59375,
+        "right": 1605.78125,
+        "bottom": 321.59375,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "04-section",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "收起，继续制作 ↙",
+        "x": 430.078125,
+        "y": 43.1875,
+        "right": 513.046875,
+        "bottom": 66.1875,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "剖面",
+        "x": 476.15625,
+        "y": 705.53125,
+        "right": 532.15625,
+        "bottom": 736.53125,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 539.15625,
+        "y": 705.53125,
+        "right": 595.15625,
+        "bottom": 736.53125,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 476.15625,
+        "y": 748.53125,
+        "right": 496.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 510.15625,
+        "y": 748.53125,
+        "right": 530.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 544.15625,
+        "y": 748.53125,
+        "right": 564.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 578.15625,
+        "y": 748.53125,
+        "right": 608.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 622.15625,
+        "y": 748.53125,
+        "right": 642.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 656.15625,
+        "y": 748.53125,
+        "right": 676.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起结构，继续制作 ↙",
+        "x": 1144.34375,
+        "y": 233.265625,
+        "right": 1247.3125,
+        "bottom": 263.265625,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "04-section",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "收起，继续制作 ↙",
+        "x": 382.46875,
+        "y": 38.390625,
+        "right": 465.4375,
+        "bottom": 61.390625,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "剖面",
+        "x": 423.453125,
+        "y": 616.25,
+        "right": 479.453125,
+        "bottom": 647.25,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 486.453125,
+        "y": 616.25,
+        "right": 542.453125,
+        "bottom": 647.25,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 423.453125,
+        "y": 659.25,
+        "right": 443.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 457.453125,
+        "y": 659.25,
+        "right": 477.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 491.453125,
+        "y": 659.25,
+        "right": 511.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 525.453125,
+        "y": 659.25,
+        "right": 555.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 569.453125,
+        "y": 659.25,
+        "right": 589.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 603.453125,
+        "y": 659.25,
+        "right": 623.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起结构，继续制作 ↙",
+        "x": 1017.6875,
+        "y": 207.359375,
+        "right": 1120.65625,
+        "bottom": 237.359375,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "04-section",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "收起，继续制作 ↙",
+        "x": 358.390625,
+        "y": 36,
+        "right": 441.359375,
+        "bottom": 59,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "剖面",
+        "x": 396.796875,
+        "y": 571.609375,
+        "right": 452.796875,
+        "bottom": 602.609375,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 459.796875,
+        "y": 571.609375,
+        "right": 515.796875,
+        "bottom": 602.609375,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 396.796875,
+        "y": 614.609375,
+        "right": 416.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 430.796875,
+        "y": 614.609375,
+        "right": 450.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 464.796875,
+        "y": 614.609375,
+        "right": 484.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 498.796875,
+        "y": 614.609375,
+        "right": 528.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 542.796875,
+        "y": 614.609375,
+        "right": 562.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 576.796875,
+        "y": 614.609375,
+        "right": 596.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起结构，继续制作 ↙",
+        "x": 953.609375,
+        "y": 194.390625,
+        "right": 1056.578125,
+        "bottom": 224.390625,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "04-section",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "收起，继续制作 ↙",
+        "x": 286.71875,
+        "y": 30,
+        "right": 361.390625,
+        "bottom": 51,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "剖面",
+        "x": 317.4375,
+        "y": 479,
+        "right": 363.4375,
+        "bottom": 505,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 370.4375,
+        "y": 479,
+        "right": 416.4375,
+        "bottom": 505,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 317.4375,
+        "y": 513,
+        "right": 335.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 345.4375,
+        "y": 513,
+        "right": 363.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 373.4375,
+        "y": 513,
+        "right": 391.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 401.4375,
+        "y": 513,
+        "right": 428.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 438.4375,
+        "y": 513,
+        "right": 456.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 466.4375,
+        "y": 513,
+        "right": 484.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "收起结构，继续制作 ↙",
+        "x": 752.65625,
+        "y": 144,
+        "right": 845.328125,
+        "bottom": 172.296875,
+        "height": 28.296875,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "04-section",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "收起，继续制作 ↙",
+        "x": 236.3125,
+        "y": 19.5,
+        "right": 310.984375,
+        "bottom": 40.5,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "剖面",
+        "x": 261.625,
+        "y": 281.8125,
+        "right": 307.625,
+        "bottom": 307.8125,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 314.625,
+        "y": 281.8125,
+        "right": 360.625,
+        "bottom": 307.8125,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 261.625,
+        "y": 315.8125,
+        "right": 279.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 289.625,
+        "y": 315.8125,
+        "right": 307.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 317.625,
+        "y": 315.8125,
+        "right": 335.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 345.625,
+        "y": 315.8125,
+        "right": 372.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 382.625,
+        "y": 315.8125,
+        "right": 400.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 410.625,
+        "y": 315.8125,
+        "right": 428.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "收起结构，继续制作 ↙",
+        "x": 620.359375,
+        "y": 93.59375,
+        "right": 713.03125,
+        "bottom": 121.890625,
+        "height": 28.296875,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "04-section",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "收起，继续制作 ↙",
+        "x": 186.75,
+        "y": 25.75,
+        "right": 261.421875,
+        "bottom": 46.75,
+        "height": 21,
+        "clickable": true
+      },
+      {
+        "name": "剖面",
+        "x": 206.765625,
+        "y": 268,
+        "right": 252.765625,
+        "bottom": 294,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 259.765625,
+        "y": 268,
+        "right": 305.765625,
+        "bottom": 294,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 206.765625,
+        "y": 302,
+        "right": 224.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 234.765625,
+        "y": 302,
+        "right": 252.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 262.765625,
+        "y": 302,
+        "right": 280.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 290.765625,
+        "y": 302,
+        "right": 317.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 327.765625,
+        "y": 302,
+        "right": 345.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 355.765625,
+        "y": 302,
+        "right": 373.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "收起结构，继续制作 ↙",
+        "x": 490.25,
+        "y": 90,
+        "right": 582.921875,
+        "bottom": 118.296875,
+        "height": 28.296875,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "05-structure",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 595.1875,
+        "y": 906.40625,
+        "right": 651.1875,
+        "bottom": 937.40625,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 658.1875,
+        "y": 906.40625,
+        "right": 714.1875,
+        "bottom": 937.40625,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 595.1875,
+        "y": 949.40625,
+        "right": 615.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 629.1875,
+        "y": 949.40625,
+        "right": 649.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 663.1875,
+        "y": 949.40625,
+        "right": 683.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 697.1875,
+        "y": 949.40625,
+        "right": 727.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 741.1875,
+        "y": 949.40625,
+        "right": 761.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 775.1875,
+        "y": 949.40625,
+        "right": 795.1875,
+        "bottom": 974.40625,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起说明 ↙",
+        "x": 1502.8125,
+        "y": 291.59375,
+        "right": 1555.78125,
+        "bottom": 321.59375,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "05-structure",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 476.15625,
+        "y": 705.53125,
+        "right": 532.15625,
+        "bottom": 736.53125,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 539.15625,
+        "y": 705.53125,
+        "right": 595.15625,
+        "bottom": 736.53125,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 476.15625,
+        "y": 748.53125,
+        "right": 496.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 510.15625,
+        "y": 748.53125,
+        "right": 530.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 544.15625,
+        "y": 748.53125,
+        "right": 564.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 578.15625,
+        "y": 748.53125,
+        "right": 608.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 622.15625,
+        "y": 748.53125,
+        "right": 642.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 656.15625,
+        "y": 748.53125,
+        "right": 676.15625,
+        "bottom": 773.53125,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起说明 ↙",
+        "x": 1144.34375,
+        "y": 233.265625,
+        "right": 1197.3125,
+        "bottom": 263.265625,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "05-structure",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 423.453125,
+        "y": 616.25,
+        "right": 479.453125,
+        "bottom": 647.25,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 486.453125,
+        "y": 616.25,
+        "right": 542.453125,
+        "bottom": 647.25,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 423.453125,
+        "y": 659.25,
+        "right": 443.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 457.453125,
+        "y": 659.25,
+        "right": 477.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 491.453125,
+        "y": 659.25,
+        "right": 511.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 525.453125,
+        "y": 659.25,
+        "right": 555.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 569.453125,
+        "y": 659.25,
+        "right": 589.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 603.453125,
+        "y": 659.25,
+        "right": 623.453125,
+        "bottom": 684.25,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起说明 ↙",
+        "x": 1017.6875,
+        "y": 207.359375,
+        "right": 1070.65625,
+        "bottom": 237.359375,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "05-structure",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 396.796875,
+        "y": 571.609375,
+        "right": 452.796875,
+        "bottom": 602.609375,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 459.796875,
+        "y": 571.609375,
+        "right": 515.796875,
+        "bottom": 602.609375,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 396.796875,
+        "y": 614.609375,
+        "right": 416.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 430.796875,
+        "y": 614.609375,
+        "right": 450.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 464.796875,
+        "y": 614.609375,
+        "right": 484.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 498.796875,
+        "y": 614.609375,
+        "right": 528.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 542.796875,
+        "y": 614.609375,
+        "right": 562.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 576.796875,
+        "y": 614.609375,
+        "right": 596.796875,
+        "bottom": 639.609375,
+        "height": 25,
+        "clickable": true
+      },
+      {
+        "name": "收起说明 ↙",
+        "x": 953.609375,
+        "y": 194.390625,
+        "right": 1006.578125,
+        "bottom": 224.390625,
+        "height": 30,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "05-structure",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 317.4375,
+        "y": 479,
+        "right": 363.4375,
+        "bottom": 505,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 370.4375,
+        "y": 479,
+        "right": 416.4375,
+        "bottom": 505,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 317.4375,
+        "y": 513,
+        "right": 335.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 345.4375,
+        "y": 513,
+        "right": 363.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 373.4375,
+        "y": 513,
+        "right": 391.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 401.4375,
+        "y": 513,
+        "right": 428.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 438.4375,
+        "y": 513,
+        "right": 456.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 466.4375,
+        "y": 513,
+        "right": 484.4375,
+        "bottom": 536,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "收起说明 ↙",
+        "x": 752.65625,
+        "y": 144,
+        "right": 800.328125,
+        "bottom": 172.296875,
+        "height": 28.296875,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "05-structure",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 261.625,
+        "y": 281.8125,
+        "right": 307.625,
+        "bottom": 307.8125,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 314.625,
+        "y": 281.8125,
+        "right": 360.625,
+        "bottom": 307.8125,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 261.625,
+        "y": 315.8125,
+        "right": 279.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 289.625,
+        "y": 315.8125,
+        "right": 307.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 317.625,
+        "y": 315.8125,
+        "right": 335.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 345.625,
+        "y": 315.8125,
+        "right": 372.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 382.625,
+        "y": 315.8125,
+        "right": 400.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 410.625,
+        "y": 315.8125,
+        "right": 428.625,
+        "bottom": 338.8125,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "收起说明 ↙",
+        "x": 620.359375,
+        "y": 93.59375,
+        "right": 668.03125,
+        "bottom": 121.890625,
+        "height": 28.296875,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "05-structure",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "剖面",
+        "x": 206.765625,
+        "y": 268,
+        "right": 252.765625,
+        "bottom": 294,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "零件",
+        "x": 259.765625,
+        "y": 268,
+        "right": 305.765625,
+        "bottom": 294,
+        "height": 26,
+        "clickable": true
+      },
+      {
+        "name": "下壶",
+        "x": 206.765625,
+        "y": 302,
+        "right": 224.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "粉篮",
+        "x": 234.765625,
+        "y": 302,
+        "right": 252.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "滤网",
+        "x": 262.765625,
+        "y": 302,
+        "right": 280.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "密封圈",
+        "x": 290.765625,
+        "y": 302,
+        "right": 317.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "上壶",
+        "x": 327.765625,
+        "y": 302,
+        "right": 345.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "壶盖",
+        "x": 355.765625,
+        "y": 302,
+        "right": 373.765625,
+        "bottom": 325,
+        "height": 23,
+        "clickable": true
+      },
+      {
+        "name": "收起说明 ↙",
+        "x": 490.25,
+        "y": 90,
+        "right": 537.921875,
+        "bottom": 118.296875,
+        "height": 28.296875,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "06-mix",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 511.78125,
+        "y": 839,
+        "right": 575.78125,
+        "bottom": 879,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 587.78125,
+        "y": 839,
+        "right": 651.78125,
+        "bottom": 879,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "分成两杯",
+        "x": 663.78125,
+        "y": 839,
+        "right": 753.78125,
+        "bottom": 879,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 765.78125,
+        "y": 841.90625,
+        "right": 825.78125,
+        "bottom": 876.09375,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1743.140625,
+        "y": 839,
+        "right": 1854,
+        "bottom": 879,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 511.78125,
+        "y": 929,
+        "right": 727.140625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 737.140625,
+        "y": 929,
+        "right": 952.515625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 962.515625,
+        "y": 929,
+        "right": 1177.890625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 1187.890625,
+        "y": 929,
+        "right": 1403.25,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 1413.25,
+        "y": 929,
+        "right": 1628.625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1638.625,
+        "y": 929,
+        "right": 1854,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "06-mix",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 406.921875,
+        "y": 633.296875,
+        "right": 470.921875,
+        "bottom": 673.296875,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 482.921875,
+        "y": 633.296875,
+        "right": 546.921875,
+        "bottom": 673.296875,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "分成两杯",
+        "x": 558.921875,
+        "y": 633.296875,
+        "right": 648.921875,
+        "bottom": 673.296875,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 660.921875,
+        "y": 636.203125,
+        "right": 720.921875,
+        "bottom": 670.390625,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1379.0625,
+        "y": 633.296875,
+        "right": 1489.921875,
+        "bottom": 673.296875,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 406.921875,
+        "y": 723.296875,
+        "right": 579.078125,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 589.078125,
+        "y": 723.296875,
+        "right": 761.25,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 771.25,
+        "y": 723.296875,
+        "right": 943.421875,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 953.421875,
+        "y": 723.296875,
+        "right": 1125.578125,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 1135.578125,
+        "y": 723.296875,
+        "right": 1307.75,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1317.75,
+        "y": 723.296875,
+        "right": 1489.921875,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "06-mix",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 361.875,
+        "y": 547.375,
+        "right": 425.875,
+        "bottom": 587.375,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 437.875,
+        "y": 547.375,
+        "right": 501.875,
+        "bottom": 587.375,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "分成两杯",
+        "x": 513.875,
+        "y": 547.375,
+        "right": 603.875,
+        "bottom": 587.375,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 615.875,
+        "y": 550.28125,
+        "right": 675.875,
+        "bottom": 584.46875,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1214.171875,
+        "y": 547.375,
+        "right": 1325.03125,
+        "bottom": 587.375,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 361.875,
+        "y": 637.375,
+        "right": 514.0625,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 524.0625,
+        "y": 637.375,
+        "right": 676.25,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 686.25,
+        "y": 637.375,
+        "right": 838.4375,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 848.4375,
+        "y": 637.375,
+        "right": 1000.640625,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 1010.640625,
+        "y": 637.375,
+        "right": 1162.828125,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1172.828125,
+        "y": 637.375,
+        "right": 1325.015625,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "06-mix",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 339.09375,
+        "y": 519,
+        "right": 393.09375,
+        "bottom": 557,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 403.09375,
+        "y": 519,
+        "right": 457.09375,
+        "bottom": 557,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "分成两杯",
+        "x": 467.09375,
+        "y": 519,
+        "right": 545.09375,
+        "bottom": 557,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 555.09375,
+        "y": 520.90625,
+        "right": 615.09375,
+        "bottom": 555.09375,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存作品 →",
+        "x": 1144.03125,
+        "y": 519,
+        "right": 1241.59375,
+        "bottom": 557,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 339.09375,
+        "y": 604,
+        "right": 481.171875,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 491.171875,
+        "y": 604,
+        "right": 633.25,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 643.25,
+        "y": 604,
+        "right": 785.328125,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 795.328125,
+        "y": 604,
+        "right": 937.421875,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 947.421875,
+        "y": 604,
+        "right": 1089.5,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1099.5,
+        "y": 604,
+        "right": 1241.578125,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "06-mix",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 271.265625,
+        "y": 410,
+        "right": 325.265625,
+        "bottom": 448,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 335.265625,
+        "y": 410,
+        "right": 389.265625,
+        "bottom": 448,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "分成两杯",
+        "x": 399.265625,
+        "y": 410,
+        "right": 477.265625,
+        "bottom": 448,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 487.265625,
+        "y": 411.90625,
+        "right": 547.265625,
+        "bottom": 446.09375,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存作品 →",
+        "x": 895.71875,
+        "y": 410,
+        "right": 993.28125,
+        "bottom": 448,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 271.265625,
+        "y": 495,
+        "right": 383.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 393.265625,
+        "y": 495,
+        "right": 505.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 515.265625,
+        "y": 495,
+        "right": 627.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 637.265625,
+        "y": 495,
+        "right": 749.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 759.265625,
+        "y": 495,
+        "right": 871.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 881.265625,
+        "y": 495,
+        "right": 993.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "06-mix",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 207.03125,
+        "y": 247,
+        "right": 249.03125,
+        "bottom": 279,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 256.03125,
+        "y": 247,
+        "right": 298.03125,
+        "bottom": 279,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "分成两杯",
+        "x": 305.03125,
+        "y": 247,
+        "right": 369.03125,
+        "bottom": 279,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 376.03125,
+        "y": 247.5,
+        "right": 426.03125,
+        "bottom": 278.5,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "保存作品 →",
+        "x": 751.734375,
+        "y": 247,
+        "right": 828,
+        "bottom": 279,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 207.03125,
+        "y": 313,
+        "right": 305.515625,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 311.515625,
+        "y": 313,
+        "right": 410.015625,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 416.015625,
+        "y": 313,
+        "right": 514.5,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 520.5,
+        "y": 313,
+        "right": 619,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 625,
+        "y": 313,
+        "right": 723.5,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 729.5,
+        "y": 313,
+        "right": 827.984375,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "06-mix",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "撤销",
+        "x": 167.0625,
+        "y": 232,
+        "right": 209.0625,
+        "bottom": 264,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 216.0625,
+        "y": 232,
+        "right": 258.0625,
+        "bottom": 264,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "分成两杯",
+        "x": 265.0625,
+        "y": 232,
+        "right": 329.0625,
+        "bottom": 264,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 336.0625,
+        "y": 232.5,
+        "right": 386.0625,
+        "bottom": 263.5,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "保存作品 →",
+        "x": 574.734375,
+        "y": 232,
+        "right": 651,
+        "bottom": 264,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 167.0625,
+        "y": 298,
+        "right": 242.71875,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 248.71875,
+        "y": 298,
+        "right": 324.375,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 330.375,
+        "y": 298,
+        "right": 406.03125,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 412.03125,
+        "y": 298,
+        "right": 487.6875,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 493.6875,
+        "y": 298,
+        "right": 569.34375,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 575.34375,
+        "y": 298,
+        "right": 651,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "09-two-cups",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "A · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%点选，调",
+        "x": 628.765625,
+        "y": 101.265625,
+        "right": 908.765625,
+        "bottom": 777,
+        "height": 675.734375,
+        "clickable": true
+      },
+      {
+        "name": "B · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%正在调整",
+        "x": 908.765625,
+        "y": 101.265625,
+        "right": 1188.765625,
+        "bottom": 777,
+        "height": 675.734375,
+        "clickable": true
+      },
+      {
+        "name": "撤销",
+        "x": 511.78125,
+        "y": 839,
+        "right": 575.78125,
+        "bottom": 879,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 587.78125,
+        "y": 839,
+        "right": 651.78125,
+        "bottom": 879,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 663.78125,
+        "y": 841.90625,
+        "right": 723.78125,
+        "bottom": 876.09375,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1715.140625,
+        "y": 839,
+        "right": 1854,
+        "bottom": 879,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 511.78125,
+        "y": 929,
+        "right": 727.140625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 737.140625,
+        "y": 929,
+        "right": 952.515625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 962.515625,
+        "y": 929,
+        "right": 1177.890625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 1187.890625,
+        "y": 929,
+        "right": 1403.25,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 1413.25,
+        "y": 929,
+        "right": 1628.625,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1638.625,
+        "y": 929,
+        "right": 1854,
+        "bottom": 1034,
+        "height": 105,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "09-two-cups",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "A · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%点选，调",
+        "x": 446.71875,
+        "y": 89.43486785888672,
+        "right": 726.71875,
+        "bottom": 570.4973678588867,
+        "height": 481.0625,
+        "clickable": true
+      },
+      {
+        "name": "B · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%正在调整",
+        "x": 726.71875,
+        "y": 89.43486785888672,
+        "right": 1006.71875,
+        "bottom": 570.4973678588867,
+        "height": 481.0625,
+        "clickable": true
+      },
+      {
+        "name": "撤销",
+        "x": 406.921875,
+        "y": 633.296875,
+        "right": 470.921875,
+        "bottom": 673.296875,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 482.921875,
+        "y": 633.296875,
+        "right": 546.921875,
+        "bottom": 673.296875,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 558.921875,
+        "y": 636.203125,
+        "right": 618.921875,
+        "bottom": 670.390625,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1351.0625,
+        "y": 633.296875,
+        "right": 1489.921875,
+        "bottom": 673.296875,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 406.921875,
+        "y": 723.296875,
+        "right": 579.078125,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 589.078125,
+        "y": 723.296875,
+        "right": 761.25,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 771.25,
+        "y": 723.296875,
+        "right": 943.421875,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 953.421875,
+        "y": 723.296875,
+        "right": 1125.578125,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 1135.578125,
+        "y": 723.296875,
+        "right": 1307.75,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1317.75,
+        "y": 723.296875,
+        "right": 1489.921875,
+        "bottom": 823.40625,
+        "height": 100.109375,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "09-two-cups",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "A · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%点选，调",
+        "x": 366.296875,
+        "y": 83.71743774414062,
+        "right": 646.296875,
+        "bottom": 483.7643127441406,
+        "height": 400.046875,
+        "clickable": true
+      },
+      {
+        "name": "B · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%正在调整",
+        "x": 646.296875,
+        "y": 83.71743774414062,
+        "right": 926.296875,
+        "bottom": 483.7643127441406,
+        "height": 400.046875,
+        "clickable": true
+      },
+      {
+        "name": "撤销",
+        "x": 361.875,
+        "y": 547.375,
+        "right": 425.875,
+        "bottom": 587.375,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 437.875,
+        "y": 547.375,
+        "right": 501.875,
+        "bottom": 587.375,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 513.875,
+        "y": 550.28125,
+        "right": 573.875,
+        "bottom": 584.46875,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1186.171875,
+        "y": 547.375,
+        "right": 1325.03125,
+        "bottom": 587.375,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 361.875,
+        "y": 637.375,
+        "right": 514.0625,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 524.0625,
+        "y": 637.375,
+        "right": 676.25,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 686.25,
+        "y": 637.375,
+        "right": 838.4375,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 848.4375,
+        "y": 637.375,
+        "right": 1000.640625,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 1010.640625,
+        "y": 637.375,
+        "right": 1162.828125,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1172.828125,
+        "y": 637.375,
+        "right": 1325.015625,
+        "bottom": 729.8125,
+        "height": 92.4375,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "09-two-cups",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "A · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%点选，调",
+        "x": 339.09375,
+        "y": 64.1875,
+        "right": 605.609375,
+        "bottom": 448,
+        "height": 383.8125,
+        "clickable": true
+      },
+      {
+        "name": "B · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%正在调整",
+        "x": 605.609375,
+        "y": 64.1875,
+        "right": 872.125,
+        "bottom": 448,
+        "height": 383.8125,
+        "clickable": true
+      },
+      {
+        "name": "撤销",
+        "x": 339.09375,
+        "y": 519,
+        "right": 393.09375,
+        "bottom": 557,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 403.09375,
+        "y": 519,
+        "right": 457.09375,
+        "bottom": 557,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 467.09375,
+        "y": 520.90625,
+        "right": 527.09375,
+        "bottom": 555.09375,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 1118.03125,
+        "y": 519,
+        "right": 1241.59375,
+        "bottom": 557,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 339.09375,
+        "y": 604,
+        "right": 481.171875,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 491.171875,
+        "y": 604,
+        "right": 633.25,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 643.25,
+        "y": 604,
+        "right": 785.328125,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 795.328125,
+        "y": 604,
+        "right": 937.421875,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 947.421875,
+        "y": 604,
+        "right": 1089.5,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 1099.5,
+        "y": 604,
+        "right": 1241.578125,
+        "bottom": 685,
+        "height": 81,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "09-two-cups",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "A · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%点选，调",
+        "x": 271.265625,
+        "y": 61.1875,
+        "right": 484.46875,
+        "bottom": 339,
+        "height": 277.8125,
+        "clickable": true
+      },
+      {
+        "name": "B · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%正在调整",
+        "x": 484.46875,
+        "y": 61.1875,
+        "right": 697.671875,
+        "bottom": 339,
+        "height": 277.8125,
+        "clickable": true
+      },
+      {
+        "name": "撤销",
+        "x": 271.265625,
+        "y": 410,
+        "right": 325.265625,
+        "bottom": 448,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 335.265625,
+        "y": 410,
+        "right": 389.265625,
+        "bottom": 448,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 399.265625,
+        "y": 411.90625,
+        "right": 459.265625,
+        "bottom": 446.09375,
+        "height": 34.1875,
+        "clickable": true
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 869.71875,
+        "y": 410,
+        "right": 993.28125,
+        "bottom": 448,
+        "height": 38,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 271.265625,
+        "y": 495,
+        "right": 383.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 393.265625,
+        "y": 495,
+        "right": 505.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 515.265625,
+        "y": 495,
+        "right": 627.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 637.265625,
+        "y": 495,
+        "right": 749.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 759.265625,
+        "y": 495,
+        "right": 871.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 881.265625,
+        "y": 495,
+        "right": 993.265625,
+        "bottom": 568,
+        "height": 73,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "09-two-cups",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "A · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%点选，调",
+        "x": 207.03125,
+        "y": 50.1875,
+        "right": 384.0625,
+        "bottom": 196,
+        "height": 145.8125,
+        "clickable": true
+      },
+      {
+        "name": "B · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%正在调整",
+        "x": 384.0625,
+        "y": 50.1875,
+        "right": 561.09375,
+        "bottom": 196,
+        "height": 145.8125,
+        "clickable": true
+      },
+      {
+        "name": "撤销",
+        "x": 207.03125,
+        "y": 247,
+        "right": 249.03125,
+        "bottom": 279,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 256.03125,
+        "y": 247,
+        "right": 298.03125,
+        "bottom": 279,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 305.03125,
+        "y": 247.5,
+        "right": 355.03125,
+        "bottom": 278.5,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 729.734375,
+        "y": 247,
+        "right": 828,
+        "bottom": 279,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 207.03125,
+        "y": 313,
+        "right": 305.515625,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 311.515625,
+        "y": 313,
+        "right": 410.015625,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 416.015625,
+        "y": 313,
+        "right": 514.5,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 520.5,
+        "y": 313,
+        "right": 619,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 625,
+        "y": 313,
+        "right": 723.5,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 729.5,
+        "y": 313,
+        "right": 827.984375,
+        "bottom": 368,
+        "height": 55,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "09-two-cups",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "A · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%点选，调",
+        "x": 167.0625,
+        "y": 50.1875,
+        "right": 304.125,
+        "bottom": 181,
+        "height": 130.8125,
+        "clickable": true
+      },
+      {
+        "name": "B · 加奶摩卡 20g + 牛奶 40g总量 60 g · 基底占比 33.3%正在调整",
+        "x": 304.125,
+        "y": 50.1875,
+        "right": 441.1875,
+        "bottom": 181,
+        "height": 130.8125,
+        "clickable": true
+      },
+      {
+        "name": "撤销",
+        "x": 167.0625,
+        "y": 232,
+        "right": 209.0625,
+        "bottom": 264,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "搅拌",
+        "x": 216.0625,
+        "y": 232,
+        "right": 258.0625,
+        "bottom": 264,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "清空当前杯",
+        "x": 265.0625,
+        "y": 232.5,
+        "right": 315.0625,
+        "bottom": 263.5,
+        "height": 31,
+        "clickable": true
+      },
+      {
+        "name": "保存双杯作品 →",
+        "x": 552.734375,
+        "y": 232,
+        "right": 651,
+        "bottom": 264,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "咖啡基底",
+        "x": 167.0625,
+        "y": 298,
+        "right": 242.71875,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "水",
+        "x": 248.71875,
+        "y": 298,
+        "right": 324.375,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "牛奶",
+        "x": 330.375,
+        "y": 298,
+        "right": 406.03125,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "奶泡",
+        "x": 412.03125,
+        "y": 298,
+        "right": 487.6875,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "冰",
+        "x": 493.6875,
+        "y": 298,
+        "right": 569.34375,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      },
+      {
+        "name": "糖浆",
+        "x": 575.34375,
+        "y": 298,
+        "right": 651,
+        "bottom": 353,
+        "height": 55,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "10-gazette",
+    "w": 1920,
+    "h": 1080,
+    "sw": 1920,
+    "sh": 1080,
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 913.03125,
+        "y": 983,
+        "right": 1059.921875,
+        "bottom": 1023,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "回到调配",
+        "x": 1069.921875,
+        "y": 983,
+        "right": 1159.921875,
+        "bottom": 1023,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "10-gazette",
+    "w": 1536,
+    "h": 864,
+    "sw": 1536,
+    "sh": 864,
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 714.578125,
+        "y": 772.40625,
+        "right": 861.46875,
+        "bottom": 812.40625,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "回到调配",
+        "x": 871.46875,
+        "y": 772.40625,
+        "right": 961.46875,
+        "bottom": 812.40625,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "10-gazette",
+    "w": 1366,
+    "h": 768,
+    "sw": 1366,
+    "sh": 768,
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 627.671875,
+        "y": 678.8125,
+        "right": 774.5625,
+        "bottom": 718.8125,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "回到调配",
+        "x": 784.5625,
+        "y": 678.8125,
+        "right": 874.5625,
+        "bottom": 718.8125,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "10-gazette",
+    "w": 1280,
+    "h": 720,
+    "sw": 1280,
+    "sh": 720,
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 542.703125,
+        "y": 633,
+        "right": 673.828125,
+        "bottom": 673,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "回到调配",
+        "x": 683.828125,
+        "y": 633,
+        "right": 761.828125,
+        "bottom": 673,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "10-gazette",
+    "w": 1024,
+    "h": 600,
+    "sw": 1024,
+    "sh": 600,
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 434.171875,
+        "y": 516,
+        "right": 565.296875,
+        "bottom": 556,
+        "height": 40,
+        "clickable": true
+      },
+      {
+        "name": "回到调配",
+        "x": 575.296875,
+        "y": 516,
+        "right": 653.296875,
+        "bottom": 556,
+        "height": 40,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "10-gazette",
+    "w": 844,
+    "h": 390,
+    "sw": 844,
+    "sh": 390,
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 297.328125,
+        "y": 331.609375,
+        "right": 400.703125,
+        "bottom": 363.609375,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "回到调配",
+        "x": 410.703125,
+        "y": 331.609375,
+        "right": 474.703125,
+        "bottom": 363.609375,
+        "height": 32,
+        "clickable": true
+      }
+    ]
+  },
+  {
+    "label": "10-gazette",
+    "w": 667,
+    "h": 375,
+    "sw": 667,
+    "sh": 375,
+    "controls": [
+      {
+        "name": "保存本期 PNG ↗",
+        "x": 238.328125,
+        "y": 316.609375,
+        "right": 341.703125,
+        "bottom": 348.609375,
+        "height": 32,
+        "clickable": true
+      },
+      {
+        "name": "回到调配",
+        "x": 351.703125,
+        "y": 316.609375,
+        "right": 415.703125,
+        "bottom": 348.609375,
+        "height": 32,
+        "clickable": true
+      }
+    ]
+  }
+]

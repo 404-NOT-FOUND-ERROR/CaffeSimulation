@@ -5,11 +5,11 @@ const $=id=>document.getElementById(id);
 const shortBrief={
  window:'热黑咖 · 不加奶 · 慢慢喝',
  breakfast:'热奶咖 · 牛奶多一些',
- bar:'意式浓缩 · 保留原液',
+ bar:'小杯摩卡 · 保留原液',
  kitchen:'摩卡壶 · 原液黑咖',
  ice:'冰黑咖 · 不加奶',
- share:'手冲黑咖 · 一壶两人',
- foam:'意式奶咖 · 加奶泡',
+ share:'同一份基底 · 两种搭配',
+ foam:'牛奶与奶泡 · 一起加入',
  small:'小杯黑咖 · 器具随你'
 };
 const methods={
@@ -21,9 +21,10 @@ export function renderEntrance(state){
  $('cafeHome').hidden=state.page!=='lobby';
  $('cafeChoose').hidden=state.page!=='choose';
  if(state.page==='lobby'){
-  $('cafeOrders').innerHTML=state.offers.map((order,index)=>`<button class="cafe-order ${state.order?.id===order.id?'is-current':''}" data-order="${order.id}" aria-label="接下来单：${esc(order.title)}，${esc(order.brief)}"><span class="cafe-order-number">0${index+1}</span><span><strong>${esc(order.title)}</strong><small>${esc(shortBrief[order.id]||order.brief)}</small></span><span class="cafe-order-arrow" aria-hidden="true">→</span></button>`).join('');
-  $('cafeArchive').hidden=!state.cups.length;
-  $('cafeArchive').textContent=`我的出杯 · ${state.cups.length} 杯 ↗`;
+  $('cafeOrders').innerHTML=state.offers.map((order,index)=>`<button class="cafe-order ${state.order?.id===order.id?'is-current':''}" data-order="${order.id}" aria-label="接下来单：${esc(order.title)}，${esc(order.brief)}"><span class="cafe-order-number">0${index+1}</span><img class="cafe-order-cup" src="${order.temp==='iced'?'assets/cafe/cup-ice.png':order.milk==='none'?'assets/cafe/v3/cup-black.webp':'assets/cafe/v3/cup-milk.webp'}" alt=""><span><strong>${esc(order.title)}</strong><small>${esc(shortBrief[order.id]||order.brief)}</small></span><span class="cafe-order-arrow" aria-hidden="true">→</span></button>`).join('');
+  let editions=0;try{editions=JSON.parse(localStorage.getItem('coffee-recipe-lab-v1'))?.saved?.length||0;}catch{}
+  $('cafeArchive').hidden=false;
+  $('cafeArchive').textContent=`我的特刊册 ${editions?'· '+editions+'期':''} ↗`;
  }
  if(state.page==='choose'){
   const order=state.order,title=order?.title||'自由发挥';

@@ -1,70 +1,99 @@
-import {createWorkshopScene} from './workshop-scene.js';
+import {createPosterScene} from './workshop-poster-scene.js';
 import {createCutaway} from './workshop-cutaway.js';
 import {measureWater,measurePowder,reviseBlend} from './workshop-controls.mjs';
 import {freshWorkshop,restoreWorkshop,turnShell,setBasket,brushRim,placePot,setHeat,tickWorkshop,pourCoffee,preparationIssue,isHot,coffeeLeft,totalCup,cupSnapshot,workshopReport,SPEC,clamp} from './workshop-state.mjs';
 import {ORDERS,drinkName,checkOrder} from './studio-model.mjs';
 import {escapeHTML as esc,PALETTES,REPORT_STYLES,drawReport} from './studio-art.js';
 import {advanceMeasuredAmount} from './preparation-motion.mjs';
+import {RECIPE_ORDERS} from './recipe-orders.mjs';
+import {RECIPE_STORE,validSession,workshopStore,recipeFromWorkshop} from './recipe-workshop-bridge.mjs';
+import {snapshot as recipeSnapshot} from './recipe-state.mjs';
 
-const $=s=>document.querySelector(s),params=new URLSearchParams(location.search),order=ORDERS.find(o=>o.id===params.get('order'))||null;
+const $=s=>document.querySelector(s),params=new URLSearchParams(location.search),recipeFlow=$('#workshop').dataset.flow==='recipe',order=(recipeFlow?RECIPE_ORDERS:ORDERS).find(o=>o.id===params.get('order'))||null;
+const flowSession=validSession(params.get('session'))?params.get('session'):crypto.randomUUID().replaceAll('-','');
+const storeKey=recipeFlow?workshopStore(flowSession):'moka-hands-on-v2';
+if(recipeFlow){params.set('session',flowSession);history.replaceState(null,'',location.pathname+'?'+params);}
 let s=freshWorkshop(),mode='water',view='',contextOpen=false,inspectedPart='lower',ready=false,animation=null,queue=[],afterSequence=null;
 let lastTime=0,lastUI=0,lastPersist=0,saveTimer=0,warningUntil=0,tool='water',flow='',tilt=0,displayTilt=0,drag=null,targetWater=null,targetPowder=null;
 let autoFill=null,levelDragging=false,previousCup=null;
 let poster=null,posterStyle='manifesto',posterPalette='torino',posterRevision=0,posterPosition={x:.58,y:.49},posterDrag=null,audio=null,sound=false;
-try{const saved=JSON.parse(localStorage.getItem('moka-hands-on-v2')||'null');if(params.get('new')!=='1'&&saved&&saved.order===(order?.id||null)){s=restoreWorkshop(saved.state);targetWater=clamp(saved.targetWater??s.water,0,SPEC.tankMax);targetPowder=clamp(saved.targetPowder??s.powder,0,SPEC.powder);}}catch{}
+try{const saved=JSON.parse(localStorage.getItem(storeKey)||'null');if(params.get('new')!=='1'&&saved&&(recipeFlow||saved.order===(order?.id||null))){s=restoreWorkshop(saved.state);targetWater=clamp(saved.targetWater??s.water,0,SPEC.tankMax);targetPowder=clamp(saved.targetPowder??s.powder,0,SPEC.powder);}}catch{}
 if(params.has('new')){params.delete('new');history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));}
 try{previousCup=(JSON.parse(localStorage.getItem('coffee-studio-v1')||'{"cups":[]}').cups||[]).filter(c=>c.gear==='moka'&&c.workshop&&c.id!==s.cupId).at(-1)||null;}catch{}
 mode=s.poured>0?'blend':s.started?(s.onStove?'heat':'pour'):'water';targetWater??=s.water;targetPowder??=s.powder;
 if(!s.started){s.onStove=false;s.basketIn=false;}
-const scene=createWorkshopScene($('#workshopCanvas')),section=createCutaway($('#cutaway'));
+const scene=createPosterScene($('#workshopCanvas')),section=createCutaway($('#cutaway'));
+s.cup.vessel='ceramic'; // The fixed product set uses a porcelain cup; reports match it.
 scene.focus(mode);tool=mode==='blend'?'milk':mode==='heat'?'heat':mode==='pour'?'coffee':'water';
-const ticketNumber=Math.min(8,Math.max(1,Number(params.get('ticket'))||ORDERS.indexOf(order)+1));
+const ticketNumber=Math.min(recipeFlow?999:8,Math.max(1,Number(params.get('ticket'))||(recipeFlow?RECIPE_ORDERS:ORDERS).indexOf(order)+1));
 $('#ticket').innerHTML=order?`<strong>来单 <span>${String(ticketNumber).padStart(2,'0')}</span></strong><p>${esc(order.title)}<br>${esc(order.brief)}</p>`:'<strong>自由 <span>01</span></strong><p>这一杯由你决定。<br>做完，再给作品命名。</p>';
+$('#ticket').insertAdjacentHTML('beforeend','<dl id="ticketFacts" class="ticket-facts"></dl>');
 if(order){const returnUrl=new URL('studio.html',location.href);returnUrl.searchParams.set('order',order.id);returnUrl.searchParams.set('ticket',ticketNumber);$('.scene-copy .back').href=returnUrl.href;}
+function mixingUrl(){const url=new URL('moka.html',location.href);if(order)url.searchParams.set('order',order.id);url.searchParams.set('ticket',ticketNumber);return url;}
+if(recipeFlow&&params.get('intent')==='refill'){$('.scene-copy .back').href=mixingUrl().href;$('.scene-copy .back').textContent='← 回到调配';}
 const status=text=>{$('#sessionStatus').textContent=text;};
-function warn(text){if(!text)return;$('#controlFeedback').textContent=text;$('#localWarning').textContent=text;$('#localWarning').classList.add('show');warningUntil=performance.now()+4400;status(text);}
-function save(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>{try{localStorage.setItem('moka-hands-on-v2',JSON.stringify({order:order?.id||null,state:s,targetWater,targetPowder}));}catch{}},180);}
+function warn(text){if(!text){$('#controlFeedback').textContent='';$('#localWarning').classList.remove('show');return;}$('#controlFeedback').textContent=text;$('#localWarning').textContent=text;$('#localWarning').classList.add('show');warningUntil=performance.now()+4400;status(text);}
+function saveSession(){localStorage.setItem(storeKey,JSON.stringify({order:order?.id||null,state:s,targetWater,targetPowder}));}
+function save(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>{try{saveSession();}catch{}},180);}
+function continueRecipe(){
+ if(!recipeFlow)return;
+ try{
+  let previous=null;try{previous=JSON.parse(localStorage.getItem(RECIPE_STORE));}catch{}
+  const next=recipeFromWorkshop(s,{session:flowSession,orderId:order?.id||null,ticket:ticketNumber,previous,preserve:params.get('intent')==='refill'});
+  saveSession();localStorage.setItem(RECIPE_STORE,JSON.stringify(recipeSnapshot(next)));persistCup();
+  const url=mixingUrl();if(next.orderId)url.searchParams.set('order',next.orderId);else url.searchParams.delete('order');url.searchParams.set('ticket',next.ticket);url.searchParams.set('collected',flowSession);location.assign(url.href);
+ }catch(error){warn(error.message||'暂时没能保存这锅。咖啡液已保留，可以再试一次。');}
+}
 const busy=()=>!ready||!!animation||queue.length>0;
 const preparationMoving=()=>!!autoFill;
 function stopInput(){flow='';tilt=0;drag=null;}
 function switchMode(next){if(busy())return;view='';contextOpen=false;delete $('#workshop').dataset.view;mode=next;inspectedPart=next==='water'?'lower':next==='powder'?'basket':'upper';tool=next==='powder'?'powder':next==='heat'?'heat':next==='pour'?'coffee':next==='blend'?'milk':'water';scene.focus(next);renderUI();save();}
 function range(id,label,value,min,max,step,ends){return `<label class="quantity-label" for="${id}">${label}<output id="${id}Value">${Math.round(value)} ${id==='heatAmount'?'档':'g'}</output></label><input id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${value}"><div class="range-ends"><span>${ends[0]}</span><span>${ends[1]}</span></div>`;}
-const components={lower:['下壶与安全阀','下壶盛水，受热后的压力差推动水上升。水位不能超过安全阀下缘，给气体留出空间。'],basket:['粉篮与粉层','咖啡粉装满粉篮，轻轻铺平，不压实。水从漏斗细管进入粉层，再经滤网向上。'],filter:['滤网与密封圈','两者正常附在上壶底部。滤网拦住颗粒，密封圈让接缝贴合；合壶前清理壶缘残粉。'],gasket:['密封圈','接缝贴合才能正常工作。合壶前扫净残粉，受热后不能拆开上下壶。'],upper:['上壶与导管','穿过粉层的咖啡液沿中央导管流出，在上壶收集。左侧水路在出液时会移动，水位会下降。'],lid:['壶盖与盖钮','壶盖遮挡飞溅，它不是下壶的承压密封件。制作中保持壶盖关闭；出液结束后搅匀再倒杯。移壶握手柄，金属仍然很烫。']};
+const components={lower:['下壶与安全阀','下壶盛水，受热后的压力差推动水上升。水位不能超过安全阀下缘，给气体留出空间。'],basket:['粉篮与粉层','咖啡粉装满粉篮，轻轻铺平，不压实。水从漏斗细管进入粉层，再经滤网向上。'],filter:['滤网与密封圈','两者正常附在上壶底部。滤网拦住颗粒，密封圈让接缝贴合；合壶前清理壶缘残粉。'],gasket:['密封圈','接缝贴合才能正常工作。合壶前扫净残粉，受热后不能拆开上下壶。'],upper:['上壶与导管','穿过粉层的咖啡液沿中央导管流出，在上壶收集。实时水路在出液时会移动，水位会下降。'],lid:['壶盖与盖钮','壶盖遮挡飞溅，它不是下壶的承压密封件。制作中保持壶盖关闭；出液结束后搅匀再倒杯。移壶握手柄，金属仍然很烫。']};
 function grainPreview(coarse){let dots='';for(let i=0;i<34;i++){const x=6+(i*31%78),y=5+(i*19%27),r=coarse?1.8+(i%3)*.35:.8+(i%3)*.2;dots+=`<ellipse cx="${x}" cy="${y}" rx="${r}" ry="${r*.72}" transform="rotate(${i*47} ${x} ${y})"/>`;}return `<svg viewBox="0 0 90 38" aria-hidden="true">${dots}</svg>`;}
 function renderUI(){
  const copies={water:['水，<br>留点空间。','加入冷水，水面不要超过安全阀下缘。','ACQUA'],powder:['装满，<br>不压实。','看颗粒、装满粉篮，器具会自动合壶。','CAFFÈ'],heat:['水，<br>开始向上。','调节火力，在剖面里看见出液的路径。','MOKA'],pour:['关火，<br>再出杯。','关火、移壶和倾倒会连贯演示。','CAFFÈ'],blend:['这一杯，<br>由你调。','调整配方，看原液如何变成你的作品。','LATTE']};
- const c=view==='structure'?['拆开，<br>看看它。','点选部件，看看它在整把壶中承担什么作用。','MOKA']:copies[mode];
+ if(recipeFlow)copies.blend=['咖啡液，<br>准备好了。','带着这一锅去加料、搅拌，也可以分成两杯。','CAFFÈ'];
+ copies.heat=['小火，<br>慢慢来。','观察出液，调节火力，决定何时收杯。','MOKA'];
+ const c=view==='structure'?['拆开，<br>看看它。','零件沿装配轴展开，点选了解作用。','MOKA']:view==='section'?['水，<br>为什么向上？','看液态水穿过粉层，在上壶收集。','ACQUA']:view==='cleanup'?['用完，<br>好好收尾。','充分冷却后再拆洗，让下一杯也顺利。','MOKA']:copies[mode];
  $('#workshop').dataset.scene=mode;$('#sceneTitle').innerHTML=c[0];$('#sceneHint').textContent=c[1];$('#latin').textContent=mode==='blend'&&s.cup.milk===0?'CAFFÈ':c[2];$('#microHint').textContent=view?'收起后继续，配方与受热状态保留。':'剖面与模型同步 · 点选部位即可了解';
  const preparing=!s.started,ids=preparing?['water','powder']:s.poured>0?['blend',...(coffeeLeft(s)>=1?['pour']:[])]:['heat'];
  $('#workshop').dataset.preparing=String(preparing);$('#controls').dataset.mode=mode;
- if(preparing){$('#prepareControlsHost').append($('#controls'));$('#sectionHeading').prepend($('#tools'));}else{$('#controlsDock').append($('#controls'));$('#controls').prepend($('#tools'));}
+ $('#controlsDock').append($('#controls'));$('#controls').prepend($('#tools'));
  $('#sectionHeadingLabel').hidden=preparing;
  $('#tools').innerHTML=ids.map(id=>`<button data-mode="${id}" class="${mode===id?'active':''}" ${busy()||view?'disabled':''}>${{water:'水位',powder:'装粉',heat:'火候',pour:'咖啡余量',blend:'调饮'}[id]}</button>`).join('');
  let html='';
- if(mode==='water')html='<div class="water-choice"><output id="waterAmountValue" aria-label="当前下壶的水量">'+Math.round(s.water)+' g</output><button data-measure="water" data-value="120">加到建议水位 ↗</button></div>';
+ if(mode==='water')html=range('waterAmount','下壶水量',s.water,0,SPEC.tankMax,1,['空壶','158 g · 可探索超量'])+'<div class="measure-presets"><button data-measure="water" data-value="120">演示安全水位 · 120 g ↗</button></div>';
  if(mode==='powder')html=range('powderAmount','粉篮中的咖啡粉',s.powder,0,SPEC.powder,1,['少量','装满 · 18 g'])+'<div class="measure-presets"><button data-measure="powder" data-value="18">演示装满粉篮 · 18 g ↗</button></div><div class="grind-choices" aria-label="研磨颗粒示意">'+[0,1].map(n=>`<button data-grind="${n}" aria-pressed="${s.grind===n}">${grainPreview(n===0)}<span>${n===0?'偏粗':'中等'}<small>颗粒示意</small></span></button>`).join('')+'</div>';
- if(mode==='heat')html=range('heatAmount','炉火',s.heat,0,3,.1,['关闭','大火'])+'<div class="brew-states"><span data-brew-state="warm">受热</span><span data-brew-state="flow">出液</span><span data-brew-state="tail">收杯</span></div><div class="brew-progress"><i id="brewProgress"></i></div><p class="heat-note" id="heatNote"></p><button class="stop-heat" data-stop-heat>关火，看看余热 ↗</button><p id="batchComparison" class="batch-comparison"></p>';
+ if(mode==='heat')html='<div class="heat-papers" aria-label="选择炉火"><button data-fire=".8" aria-pressed="false">♨ 微火</button><button data-fire="1.6" aria-pressed="false">♨ 小火</button><button data-fire="0" aria-pressed="false">关火观察</button></div><div class="brew-states"><span data-brew-state="warm">受热</span><span data-brew-state="flow">出液</span><span data-brew-state="tail">收杯</span></div><div class="brew-progress"><i id="brewProgress"></i></div><p class="heat-note" id="heatNote"></p><p id="batchComparison" class="batch-comparison"></p>';
  if(mode==='pour')html='<p class="pour-summary">壶中还有 <strong id="remainingCoffee">'+Math.round(coffeeLeft(s))+' g</strong><br>已关火。移壶握手柄，充分冷却后再拆洗。</p>';
- if(mode==='blend')html=range('milkAmount','牛奶',s.cup.milk,0,250,5,['0 g','250 g'])+range('cupWaterAmount','水',s.cup.water,0,250,5,['0 g','250 g'])+'<div class="ice-row"><span>冰块</span>'+[0,30,60].map(n=>`<button data-ice="${n}" aria-pressed="${s.cup.ice===n}">${n?n+' g':'不加'}</button>`).join('')+'</div>';
+ if(mode==='blend')html=recipeFlow?'<p class="pour-summary">已收集 <strong>'+s.poured.toFixed(1)+' g</strong> 摩卡咖啡液<br>来单、火候与出液记录一起带到调配桌。</p>':range('milkAmount','牛奶',s.cup.milk,0,250,1,['0 g','250 g'])+range('cupWaterAmount','水',s.cup.water,0,250,1,['0 g','250 g'])+'<div class="ice-row"><span>冰块</span>'+[0,30,60].map(n=>`<button data-ice="${n}" aria-pressed="${s.cup.ice===n}">${n?n+' g':'不加'}</button>`).join('')+'</div>';
  $('#controlBody').innerHTML=html;
- if($('#waterAmount')){$('#waterAmount').tabIndex=-1;$('#waterAmount').setAttribute('aria-hidden','true');}
  if($('#heatAmount'))$('#heatAmount').disabled=s.progress>=1;
  $('#primaryAction').textContent=mode==='water'?'装粉 →':mode==='powder'?'合壶，开始冲煮 →':mode==='pour'&&coffeeLeft(s)<1&&s.progress<1&&s.poured===0?'移回炉头，继续加热 →':mode==='heat'||mode==='pour'?(s.poured>0?'倒出剩余咖啡 →':'关火，倒入杯中 →'):'这杯完成了 →';
+ if(mode==='heat')$('#primaryAction').textContent='关火收杯 →';
+ if(recipeFlow&&mode==='blend')$('#primaryAction').textContent='开始加料 →';
  $('#primaryAction').disabled=busy()||!!view||(['heat','pour'].includes(mode)&&coffeeLeft(s)<1&&!(mode==='pour'&&s.progress<1&&s.poured===0));
  $('#controls').inert=busy()||!!view;$('#controls').classList.toggle('busy',busy());
  $('#controlFeedback').textContent='';$('#contextToggle').textContent=view?'收起结构，继续制作 ↙':contextOpen?'收起说明 ↙':'这一处，为什么？ ↗';
- $('#structureToggle').textContent=view?'收起结构 ↙':'展开结构 ↗';$('#structureToggle').setAttribute('aria-pressed',String(!!view));
- $('#recipe').hidden=mode!=='blend'||!!view;$('#finishCup').hidden=true;$('#newBatch').hidden=!!view||s.poured<1;renderContext();updateNumbers();
+ $('#structureToggle').textContent=view?'收起，继续制作 ↙':'看看里面 ↗';$('#structureToggle').setAttribute('aria-pressed',String(!!view));
+ $('#structureToggle').disabled=busy();$('#cleanupHelp').disabled=busy();
+ $('#insideViews').hidden=!['section','structure'].includes(view);for(const b of document.querySelectorAll('[data-inside-view]'))b.setAttribute('aria-pressed',String(view===b.dataset.insideView));
+ $('#recipe').hidden=recipeFlow||mode!=='blend'||!!view;$('#finishCup').hidden=true;$('#newBatch').hidden=recipeFlow||!!view||s.poured<1;$('#cleanupHelp').hidden=!!view||s.poured<1;renderContext();updateNumbers();
 }
 function renderContext(){
- $('#workshop').dataset.reading=String(contextOpen);$('#contextBody').hidden=!contextOpen;$('#contextToggle').setAttribute('aria-expanded',String(contextOpen));if(!contextOpen)return;
- const blending=mode==='blend'&&view!=='structure',part=blending?['杯中的咖啡','原液已经萃取完成。加水会稀释，加奶会改变配方与颜色；不会从粉层再萃取出更多咖啡。']:components[inspectedPart],copy=view==='structure'||inspectedPart?`<h3>${part[0]}</h3><p>${part[1]}</p>`:'';
+ $('#workshop').dataset.reading=String(contextOpen);$('#contextBody').hidden=!contextOpen;$('#contextToggle').setAttribute('aria-expanded',String(contextOpen));$('#controls').inert=busy()||!!view||contextOpen;if(!contextOpen)return;
+ if(view==='cleanup'){$('#contextBody').innerHTML='<h3>一把冷壶的收尾</h3><p class="reading-pause">这是充分冷却后的清理示范，当前这杯的配方与受热状态保留。</p><ol class="cleanup-sequence"><li><strong>01 · 先等它充分冷却</strong><span>热壶不要拧开。握手柄移到合适的耐热表面。</span></li><li><strong>02 · 拆开、弃粉、手洗</strong><span>这把铝制壶按说明用清水手洗；不要用洗碗机，也不要敲打粉篮。</span></li><li><strong>03 · 晾干，拆开放置</strong><span>检查滤网、密封圈与安全阀，干透后收好各部件。</span></li></ol><p class="small">不同材质和型号的清洁方法可能不同。</p><a href="https://www.bialetti.com/media/manual/caffettiere/MOKA_EXPRESS-manual.pdf" target="_blank" rel="noopener">查看对应器具说明 ↗</a>';return;}
+ const blending=mode==='blend'&&!view,part=blending?['杯中的咖啡','原液已经萃取完成。加水会稀释，加奶会改变配方与颜色；不会从粉层再萃取出更多咖啡。']:components[inspectedPart],copy=view||inspectedPart?`<h3>${part[0]}</h3><p>${part[1]}</p>`:'';
  $('#contextBody').innerHTML=copy+(blending?'<p>加奶改变配方与示意颜色，不会再次萃取咖啡粉。摩卡原液与意式浓缩采用不同器具；未制作奶泡，就不会自动出现拉花。</p>':'')+(blending?'<p>这把铝制壶冷却后再拆开，弃粉渣，用清水手洗并晾干各部件，拆开放置。清洁方式按对应器具说明。</p>':'')+'<p class="reading-pause">阅读中 · 虚拟制作暂停，收起继续。</p><p>实物按器具说明操作。火焰留在壶底，安全阀不要朝向人；移壶握手柄，充分冷却后才能拆洗。</p><p class="small">内腔、容量和流量为教学示意，加热时间已压缩。</p><a href="https://www.bialetti.com/media/manual/caffettiere/MOKA_EXPRESS-manual.pdf" target="_blank" rel="noopener">查看器具使用说明 ↗</a>';
 }
 function inspect(part){if(!components[part])return;inspectedPart=part;contextOpen=true;$('#cutaway').dataset.selected=part;$('#contextToggle').textContent='收起说明 ↙';renderContext();status('正在了解：'+components[part][0]);}
-function closeContext(){view='';contextOpen=false;delete $('#workshop').dataset.view;delete $('#cutaway').dataset.selected;scene.focus(mode);renderUI();}
-function toggleStructure(){if(busy())return;if(view){closeContext();return;}view='structure';contextOpen=true;$('#workshop').dataset.view=view;scene.focus('structure');renderUI();}
+function closeContext(){if(recipeFlow&&params.get('inspect')==='structure'&&params.get('intent')==='refill'){location.assign(mixingUrl().href);return;}view='';contextOpen=false;delete $('#workshop').dataset.view;delete $('#cutaway').dataset.selected;scene.focus(mode);renderUI();}
+function toggleStructure(){if(busy())return;if(view){closeContext();return;}view='section';contextOpen=true;inspectedPart='lower';$('#workshop').dataset.view=view;scene.focus(view);renderUI();}
 function updateNumbers(){
+ const fact=$('#ticketFacts');fact.innerHTML=s.started?`<dt>${s.poured>0?'成杯':'出液'}</dt><dd>${Math.round(s.poured>0?totalCup(s):s.brewed)} g</dd><dt>状态</dt><dd>${mode==='blend'?'调配中':contextOpen||view?'阅读暂停':s.heat===0?s.lastFlow>.08?'余热出液':'已关火':s.brewed>.5?'正在出液':'正在受热'}</dd>`:`<dt>水</dt><dd>${Math.round(s.water)} g</dd><dt>咖啡粉</dt><dd>${Math.round(s.powder)} g</dd>`;
+ for(const button of document.querySelectorAll('[data-fire]')){const n=Number(button.dataset.fire);button.setAttribute('aria-pressed',String(n===0?s.heat===0:n<1?s.heat>0&&s.heat<1:s.heat>=1));button.disabled=busy()||s.progress>=1;}
+ for(const button of document.querySelectorAll('.part-choices [data-inspect]'))button.setAttribute('aria-pressed',String(inspectedPart===button.dataset.inspect));
  const vals={waterAmount:s.water,powderAmount:s.powder,heatAmount:s.heat,milkAmount:s.cup.milk,cupWaterAmount:s.cup.water};
  for(const [id,n] of Object.entries(vals)){const out=$('#'+id+'Value');if(out)out.textContent=id==='heatAmount'?(n===0?'关闭':n<1?'微火':n<=2?'小火':'大火'):Math.round(n)+' g';}
  const read=view?components[inspectedPart][0]:mode==='heat'?`${s.progress>=1?'出液结束':s.lastFlow>.08?(s.heat>0?'正在出液':'余热出液'):s.heat>0?'正在受热':'已关火'} · ${Math.round(s.brewed)} g`:mode==='blend'?`摩卡原液 ${Math.round(s.poured)} g · 成杯 ${Math.round(totalCup(s))} g`:mode==='pour'?`壶中余量 ${Math.round(coffeeLeft(s))} g`:mode==='water'?`水位 ${Math.round(s.water)} g`:`粉量 ${Math.round(s.powder)} g`;
@@ -74,7 +103,7 @@ function updateNumbers(){
  if($('#remainingCoffee'))$('#remainingCoffee').textContent=Math.round(coffeeLeft(s))+' g';
  if(['heat','pour'].includes(mode))$('#primaryAction').disabled=busy()||!!view||coffeeLeft(s)<1&&!(mode==='pour'&&s.progress<1&&s.poured===0);
  const over=targetWater>SPEC.waterMax;
- $('#sectionNote').textContent=over?'水位超过安全阀下缘，向下调低水位线。':mode==='water'?(autoFill?(autoFill.target<s.water?'正在倒出多余的水，保留其他准备。':'正在加入清水，水面与用量同步变化。'):'拖动圆点调水位，留出上方的空气空间。'):mode==='powder'?(autoFill?'咖啡粉正在落入粉篮，装满后铺平。':'颗粒放大示意。装满、铺平，不压实。'):mode==='heat'?s.brewed>0?'水穿过粉层，咖啡液从中央导管流出。':'下壶受热，水面上方的气体压力开始变化。':mode==='blend'?'咖啡基底已完成，配方仍可自由调整。':'关火不会让金属立刻冷却。';
+ $('#sectionNote').textContent=view==='section'?'蓝色为液态水，棕色为经过粉层的咖啡液；路径为原理示意。':view==='structure'?'沿装配轴认识部件。实物需充分冷却后才能拆开。':over?'水位超过安全阀下缘，向下调低水位线。':mode==='water'?(autoFill?(autoFill.target<s.water?'正在倒出多余的水，保留其他准备。':'正在加入清水，水面与用量同步变化。'):'拖动圆点调水位，留出上方的空气空间。'):mode==='powder'?(autoFill?'咖啡粉正在落入粉篮，装满后铺平。':'颗粒放大示意。装满、铺平，不压实。'):mode==='heat'?s.brewed>0?'水穿过粉层，咖啡液从中央导管流出。':'下壶受热，水面上方的气体压力开始变化。':mode==='blend'?'咖啡基底已完成，配方仍可自由调整。':'关火不会让金属立刻冷却。';
  $('#sectionNote').classList.toggle('alert',over||isHot(s));
  if(mode==='blend'){const cup=cupSnapshot(s),check=checkOrder(cup,order);const facts=checkOrder(cup,order),needed=order?Math.max(0,order.range[0]-totalCup(s)):0,tip=order&&needed>0?(order.milk==='more'?'加奶可同时改变份量与配方。':'还差约 '+Math.ceil(needed)+' g 达到来单份量；出杯后加水可做成长杯。'):order&&facts.met?'来单配方已满足，可以保留这杯或继续发挥。':'改变添加比例，看看液面和示意颜色怎样变化。';$('#recipe').innerHTML=`<strong>这一杯的配方</strong><p>摩卡原液 ${Math.round(s.poured)} g · 牛奶 ${Math.round(s.cup.milk)} g · 水 ${Math.round(s.cup.water)} g${s.cup.ice?' · 冰 '+Math.round(s.cup.ice)+' g':''}</p><p class="match">${order?(check.met?'符合来单 ✓':'来单反馈：'+check.checks.filter(x=>!x.met).map(x=>x.label).join(' · ')):'自由作品 · 用配方给这一杯签名'}</p><p class="recipe-tip">${tip}</p>`;}
  if(!s.started){$('#primaryAction').disabled=busy()||!!view||preparationMoving();for(const b of $('#tools').querySelectorAll('button'))b.disabled=busy()||!!view||preparationMoving();}
@@ -95,23 +124,27 @@ function brew(){
   {duration:.55,begin(){tool='brush';status('扫净壶缘，让密封圈正常贴合。');},frame(t){drag={kind:'brush',dx:Math.sin(t*Math.PI*2)*.42};},end(){brushRim(s,200);drag=null;}},
   {duration:.9,begin(){tool='upper';scene.focus('close');status('上下壶自动旋合，手柄不用于拧紧。');},frame(t){s.open=1-t;},end(){s.open=0;if(!s.events.includes('assembled'))s.events.push('assembled');}},
   {duration:1,begin(){tool='handle';scene.focus('transport');status('握手柄移到炉头，放稳再开火。');},frame(t){drag={kind:'transport',dx:1.8*t};},end(){drag=null;placePot(s,true);setHeat(s,1.6);mode='heat';tool='heat';scene.focus('heat');inspectedPart='upper';}}
- ],()=>{status('小火开始冲煮。左侧剖面同步显示水位、粉层和出液路径。');});
+ ],()=>{status('小火开始冲煮。实时剖面同步显示水位、粉层和出液路径。');});
 }
 function serve(){
  if(busy()||coffeeLeft(s)<1)return;
  if(totalCup(s)>=SPEC.cupMax){warn('杯子已满。回到调饮，减少添加材料后再加咖啡。');return;}
  setHeat(s,0);if(s.stopProgress===null)s.stopProgress=s.progress;const from=s.onStove?1.8:0,amount=Math.min(coffeeLeft(s),SPEC.cupMax-totalCup(s));
+ mode='pour';
  startSequence([
   {duration:.85,begin(){tool='handle';scene.focus('transport');status(isHot(s)?'先关火，再握住手柄移开。金属仍然很烫。':'先关火，再用手柄将壶移到隔热垫。');},frame(t){drag={kind:'transport',dx:-from*t};},end(){placePot(s,false);drag=null;mode='pour';tool='coffee';scene.focus('pour');}},
   {duration:1.15,begin(){tool='stir';status('出液结束后先轻轻搅匀，再倒入杯中。实物握盖钮，避开热金属。');},frame(t){drag={kind:'stir',dx:Math.sin(t*Math.PI*4)*.14,dz:Math.cos(t*Math.PI*4)*.14};},end(){s.stirred=true;drag=null;tool='coffee';}},
   {duration:.85,frame(t){tilt=t*.70;}},
   {duration:Math.max(1,amount/45),frame(t,dt){tilt=.70;flow='coffee';pourCoffee(s,45,dt);},end(){/* Final fractional frame transfers only the remaining liquid. */pourCoffee(s,amount,1);flow='';}},
   {duration:.7,frame(t){tilt=(1-t)*.70;},end(){tilt=0;flow='';mode='blend';tool='milk';scene.focus('blend');inspectedPart='upper';}}
- ],()=>{status('咖啡已经入杯。调整牛奶、水和冰块，配方与颜色会一起变化。');});
+ ],()=>{if(recipeFlow){continueRecipe();return;}status('咖啡已经入杯。调整牛奶、水和冰块，配方与颜色会一起变化。');});
 }
 function resumeHeating(){if(busy())return;const issue=preparationIssue(s);if(issue){warn(issue);return;}scene.focus('transport');tool='handle';startSequence([{duration:.85,frame(t){drag={kind:'transport',dx:1.8*t};},end(){drag=null;placePot(s,true);warn(setHeat(s,1.6));mode='heat';tool='heat';scene.focus('heat');}}],()=>{status('器具已放稳，继续加热。金属很烫，移壶用手柄。');});}
-$('#primaryAction').addEventListener('click',()=>{if(mode==='water')switchMode('powder');else if(mode==='powder')brew();else if(mode==='pour'&&coffeeLeft(s)<1&&s.progress<1&&s.poured===0)resumeHeating();else if(['heat','pour'].includes(mode))serve();else openPoster();});
+$('#primaryAction').addEventListener('click',()=>{if(mode==='water')switchMode('powder');else if(mode==='powder')brew();else if(mode==='pour'&&coffeeLeft(s)<1&&s.progress<1&&s.poured===0)resumeHeating();else if(['heat','pour'].includes(mode))serve();else if(recipeFlow)continueRecipe();else openPoster();});
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;
+ if(b.dataset.insideView&&view){view=b.dataset.insideView;$('#workshop').dataset.view=view;scene.focus(view);renderUI();return;}
+ if(b.dataset.inspect&&!busy()){inspect(b.dataset.inspect);return;}
+ if(b.dataset.fire!==undefined){warn(setHeat(s,Number(b.dataset.fire)));status(Number(b.dataset.fire)===0?'已关火，观察余热出液；随时可以收杯。':'火力已经调整，水路与出液继续同步。');updateNumbers();save();return;}
  if(b.hasAttribute('data-stop-heat')){setHeat(s,0);status('你关掉了炉火。观察剖面里的余热出液，决定何时移壶收杯。');updateNumbers();save();return;}
  if(b.dataset.mode){if(!preparationMoving())switchMode(b.dataset.mode);return;}
  if(b.dataset.measure){fill(b.dataset.measure,Number(b.dataset.value));const input=$('#'+(b.dataset.measure==='water'?'waterAmount':'powderAmount'));if(input)input.value=b.dataset.value;updateNumbers();return;}
@@ -128,6 +161,7 @@ $('#controlBody').addEventListener('input',e=>{const n=Number(e.target.value),id
 });
 let blendFlowUntil=0;
 $('#structureToggle').addEventListener('click',toggleStructure);
+$('#cleanupHelp').addEventListener('click',()=>{if(busy())return;view='cleanup';contextOpen=true;$('#workshop').dataset.view=view;scene.focus(view);renderUI();});
 $('#contextToggle').addEventListener('click',()=>{if(view)closeContext();else{contextOpen=!contextOpen;renderContext();$('#contextToggle').textContent=contextOpen?'收起说明 ↙':'这一处，为什么？ ↗';}});
 $('#cutaway').addEventListener('click',e=>{const part=e.target.closest('[data-component]');if(part)inspect(part.dataset.component);});
 $('#cutaway').addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)){const part=e.target.closest('[data-component]');if(part){e.preventDefault();inspect(part.dataset.component);}}});
@@ -141,10 +175,10 @@ canvas.addEventListener('pointermove',e=>{canvas.style.cursor=!busy()&&scene.pic
 $('#newBatch').addEventListener('click',()=>{if(busy())return;previousCup=persistCup();const batch=s.batch+1;s=freshWorkshop();s.batch=batch;targetWater=targetPowder=0;autoFill=null;mode='water';tool='water';view='';contextOpen=false;delete $('#workshop').dataset.view;scene.focus('water');openPot();status('上一杯已留在工作室。换一把冷壶和新原料。');});
 $('#fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await $('#workshop').requestFullscreen();}catch{warn('可以展开浏览器面板继续体验。');}});
 document.addEventListener('fullscreenchange',()=>{$('#fullscreen').setAttribute('aria-label',document.fullscreenElement?'退出全屏':'全屏工作台');$('#workshop').dataset.fullscreen=String(!!document.fullscreenElement);});
-function openPot(){const from=s.open;startSequence([{duration:1.2,frame(t){s.open=from+(1-from)*t;},end(){s.open=1;if(!s.events.includes('opened'))s.events.push('opened');}}],()=>{if(Math.abs(targetWater-s.water)>.05)fill('water',targetWater);else if(Math.abs(targetPowder-s.powder)>.05)fill('powder',targetPowder);status('拖动左侧剖面的水位线，观察模型中的水面。');});}
-scene.ready.then(()=>{ready=true;$('#stage').classList.remove('model-loading');$('#stage').setAttribute('aria-busy','false');if(!s.started)openPot();else{renderUI();status(mode==='blend'?'继续这一杯，配方已保留。':s.progress>=1?'出液已完成，炉火已关闭。':s.onStove?'炉火已关闭，调节火力继续这锅。':'这一锅已保留，可以继续加热或出杯。');}}).catch(error=>{console.error(error);$('#stage').classList.remove('model-loading');status('模型未加载，请刷新重试。');});
+function openPot(){const from=s.open;startSequence([{duration:1.2,frame(t){s.open=from+(1-from)*t;},end(){s.open=1;if(!s.events.includes('opened'))s.events.push('opened');}}],()=>{if(Math.abs(targetWater-s.water)>.05)fill('water',targetWater);else if(Math.abs(targetPowder-s.powder)>.05)fill('powder',targetPowder);status('拖动实时剖面的水位线，观察实时水位变化。');});}
+scene.ready.then(()=>{ready=true;$('#stage').classList.remove('model-loading');$('#stage').setAttribute('aria-busy','false');if(recipeFlow&&params.get('inspect')==='structure'){if(!s.started)s.open=1;view='structure';contextOpen=true;scene.focus(view);$('#workshop').dataset.view=view;renderUI();status('这把摩卡壶的结构。收起后回到原来的配方。');}else if(!s.started)openPot();else{renderUI();status(mode==='blend'?'咖啡液已收集，可以继续加料。':s.progress>=1?'出液已完成，炉火已关闭。':s.onStove?'炉火已关闭，调节火力继续这锅。':'这一锅已保留，可以继续加热或出杯。');}}).catch(error=>{console.error(error);$('#stage').classList.remove('model-loading');status('模型未加载，请刷新重试。');});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){stopInput();save();}});
-window.addEventListener('pagehide',()=>{clearTimeout(saveTimer);s.heat=0;try{localStorage.setItem('moka-hands-on-v2',JSON.stringify({order:order?.id||null,state:s,targetWater,targetPowder}));}catch{}});
+window.addEventListener('pagehide',()=>{clearTimeout(saveTimer);s.heat=0;try{saveSession();}catch{}});
 function frame(now){
  const dt=Math.min(.08,(now-(lastTime||now))/1000);lastTime=now;
  const paused=document.hidden||contextOpen||!!view||$('#posterDialog').open;
@@ -158,13 +192,14 @@ function frame(now){
   if(s.progress>=1&&s.heat>0){setHeat(s,0);renderUI();status('出液结束，炉火已关闭。壶身仍热，请用手柄出杯。');save();}
  }
  displayTilt+=((paused?0:tilt)-displayTilt)*(1-Math.exp(-dt*12));
- scene.update(s,{tool,view,tilt:displayTilt,drag:paused?null:drag,flow:paused||displayTilt<.12?'':flow,time:now/1000,dt});section.animate(mode,view,dt);
+ scene.update(s,{tool,view,selected:contextOpen?inspectedPart:'',tilt:displayTilt,drag:paused?null:drag,flow:paused||displayTilt<.12?'':flow,time:now/1000,dt});section.animate(mode,view,dt);
  if(now-lastUI>90){lastUI=now;updateNumbers();}if(s.started&&now-lastPersist>2000){lastPersist=now;save();}
  if(now>warningUntil)$('#localWarning').classList.remove('show');
  if(audio)audio.gain.gain.setTargetAtTime(sound&&!paused&&(flow||s.heat>0)?(flow?.13:.05):0,audio.ctx.currentTime,.08);
  requestAnimationFrame(frame);
 }
 renderUI();requestAnimationFrame(frame);
+Object.defineProperty(window,'mokaWorkshopSnapshot',{get:()=>({state:structuredClone(s),mode,view,busy:busy(),moving:preparationMoving()})});
 
 function persistCup(){s.cupId??=Date.now();const cup=cupSnapshot(s,s.cupId);if(cup.baseMass<1)return;try{const store=JSON.parse(localStorage.getItem('coffee-studio-v1')||'{"cups":[]}');store.cups||=[];const index=store.cups.findIndex(c=>c.id===cup.id);if(index>=0)store.cups[index]=cup;else store.cups.push(cup);store.cups=store.cups.slice(-10);store.nextId=Math.max(...store.cups.map(c=>Number(c.id)||0))+1;localStorage.setItem('coffee-studio-v1',JSON.stringify(store));}catch{}return cup;}
 function reportHighlights(report,cup){const observations=report.observations;return [...new Set([observations.find(x=>x.includes('收杯')),cup.water>0?observations.find(x=>x.startsWith('出杯后')):null,cup.milk>0?observations.find(x=>x.startsWith('加入')&&x.includes('牛奶')):null,cup.ice>0?observations.find(x=>x.includes('冰块')):null,...observations].filter(Boolean))].slice(0,4);}

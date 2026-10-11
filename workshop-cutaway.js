@@ -12,16 +12,23 @@ export function createCutaway(svg){
   <marker id="waterArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 8 5 0 10" fill="none" stroke="#547c84" stroke-width="2"/></marker>
  </defs>
  <g id="sectionOverview"><path class="section-shell section-lower" d="M71 237H207L191 158H87Z"/><path class="section-shell section-upper" d="M75 45H203L184 125H94Z"/>
+ <path d="M93 162H185L201 232H77Z" fill="#f0eadc" stroke="#a3aaa0" stroke-width="1"/>
+ <path d="M82 49H196L180 121H98Z" fill="#f3eddc" stroke="#a3aaa0" stroke-width="1"/>
  <path class="section-lid" d="M68 44 140 27 210 44M139 27V18"/>
  <path class="section-handle" d="M202 55H230L250 75 235 117H215"/>
+ <path class="section-collar" d="M94 125H184V158H191L184 125H94L87 158H94Z" fill="url(#detailSilver)" stroke="#888f89" stroke-width="1"/>
+ <path d="M94 156H184" stroke="#30271f" stroke-width="3"/>
  <g clip-path="url(#tankClip)"><rect id="sectionWater" x="68" y="237" width="143" height="0" fill="#99b8be" opacity=".85"/></g>
  <g clip-path="url(#upperClip)"><rect id="sectionCoffee" x="75" y="124" width="130" height="0" fill="#683c25"/></g>
  <path class="section-basket" d="M98 135H182V153L145 174V218H134V174L98 153Z"/>
  <rect id="sectionGrounds" x="100" y="153" width="80" height="0" fill="#553724"/>
  <rect id="sectionGrain" x="100" y="153" width="80" height="0" fill="url(#powderHatch)"/>
  <path class="section-tube" d="M133 125V64H146V125M98 130H181"/>
- <path id="sectionFlow" class="section-flow" d="M139 205V154M139 126V69M145 69Q162 64 165 86" marker-end="url(#waterArrow)"/>
+ <rect x="134" y="65" width="11" height="59" fill="#e9e8dc"/>
+ <path id="sectionFlow" class="section-flow" d="M139 205V154" marker-end="url(#waterArrow)"/>
+ <path class="section-flow coffee-flow" d="M139 135V69M145 69Q162 64 165 86"/>
  <path id="valveLine" class="valve-line" d="M68 177H227"/><circle id="valveDot" cx="194" cy="177" r="4"/>
+ <text class="section-air" x="51" y="164">空气与<tspan x="51" dy="9">水蒸气</tspan></text><path d="M76 165H99" class="section-leader"/>
  <g class="section-upper-label"><path class="section-leader" d="M167 89H252"/><text class="section-label" x="258" y="93">出液</text></g>
  <g class="section-powder-label"><path class="section-leader" d="M181 143H252"/><text class="section-label" x="258" y="147">粉层</text></g>
  <g class="section-valve-label"><path class="section-leader" d="M200 178H245"/><text class="section-label" x="250" y="182">安全阀</text></g>
@@ -60,7 +67,7 @@ export function createCutaway(svg){
   const mixing=mode==='blend'&&!view,blend=svg.querySelector('#blendSection');blend.style.display=mixing?'':'none';blend.setAttribute('aria-hidden',String(!mixing));svg.querySelector('#sectionOverview').setAttribute('aria-hidden',String(mixing||(!view&&['water','powder'].includes(mode))));
   if(mixing){svg.querySelector('#sectionOverview').style.display='none';const amount=totalCup(s),fraction=amount?s.poured/amount:0,level=174-Math.min(amount,SPEC.cupMax)/SPEC.cupMax*113;const liquid=svg.querySelector('#blendLiquid');liquid.setAttribute('y',level);liquid.setAttribute('height',174-level);const milk=s.cup.milk/Math.max(1,amount-s.cup.ice),water=s.cup.water/Math.max(1,amount-s.cup.ice),rgb=[72,39,24].map((n,i)=>Math.round(n+([148,112,77][i]-n)*water*.75+([238,214,175][i]-n)*milk*.92));const color=`rgb(${rgb.join(',')})`;const ice=svg.querySelector('#blendIce');ice.style.display=s.cup.ice?'':'none';ice.setAttribute('transform',`translate(0 ${level-72})`);liquid.setAttribute('fill',color);const surface=svg.querySelector('#blendSurface');surface.setAttribute('cy',level);surface.setAttribute('rx',40+(174-level)*.07);surface.setAttribute('fill',color);svg.querySelector('#blendFraction').setAttribute('width',135*fraction);svg.querySelector('#blendAddedFraction').setAttribute('x',85+135*fraction);svg.querySelector('#blendAddedFraction').setAttribute('width',135*(1-fraction));svg.querySelector('#blendFractionLabel').textContent='咖啡基底 '+Math.round(fraction*100)+'% · 配方质量比';svg.querySelector('#blendMassLabel').textContent='成杯 '+Math.round(amount)+' g'+(s.cup.ice>0?' · 含冰质量':'');}
   for(const hit of svg.querySelectorAll('#sectionOverview .section-hit'))hit.setAttribute('tabindex',view||!['water','powder'].includes(mode)?'0':'-1');
-  svg.classList.toggle('overfilled',s.water>SPEC.waterMax);svg.classList.toggle('flowing',s.lastFlow>.08&&s.brewed>0&&s.progress<1);svg.classList.toggle('heated',isHot(s));
+  svg.classList.toggle('overfilled',s.water>SPEC.waterMax);svg.classList.toggle('flowing',view==='section'||s.lastFlow>.08&&s.brewed>0&&s.progress<1);svg.classList.toggle('heated',isHot(s));
   svg.dataset.phase=mode;
  }};
 }

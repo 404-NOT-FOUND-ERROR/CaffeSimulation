@@ -1,0 +1,315 @@
+{
+  "created": "2026-10-09",
+  "tool": "built-in image_gen.imagegen",
+  "purpose": "新版二维操作＋三维展示咖啡小馆主要页面规划与审核图。仅创建概念材料，未修改应用。",
+  "outputDirectory": "D:/502 Bad Gateway/Codex Project/Fasiontoy Workflow/moka-lab/assets/concepts/coffee-hybrid-flow-2026-10-09",
+  "flow": {
+    "main": [
+      "咖啡小馆",
+      "准备水与粉",
+      "冲煮并收取咖啡基底",
+      "调配",
+      "出品特刊"
+    ],
+    "progress": [
+      "做基底",
+      "调配",
+      "出品"
+    ],
+    "optional": [
+      "操作中随时展开结构",
+      "同桌面分成两杯",
+      "补做一锅并保留现有配方"
+    ],
+    "continuity": "接来单或自由发挥后先制作咖啡液。收取的基底进入有限库存，再按用量调配；不用额外确认页。"
+  },
+  "examples": {
+    "preparation": {
+      "waterG": 120,
+      "powderG": 18,
+      "meaning": "本演示壶的界面样例，不是通用壶规格或必然产出预测"
+    },
+    "brewShot": {
+      "collectedAtShotG": 64,
+      "finalExampleBatchG": 96,
+      "meaning": "不同时间点的教学状态示意"
+    },
+    "single": {
+      "coffeeG": 40,
+      "milkG": 160,
+      "totalG": 200,
+      "batchRemainingG": 56
+    },
+    "comparison": {
+      "scenario": "独立自由实验截图",
+      "A": {
+        "coffeeG": 40,
+        "waterG": 80,
+        "totalG": 120
+      },
+      "B": {
+        "coffeeG": 40,
+        "milkG": 120,
+        "totalG": 160
+      },
+      "batchRemainingG": 16
+    }
+  },
+  "densityRules": [
+    "每页只有一个主要操作区；二维与三维共用状态，三维不重复一套水/粉/火力控件。",
+    "当前需操作的数据常驻，长解释与额外成分信息按需展开。",
+    "操作阶段弱化巨型文案、固定宽侧栏和重复表单。",
+    "分杯与爆炸图属于展开状态，不增加一级导航。",
+    "横屏用剩余空间分配主体，主要动作固定在可视区；竖屏结构详情可展开但不横向溢出。"
+  ],
+  "motionContract": {
+    "threeD": [
+      "统一PBR材质、暖中性光照与环境反射；角色/台面可用静态烘焙背景，主体三维对象承担观察。",
+      "三维对象以已有模型为基础在Blender核对、整理六组件。起止位置与可见展开间距在几何上验证。",
+      "展开只沿公共装配轴插值；整体轻微倾斜可保留，不让下壶另行歪斜。",
+      "限制转动范围；取消自由缩放和拖拽组装；相机从固定模型边界计算，窗口调整不累乘缩放。",
+      "同一动作快速重触发时从当前状态接续，不排队叠加；没有强制手持、拧螺纹、刚体碰撞。",
+      "选择部件仅高亮＋短距离聚焦；开盖默认固定姿态，若铰链运动不能可靠验证则采用固定开盖展示。"
+    ],
+    "twoD": [
+      "水位、粉层、出液是可裁切的SVG路径/图层动画。",
+      "加料用固定落点的简化液流，松手即停止；数量守恒决定高度和配方。",
+      "搅拌使用少量可编辑曲线路径逐渐融合并淡出，约2–3秒，无飞溅物理。",
+      "冰和奶泡作为独立视觉层；配方色带明确标注示意，成品不可一键物理重新分层。"
+    ],
+    "transitions": [
+      "同一空间内采用短位移和交叉淡入；避免大幅旋转运镜。",
+      "合壶、移到炉头、收取的复杂机械动作先采用状态切换和短演示；质量不足时优先改为清晰的固定姿态转场。",
+      "结构阅读期间暂停，返回恢复同一锅与原来的配方；热壶操作提示持续。"
+    ]
+  },
+  "review": [
+    "本组为AI生成的概念图，不能作为实际交互、碰撞检查或渲染性能通过的证据。",
+    "每张最终图已人工检查布局、文字、样例质量守恒与实现边界；修正了意式浓缩误称、错误流程标签、虚构壶容量、多出的材料、过强器具主体、复杂搅拌和未搅匀的特刊成品。",
+    "模型剖面与装配仍需按实物/厂商资料核对，制作用量仅适用于演示壶设定。",
+    "三维金属参考属于材质目标，须在实际浏览器按环境贴图、粗糙度、曝光和边缘细节对照；无法自动保证与概念像素一致。",
+    "首次原型需验证完整三阶段、短横屏、重复点击、观察返回、两杯库存守恒与海报成品一致，再精修外观。",
+    "双杯图中液位已额外修正；实装仍用真实杯型容积曲线/密度近似，不能直接把示例数值写死在图中。"
+  ],
+  "commonPrompt": "Use case: ui-mockup.\nCreate ONE high-fidelity, shippable desktop screenshot concept for a Chinese interactive educational coffee workshop, 咖啡小馆. Landscape 16:9, full page, no browser/device frame, no contact sheet. The design must be realizable as HTML/CSS controls, SVG liquid diagrams, and a restrained Three.js object viewer or Blender pre-rendered objects. This is a polished working interface, not a cinematic illustration or an infographic.\nVisual identity: refined Italian 1930s–1960s commercial poster graphic language translated into a contemporary spacious interface: warm clean ivory #F6F1E6, espresso brown #302018, burnt sienna #B65A32, small navy #253F4A and olive #63705B accents. Asymmetric editorial composition, cropped diagonal flat poster graphics, geometric silhouette collage in a corner, restrained precise print texture. No sepia aging, heavily distressed paper, faux wood, grunge, Soviet/Chinese 1980s poster styling, glossy skeuomorphic controls, generic SaaS dashboard cards. Excellent breathing room, consistent 40–60px edge margin, generous gaps. Chinese operating headings compact and medium bold, NOT giant hero slogans. Italian lettering is decorative only in a background corner. No full-width navbar and no six-step footer. Small back link and unobtrusive three-stage text at top are sufficient.\nMaterials: believable octagonal aluminum moka pot, subtly cast/brushed silver facets, softly bevelled edges, smooth bright turned collar, matte black phenolic handle and lid knob, small brass safety valve. Warm-neutral studio key light from upper left, restrained fill, soft grounded shadows, not white plastic or mirror chrome. 2D illustrations share warm colors with the 3D object but are deliberately simpler, no ornamental marbling.\nAt any moment only ONE region is the main action; all physical/2D controls visually next to their affected object. No duplicated live model and diagram controls, no fake complex machinery, no floating hands or hover cursors. No overflowing bottom tray. No unnecessary multi-panel metrics, tutorials, knowledge quizzes or novice/expert entrances. All text must be concise, legible, accurately rendered Chinese. Numbers and units in grams. Values are illustrative interface states, not claims of physics precision.",
+  "screens": [
+    {
+      "key": "01-cafe-home",
+      "title": "小馆首页",
+      "density": "低",
+      "spec": "Screen: the welcoming café home, visually distinct from working pages. No top bar. Bold stylish headline 咖啡小馆 embedded at upper-left in a poster composition, small OFFICINA DEL CAFFÈ, and 今天，这一杯由你来做。 Central illustrated paper-cut portrait of an adult Italian-style café hostess with short dark bob, ivory shirt and sienna apron, holding a white cup; refined illustrated collage, not a photographic human. Behind her one large flat rust circle and dramatic slanted cream CAFFÈ lettering. Left a hanging cream paper menu occupying roughly 30% width, three generous clickable rows: 今日菜单, 换一批, 01 早餐奶咖 / 热饮 · 约200 g · 牛奶多一些; 02 清爽冰咖 / 冰饮 · 不加奶; 03 两杯分享 / 同一锅 · 两种做法. Row 01 gently selected with a fine sienna rule and arrow, not a bulky button. Right taped paper with 自由发挥, 按自己的想法调一杯。, 开始创作 ↗. The home scene has a slim ivory stone tabletop bottom 16% containing a well-rendered small aluminum moka pot, white espresso cup/saucer, a few beans. Small rust-and-navy geometric café poster upper right behind paper, plant edge at far right, not crowded. Bottom-left quiet text 我的特刊册 ↗. Large clean upper breathing space. Entry affordances read as interactive pieces of the poster, not a grid of feature cards.",
+      "file": "01-cafe-home.png",
+      "source": "C:\\Users\\502BadGateway\\.codex\\generated_images\\01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5\\exec-8a19632c-c746-4045-91cd-aea0e6a789d1.png",
+      "kind": "main",
+      "layout": "人物海报拼贴＋左侧来单纸＋右侧自由发挥＋底部小馆台面",
+      "mainActions": [
+        "选来单",
+        "换一批来单",
+        "自由发挥"
+      ],
+      "alwaysVisible": [
+        "来单主题",
+        "冷热与杯量偏好"
+      ],
+      "optional": [
+        "特刊册"
+      ],
+      "tech": "人物、海报与台面为静态分层插画/Blender渲染；纸片入口为HTML；悬停仅轻微抬升和描边。"
+    },
+    {
+      "key": "02-prepare-hybrid",
+      "title": "水与粉的准备",
+      "density": "中低",
+      "spec": "Screen: cold moka preparation workspace, hybrid 2D operation on LEFT 42% and 3D explanatory object on RIGHT 46%, separated only by generous space, no boxed canvases. Top-left ← 咖啡小馆, compact title 先准备好水和粉。, small preparation status 做基底 · 调配 · 出品. Small clipped order ticket at upper right 来单 01 / 早餐奶咖 / 热饮 · 约200 g.\nLEFT: active small tabs 水 / 粉, 水 selected. An enlarged beautifully drawn 2D cutaway of ONLY the lower aluminum chamber with subtle depth, flat blue-gray water occupying lower portion, straight clean level line terminating below a brass side safety valve. The lower chamber silhouette and valve position correspond to the 3D model. Label 水位 and 120 g next to the water, a thin upper limit marker 安全阀下方 aligned with valve; no impossible full-pot cross-section. A compact horizontal water range immediately below the diagram plus an adjacent small text action 推荐水位. Nearby unobtrusive next-step powder basket thumbnail 粉篮待准备. One short in-place instruction 水位留在安全阀下方. Stable main button at bottom-left 操作条 position 准备粉篮 →.\nRIGHT: a large refined REALISTIC 3D moka exploded view from a fixed 3/4 camera, occupying 60% screen height, every component concentric and on ONE vertical assembly axis. Exact six visible groups top-to-bottom: lid with attached black knob, hollow octagonal upper chamber with black handle and spout, perforated flat filter disk, black annular gasket, hollow funnel basket with narrow DOWNWARD stem, lower chamber with brass valve. No loose extra screws, doubled handles or intersecting pieces. Generous visible gaps. Highlight lower chamber with a subtle sienna contour; five other groups remain silver. Only two short model hotspot labels 下壶 and 粉篮. Below viewer discreet text 拖动观察 · 点击部件 and local control 查看结构 ↗, nothing suggesting physical drag assembly. One small explanatory line 下壶存水，粉篮放咖啡粉. Restrained rust diagonal background fragment on far right behind object, not across controls; tabletop bottom only 10%. Warm neutral consistent lighting. No giant ACQUA headline.",
+      "file": "02-prepare-hybrid.png",
+      "source": "C:\\Users\\502BadGateway\\.codex\\generated_images\\01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5\\exec-f10a0d12-aec8-4ab1-87c1-6ece4fcd1395.png",
+      "kind": "main",
+      "layout": "左侧二维操作约42%；右侧三维展示约46%；余量用于留白",
+      "mainActions": [
+        "调整水位",
+        "准备粉篮",
+        "选择研磨",
+        "开始冲煮"
+      ],
+      "alwaysVisible": [
+        "当前部件",
+        "当前用量",
+        "对应操作界限"
+      ],
+      "optional": [
+        "推荐值",
+        "结构详情"
+      ],
+      "tech": "二维剖面底图＋SVG水位与粉层；三维六组模型只做受控轴向展开、部件高亮、有限转动。水/粉为同一布局的局部状态，合壶不设新页面。"
+    },
+    {
+      "key": "03-brew-hybrid",
+      "title": "冲煮与观察",
+      "density": "中",
+      "spec": "Screen: brewing on stove, same room and identity as preparation but camera framed toward burner. Top-left small back 准备 and modest title 听一听，看它上来。, stage 做基底 selected. Upper-right same compact 来单 01 ticket. LEFT around 38%: a large elegant 2D orthographic teaching cutaway of assembled moka, lower chamber translucent blue-gray water, funnel stem descends into water, powder basket exactly between chambers, upper vertical chimney carrying amber coffee and upper collecting chamber with growing dark coffee pool. Exactly three spaced cream upward flow arrows show lower stem → powder → chimney, no arrows through metal. Small top label 水路示意; concise bottom caption 压力差推动水穿过粉层. Under diagram one low-density horizontal phase indicator 受热 / 连续出液 / 后段, current 连续出液; no numerical temperature/pressure charts.\nRIGHT around 48%: a large physically correct solid assembled aluminum moka pot on a compact single stainless burner, upright complete pot with black handle and lid slightly hinged OPEN to reveal upper coffee; lid stays attached to hinge and does not collide with handle. Silver cast aluminum and softly bevelled facets, black matte handle, brass valve. Simple blue low flame UNDER base, fixed camera, no pouring motion and no transparent 3D fluid requirement. The 3D object's physical components match 2D diagram. Small warm warning label next to aluminum wall 壶身很烫 · 用手柄, clear line to WALL, not valve. Actual primary fire control is a simple compact three-position HTML selector 微火 / 小火 / 关火, below burner, 小火 selected; not a complex radial knob drag. Below it smaller text 已收集 64 g · 教学时间加速 and primary 关火并收取 →. Only ONE fire control exists, none under 2D diagram. A local quiet 查看结构 ↗ near object. Ambient counter/backdrop evolves via flat poster crop and soft tabletop lighting without clutter, bottom band under 12%. No scores, faux realistic pressure gauge or exploded hot object in normal brewing.",
+      "file": "03-brew-hybrid.png",
+      "source": "C:\\Users\\502BadGateway\\.codex\\generated_images\\01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5\\exec-d0b5f633-1826-404a-bb70-da20431de251.png",
+      "kind": "main",
+      "layout": "左侧水路示意约38%；右侧壶与炉头约48%；唯一火力控制靠近炉头",
+      "mainActions": [
+        "微火或小火",
+        "观察出液",
+        "关火并收取"
+      ],
+      "alwaysVisible": [
+        "火力",
+        "出液阶段",
+        "已收集克数",
+        "热壶提示"
+      ],
+      "optional": [
+        "结构",
+        "原理解释"
+      ],
+      "tech": "受控三维静态壶姿＋独立火焰简化图层；SVG剖面路径、箭头和液位。初版固定开盖观察姿态；不用动态3D流体或自由倾倒。"
+    },
+    {
+      "key": "04-exploded-context",
+      "title": "随操作展开的结构科普",
+      "density": "中低",
+      "spec": "Screen: optional expanded STRUCTURE reading state opened DURING preparation/brewing, not a required next page. Top-left visible 收起，继续制作 ← and small 暂停中的教学视图. A broad central 3D exploded moka object occupies about 55% width and 70% height, elegantly tilted as a WHOLE by only 6 degrees for Italian poster composition. All six components share the SAME tilted straight assembly axis; lower chamber must not have an independent tilt. Camera and material consistent with previous pages. Order top to bottom lid+knob, upper chamber+black handle+left spout, perforated metal filter disk, black gasket, funnel powder basket with downward hollow stem, lower water vessel+brass valve. Ample separation, no penetrations, no extra pieces. Exactly six thin readable hotspot leaders all on the open side and labeled 壶盖 / 上壶 / 滤网 / 密封圈 / 粉篮 / 下壶, no crossing lines. Selected 粉篮 has a restrained rust outline, no gigantic glowing UI.\nRIGHT about 25% width shows one selected-part detail, title 粉篮, enlarged 3D funnel basket isolated from other pieces, with CLEAR perforated bottom and DOWNWARD tube. One short operation note 装满、铺平，不压实。 Another short role note 引导水流穿过咖啡粉。 Main local link 水怎么走？ toggles a clean 2D route diagram within SAME detail region, not a third simultaneous large model. A quiet warning at bottom 教学拆解已暂停制作 · 实物充分冷却后再拆开。 Bottom only one shallow expansion slider 展开程度 70% and small 恢复视角. No quiz, no next-stage navigation, no recipe form. Existing order context is a small collapsed slip left lower, with generous empty left space. Refined rust/navy geometric poster fragment along far edge carries tiny DENTRO LA MOKA, never huge wallpaper text. Soft warm light, renderable metal, no hand interactions or rigidbody physics.",
+      "file": "04-exploded-context.png",
+      "source": "C:\\Users\\502BadGateway\\.codex\\generated_images\\01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5\\exec-16155639-449f-4713-b470-528192377db6.png",
+      "kind": "optional-state",
+      "layout": "原工作台展开为大模型＋六个热点；右侧仅显示当前部件及对应原理",
+      "mainActions": [
+        "选部件",
+        "调整展开",
+        "有限转动",
+        "收起返回"
+      ],
+      "alwaysVisible": [
+        "选中部件",
+        "短操作说明",
+        "虚拟过程暂停提示"
+      ],
+      "optional": [
+        "水路示意"
+      ],
+      "tech": "复用原爆炸视图；共用整体轴向和视角，独立部件不另行歪斜。此图展示粉篮原理已展开的状态；默认可折叠，避免同时堆满。"
+    },
+    {
+      "key": "05-mix-workbench",
+      "title": "单杯 DIY 调配",
+      "density": "中高但聚焦",
+      "spec": "Screen: single-cup DIY mixing workbench after brewing. Focus on a large flat-shaded SVG-style 2D glass in central-left, about 38% screen height, one principal interaction object. Small top-left back 咖啡小馆, compact heading 这一杯，由你调。, small stage 做基底 / 调配 / 出品 with 调配 selected. Upper-left small order slip 来单 01 / 早餐奶咖 / 热饮 · 约200 g · 牛奶多一些.\nCentral glass front elevation elegant thin dark outline with believable warm caramel coffee-milk swirl DURING mixing, not permanent literal stratification. A small slim spoon and a few smooth internal curved ribbons suggest implementable masked SVG stirring, no splash physics. Title 我的早餐奶咖 above, 总量 200 g below. Compact text toggle 成品 / 配方示意 under cup; 成品 selected. Below cup slim local actions 撤销 / 搅拌 / 分成两杯 and a clear but restrained main 出品 →. No enormous ornamental headline eating the left.\nBOTTOM shallow tray about 15% height, six simple illustrated ingredient choices 咖啡液 / 水 / 牛奶 / 奶泡 / 冰 / 糖浆, no cards enclosing the whole tray. 牛奶 selected by fine sienna line. Directly above selected ingredient compact real HTML controls 牛奶 160 g, minus / plus, editable 160, and short 按住添加 · 松手停止. Material thumbnail size modest with whitespace.\nRIGHT about 24% width is a narrow airy recipe ticket, not a full dense spreadsheet: 我的配方 / 摩卡咖啡液 40 g / 牛奶 160 g / 总量 200 g. Smaller 基底占比 20% with no taste score. Above or beside ticket, a small 3D rendered pour carafe containing smooth brewed coffee, source info 这一锅摩卡 / 剩余 56 g; attached 查看这一锅 ↗ brings structure and brew record locally, 补做一锅 is secondary small text. Only these 2 ingredients listed; no zero-quantity form fields. One concise contextual educational sentence 加奶改变比例，不会再次萃取。 The interface cup remains 2D; the small carafe is the only rendered 3D object. Ivory stone surface and a cropped rust poster edge at far right, consistent lighting, no UI dark background or photorealistic central fluid simulation.",
+      "file": "05-mix-workbench.png",
+      "source": "C:\\Users\\502BadGateway\\.codex\\generated_images\\01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5\\exec-a73a70d3-d74e-4d96-b22c-7c496456a66f.png",
+      "kind": "main",
+      "layout": "杯子中央偏左约38%画面高度；右侧配方及来源约24%宽度；底部浅材料托盘约15%高度",
+      "mainActions": [
+        "取咖啡液",
+        "选材料",
+        "点按或按住添加",
+        "输入克数",
+        "搅拌",
+        "出品"
+      ],
+      "alwaysVisible": [
+        "当前材料用量",
+        "总量",
+        "已用成分",
+        "咖啡液余量"
+      ],
+      "optional": [
+        "撤销",
+        "配方示意",
+        "分杯",
+        "基底占比解释",
+        "查看这一锅",
+        "补做一锅"
+      ],
+      "tech": "杯子和液体由SVG绘制；搅拌为3–5条路径受clipPath约束、变形、交叠并淡出，最终变为计算后的单一示意液色；不会保留高复杂度体积流体。"
+    },
+    {
+      "key": "06-two-cup-state",
+      "title": "同桌面的双杯实验",
+      "density": "中高",
+      "spec": "Screen: optional two-cup state of SAME DIY workbench, not a separate application or mandatory page. Match single-cup screen surfaces, typography and ingredient tray. Small heading 同一锅，两种做法。, small subtitle 自由实验 · 调配. Central area widens to TWO large 2D front-view glasses side by side, identical glass shapes and baseline, equal size, generous gap. A contains black diluted moka coffee with slight transparent amber edges, label A · 清爽 / 咖啡液 40 g + 水 80 g / 120 g. B contains opaque warm caramel milk coffee, label B · 柔和 / 咖啡液 40 g + 牛奶 120 g / 160 g. A is not blue watery neon; B is brown, not gray. B selected with a slim rust underline and small 编辑 B, not a large selection ring. The two finished cups have blended liquid, no permanent physically separated water/coffee bands.\nRIGHT compact recipe ticket for ONLY selected B: 当前杯 B / 咖啡液 40 g / 牛奶 120 g / 总量 160 g. Next to it compact source 这一锅摩卡 / 剩余 16 g, 查看这一锅 ↗. Under BOTH glasses one unobtrusive comparison strip 同锅咖啡液各40 g · 只改变添加物与用量, plus a small 观察区别 toggle rather than several scores or bar charts. Below small shared actions 撤销 / 搅拌 B / 回到单杯 and main 制作双杯特刊 →.\nBottom shallow six-ingredient tray exactly as single cup, milk selected; compact 牛奶 120 g minus/input/plus above tray. No duplicated ingredient trays or two full forms. Subtle rust and navy paper poster fragments, ample empty upper space, not split halves with thick divider. Educational comparison is composition and visible color, not a claim of tasted sweetness or measured extraction. No realistic foam art. Everything fits single 16:9 viewport with all controls visible.",
+      "file": "06-two-cup-state.png",
+      "source": "C:\\Users\\502BadGateway\\.codex\\generated_images\\01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5\\exec-ccb3d7ac-2d63-415a-b23b-effbb2fc5285.png",
+      "kind": "optional-state",
+      "layout": "同一调配桌面展开两杯；仅一个选中杯编辑区；共享一条材料托盘",
+      "mainActions": [
+        "选择A或B",
+        "改变当前杯配方",
+        "搅拌当前杯",
+        "制作双杯特刊"
+      ],
+      "alwaysVisible": [
+        "A/B身份",
+        "两杯用量",
+        "当前杯编辑量",
+        "共同基底与余量"
+      ],
+      "optional": [
+        "观察区别",
+        "回到单杯",
+        "撤销"
+      ],
+      "tech": "复用同一个杯子组件与配方状态；液位由实际杯型容积曲线映射，不能照抄AI图中像素高度；冰等固体另计。此图是另一个自由实验方案，不是早餐奶咖必经后续。"
+    },
+    {
+      "key": "07-gazette-editor",
+      "title": "出品与意式特刊",
+      "density": "低",
+      "spec": "Screen: finished drink and shareable Italian poster gazette editor. Product top-left quiet ← 返回调配, compact heading 今天的小馆特刊. No top navbar and no dense footer. CENTER/LEFT around 58% width a fully visible vertical 2:3 poster preview, poster width about 29% entire screenshot, centered with generous ivory space around. Main poster burnt sienna ground with original cream/navy angular typography and geometric cup silhouette collage, Italian commercial advertising finesse, not aged distressed texture. Large condensed slanted words CAFFÈ / FATTO DA ME behind a coherent cutout illustration of ONE clear glass of caramel milk coffee. Poster actual Chinese title 我的早餐奶咖, small recipe 摩卡咖啡液 40 g · 牛奶 160 g, 200 g, and note 本次用摩卡壶制作. No brand trademark. Design genuinely printable with simple layered illustration + typography, no artificial magazine filler articles.\nRIGHT narrow edit region ~25% width, simple clean labels with real HTML style fields: 作品标题 and input 我的早餐奶咖. Three SMALL named layout thumbnail choices 杯子特写 / 人物拼贴 / 配方报道, 杯子特写 selected. Under label 配色, three equally small poster thumbnails: rust/cream/navy, deep olive/cream/ochre, ultramarine/cream/red, all same recipe but noticeably different graphic contrast. A compact 制作记录 disclosure below, NOT expanded, and primary 保存海报 PNG with quiet 存入特刊册. Lowest secondary 接下一单 ↗. No big duplicate hero object alongside preview. The host canvas retains contemporary cream paper and tiny poster corner elements. Preview not skewed/perspective-warped and all text accurate. Thumbnails are small but legible as simple compositional options; sparse controls and lots of breathing room. No screens within screens, no photo frames, no multiple full-size poster sheets.",
+      "file": "07-gazette-editor.png",
+      "source": "C:\\Users\\502BadGateway\\.codex\\generated_images\\01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5\\exec-35a17648-91f9-4ec1-b217-ade0365f8b5d.png",
+      "kind": "main",
+      "layout": "完整2:3海报主预览＋右侧紧凑编辑；主页面预览不倾斜裁切",
+      "mainActions": [
+        "标题",
+        "版式",
+        "配色",
+        "保存PNG",
+        "存入特刊册"
+      ],
+      "alwaysVisible": [
+        "真实成品",
+        "真实配方",
+        "作品预览"
+      ],
+      "optional": [
+        "制作记录",
+        "接下一单"
+      ],
+      "tech": "Canvas合成实际杯子SVG/截图、排版、静态艺术插画；所有模板共用真实配方和成品液色，仅更换构图配色。生成图中装饰杯型在实现时统一为实际杯子组件。"
+    }
+  ],
+  "correctionPrompts": [
+    {
+      "key": "03-brew-hybrid",
+      "prompt": "Use case: text-localization. Edit the provided brewing interface screenshot. Preserve all object geometry, lighting, material, positions, controls, cutaway, fire, backdrop and margins. Change ONLY these text regions: top three-stage labels must read exactly 做基底 / 调配 / 出品, with 做基底 active; upper-right ticket must read 来单 01 / 早餐奶咖 / 热饮 · 约200 g, replacing the incorrect 意式浓缩 and 预计60g. Replace subtitle below heading with 调节火力，观察出液，适时关火。 Keep main title 听一听，看它上来。 Keep all existing controls and 64g reading. Do not describe moka coffee as espresso or 意式浓缩. No other changes."
+    },
+    {
+      "key": "06-two-cup-state",
+      "prompt": "Use case: precise-object-edit. Input 1 is the two-cup interface EDIT TARGET; Input 2 is the single-cup style and control REFERENCE. Preserve Input 1's Italian poster backdrop palette, warm tabletop, two-cup idea and the right recipe ticket. Correct the layout and implementation promises:\n1) Remove the huge physical moka pot on the LEFT and the verbose prose beside it. Use that space as clean breathing room and a SMALL contextual note 自由实验 / 同一锅，两种做法。, not another hero pot. Enlarge and center the two cups in the reclaimed central area, maintaining a generous gap.\n2) Render the cups as refined TWO-DIMENSIONAL outlined SVG-style glass illustrations with smooth flat shaded liquid and a few controlled highlights, not photorealistic glass with caustics. Identical glass capacities and shape. A must visibly contain LESS liquid: A 120g at 40% height, B 160g at 53% height. A coffee color dark transparent amber-brown; B milk coffee warm opaque caramel. Keep labels A · 清爽 / 咖啡液40g + 水80g /120g and B · 柔和 / 咖啡液40g + 牛奶120g /160g. B selected with fine rust underline, 编辑B.\n3) Replace the invented top navigation with a tiny back link ← 咖啡小馆 and the EXACT SAME three-stage labels as Input2: 做基底 / 调配 / 出品, 调配 active. No logo navbar.\n4) Replace ALL six bottom ingredient choices with the SAME ingredient set and illustrated thumbnails as Input2, in exact order 咖啡液 / 水 / 牛奶 / 奶泡 / 冰 / 糖浆. Coffee LIQUID, not coffee beans. Milk selected. Remove chocolate, cinnamon, vanilla and sugar entirely. Keep the shallow tray at 15% screen height, no bulky tray card.\n5) Keep real compact milk amount controls 牛奶120g, minus/input120/plus next to selected tray choice, and local actions 撤销 / 搅拌B / 回到单杯 / 制作双杯特刊 →. Right recipe lists ONLY B coffee40g,milk120g,total160g and source remaining16g.\n6) Keep a short comparison line 同锅咖啡液各40g · 添加物与用量不同. No invented taste metrics. Wide 16:9 one viewport, spacious, everything readable and aligned."
+    },
+    {
+      "key": "05-mix-workbench",
+      "prompt": "Use case: precise-object-edit. Edit the provided single-cup coffee mixing interface. Preserve ALL text, numbers, layout, controls, poster, order slip, ingredient tray and 3D source carafe exactly. Change ONLY the central drink and spoon visual to make its mixing animation faithfully implementable as a masked SVG:\nKeep exactly the same central glass size, rim, liquid height and position. Use a crisp elegant 2D illustrated glass with thin espresso outline, 2–3 restrained highlight strokes and a simple grounded oval shadow, no photorealistic refraction or caustics. Show the milk-coffee mixing MID-TRANSITION with ONLY THREE to FIVE broad smooth curved ribbons of warm ivory and caramel overlapping inside the cup, clearly bounded by the glass interior. Remove all detailed fractal/volumetric marbling, hundreds of fine whorls, splashes and foam. Leave a simple flat-shaded slender spoon in the same position with no hand. The final intended mixture is smooth opaque warm caramel; this screenshot records the middle of a short easing animation. All other image regions remain unchanged."
+    },
+    {
+      "key": "04-exploded-context",
+      "prompt": "Use case: precise-object-edit. Edit this exploded moka structure screenshot. Keep the six-part model, coaxial assembly geometry, selected basket outline, leaders, brushed/cast metal, lighting, artwork, right detail panel, expansion slider and warning exactly unchanged. Correct only the LEFT textual information: replace the very large headline 咖啡小馆 and the large slogan block immediately below it with a compact medium-sized heading 认识摩卡壶。 and one small line 点击部件，看它如何工作。, creating substantially more breathing room. Remove the additional cursive marketing prose in the middle-left, leaving quiet ivory space. Change the bottom-left status slip to 本次准备 / 水 120 g · 粉 18 g / 制作进度已保留. Remove invented 300ml / 约6杯 / 经典摩卡壶 and no dropdown selector. Preserve top-left 收起，继续制作 and 暂停中的教学视图. No other changes, especially do NOT independently rotate or straighten any pot component."
+    },
+    {
+      "key": "07-gazette-editor",
+      "prompt": "Use case: precise-object-edit. Edit the provided coffee poster editor screenshot. Preserve exactly all type, layout, graphic background, controls, recipes, numbers, the large 2:3 poster, surrounding tabletop, decorative pot and all thumbnail positions. Change ONLY drink illustrations in the MAIN poster and its small thumbnail copies:\nThe recipe is moka liquid40g + milk160g, fully STIRRED, total200g. Show an elegant outlined 2D clear glass filled with SMOOTH HOMOGENEOUS warm caramel milk coffee. Remove all unmixed dark/cream swirls, separated layers, froth, foam cap and latte art because those are not in the displayed recipe. Keep a gentle flat-shaded top ellipse and restrained glass highlights. No spoon or milk pouring stream in the finished poster. In the 杯子特写 thumbnail and the three color thumbnails, show the same finished smooth caramel glass, with only background palette/layout varying. Make the poster drink agree with the completed interactive cup and the stated ingredients. Keep typography and all other pixels unchanged."
+    },
+    {
+      "key": "01-cafe-home",
+      "prompt": "Use case: precise-object-edit. Change only the tiny illustrated cup in the FIRST menu row labeled 早餐奶咖 in this café homepage: make its visible drink surface smooth caramel milk coffee, without any latte-art flower, leaf, heart or foam decoration. Preserve the white ceramic cup, saucer, scale, shadows and position. Preserve the entire rest of the screenshot exactly, including all menu text, portrait, big CAFFÈ poster, tabletop objects, lighting, typography, layout, other drink thumbnails and free creation card. This is a very small correction to avoid promising a latte-art interaction."
+    },
+    {
+      "key": "06-two-cup-state",
+      "prompt": "Use case: precise-object-edit. Edit this two-cup coffee screenshot. Make ONE small correction ONLY to the LIQUID LEVEL of glass A (the black coffee glass on the left). Its 120g liquid must have about THREE QUARTERS the liquid height/volume shown in B's 160g drink because the glasses are identical. Currently their levels are too similar. Lower A's top liquid ellipse by about 20–25 image pixels, increasing the clear empty glass space above A, while keeping its glass position, outline, bottom, dark amber liquid color and shadows unchanged. Keep B completely unchanged. Preserve ALL labels, numbers, backdrop, controls, ingredient tray, source stock and every other region exactly. Do not resize the glasses or alter the recipe."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 920">
+<defs><pattern id="print" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M8 19h1m21 33h1m37-27h1m-2 53h1m-42-5h1" stroke="#efdfc6" stroke-opacity=".14"/></pattern></defs>
+<path fill="#b75632" d="M0 0h460v920H0z"/>
+<path fill="#eee2cd" d="M-50 685 460 195v248L-20 920z"/>
+<path fill="#293f48" d="m-40 134 500 466v178L-50 385z"/>
+<circle cx="341" cy="340" r="75" fill="#e8c197"/>
+<path fill="#eee2cd" d="m82 277 42-24 56 8 31 26 14 32-12 53-30 29-37 7-36-35-14-46z"/>
+<path fill="#303c3d" d="m100 278 20-42 44-13 41 16 21 38-55-12-45 4zM127 305l39-9 17 10-43 3zM178 328l20 23-22 4zM201 368l-31 7 17 11zM116 386l52 28-48 143-85-77z"/>
+<path fill="#eee2cd" d="M214 395h86l-7 54q-42 25-73 0z"/>
+<ellipse cx="257" cy="395" rx="45" ry="10" fill="#303c3d"/>
+<path fill="none" stroke="#eee2cd" stroke-width="10" d="M295 403c44-16 42 41-3 34"/>
+<path fill="#293f48" d="M27 740h46V623h30v117h48V669h37v71h31V578h37v-33h8v-23h5v23h8v33h37v162h33V654h46v86h34V611h26v129h47v118H27z"/>
+<path fill="#293f48" d="M214 578c0-49 32-61 48-62s48 16 48 62zM376 611l13-67 13 67z"/>
+<path fill="#dcb487" d="M76 661h7v12h-7m13-12h7v12h-7m70 35h7v12h-7m13-12h7v12h-7m48-76h9v16h-9m39-16h9v16h-9m-48 34h9v16h-9m39-16h9v16h-9m59-7h8v13h-8m17-13h8v13h-8m48-27h7v13h-7"/>
+<path fill="#e7d9c0" d="M18 866h424v5H18z"/>
+<g fill="#f0e4cf" font-family="Georgia,serif" font-style="italic" text-anchor="middle"><text x="230" y="91" font-size="47">Un buon</text><text x="230" y="137" font-size="49">caffè.</text><text x="230" y="898" font-size="25">Piccoli rituali, grandi idee.</text></g>
+<path fill="url(#print)" d="M0 0h460v920H0z"/>
+</svg>

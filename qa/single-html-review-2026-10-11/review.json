@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-11",
+  "artifact": "dist/caffe-simulation.html",
+  "bytes": 41754324,
+  "sha256": "4b4cff8701edc15a5b3f0fac9785ae7300be4ef32e137319f2516a23ca7bba51",
+  "embeddedResources": 43,
+  "preview": "HTTP server on port 4187 serving only index.html; all sidecar paths return 404",
+  "checks": {
+    "stateTests": "12 scripts passed",
+    "packageTest": "All embedded bytes and hashes match; all three script bundles parse",
+    "navigation": "Studio order and Moka selection to preparation, brewing and mixing remain in the same HTML",
+    "brewing": "120 g water, 18 g grounds, 86.4 g yield; embedded realtime model rendered",
+    "mixing": "40 g coffee, 160 g milk, two 15 g ice cubes, progressive stirring",
+    "splitting": "A and B each 115 g; 20 g coffee, 80 g milk and 15 g ice; 46.4 g coffee inventory remains",
+    "gazette": "Coast and portrait layouts, palette selection, browser PNG download, local shelf save and return to mixing",
+    "sourceReturn": "Inspect the same brewed batch and return to this cup through single-file routes",
+    "export": "04-export.png is the actual 1200 x 1800 PNG downloaded from the standalone UI",
+    "console": "No warning or error entries in final browser check",
+    "serverRequests": "Only HTML documents and favicon; no sidecar assets or export API"
+  },
+  "limitations": "The browser automation tool disallows file://, so direct local-file opening was not automatically verified. Tested through a single-file-only HTTP preview."
+}

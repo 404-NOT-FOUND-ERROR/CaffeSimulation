@@ -1,0 +1,172 @@
+/* Layouts follow the six approved references. Decorative plates contain no UI. */
+.studio[data-page=lobby]{height:100dvh;min-height:0;overflow:clip}
+.cafe-home{height:100dvh!important;min-height:0!important;background:#f3eadd url('assets/reference-room/cafe-home.png') center/cover no-repeat!important}
+.cafe-home:after,.cafe-disc,.cafe-ribbon,.cafe-latin,.cafe-verse,.cafe-wall-poster,.cafe-host,.cafe-counter{display:none!important}
+.cafe-home .cafe-brand{position:absolute;left:33.3%;top:2.3%;width:34%;padding:0;transform:none;display:flex;flex-direction:column}
+.cafe-brand h1{font:900 clamp(45px,6.1vw,109px)/1.1 'Microsoft YaHei',sans-serif;letter-spacing:-.045em;margin:0;padding:0;border:0;transform:none;text-shadow:none;order:0}
+.cafe-brand p{font:clamp(10px,1.05vw,18px)/1.4 Georgia,serif;letter-spacing:.2em;margin:12px 0 14px;position:static;order:1}
+.cafe-brand>span{display:block;margin-top:0;font:600 clamp(12px,1.4vw,24px)/1.6 'SimSun',serif;letter-spacing:0;border:0;padding:0;text-align:left;order:2}
+.cafe-brand>span:after{content:'';display:block;width:86px;height:3px;background:#a34d29;margin-top:10px}
+.cafe-home .cafe-menu{position:absolute;left:3.1%;top:8.5%;width:28.5%;height:68%;padding:3% 2.3% 1.5%;transform:none;clip-path:none;border:1px solid #ddcfba;background:#f8f0e2 url('assets/cafe/paper-grain.svg');box-shadow:3px 8px 14px #3c2b1924}
+.cafe-menu:before,.cafe-menu:after{content:'';position:absolute;top:-12vh;width:3px;height:13vh;background:linear-gradient(90deg,#543d22,#a18c6c,#392715);left:16%;box-shadow:0 1px 1px #0004;border-radius:2px}
+.cafe-menu:after{left:85%}
+.cafe-menu .cafe-clip{top:-19px;left:15%;width:13px;height:30px;border:2px solid #856445;border-radius:5px;rotate:0;background:linear-gradient(90deg,#9e7a4c,#f1d6a4,#8d663c);box-shadow:0 3px 3px #3a221849}
+.cafe-menu .cafe-menu-heading{padding:0 0 4%;margin:0;border-color:#bd7955;align-items:center}
+.cafe-menu-heading h2{font:900 clamp(20px,2.3vw,39px)/1.3 'SimSun',serif;color:#2d1e15;letter-spacing:0;text-shadow:.35px 0 currentColor,-.35px 0 currentColor}
+.cafe-menu-heading button{font-size:clamp(10px,.95vw,16px);padding:5px 0;white-space:nowrap}
+.cafe-menu .cafe-orders{display:flex;flex-direction:column;justify-content:space-evenly;height:77%;gap:0;padding:0}
+.cafe-order{display:grid!important;grid-template-columns:14% 29% 1fr 6%;align-items:center;gap:2%;padding:5% 0!important;border:0!important;border-bottom:1px solid #bc977c!important;border-radius:0!important;background:none!important;box-shadow:none!important;transform:none!important;text-align:left}
+.cafe-order-cup{width:100%;height:12vh;object-fit:contain;filter:drop-shadow(1px 5px 3px #41261720)}
+.cafe-order-number{font:clamp(25px,2.8vw,46px)/1 Georgia,serif!important;color:#ae532f!important}
+.cafe-order:nth-child(2) .cafe-order-number{color:#2a4753!important}.cafe-order:nth-child(3) .cafe-order-number{color:#4b5c45!important}
+.cafe-order strong{font:700 clamp(14px,1.65vw,29px)/1.5 'SimSun',serif!important;color:#2d2018}
+.cafe-order small{display:block;font:clamp(9px,.9vw,16px)/1.6 'Microsoft YaHei',sans-serif!important;margin-top:6px;max-width:100%;color:#5d4b3e}
+.cafe-order-arrow{font:clamp(18px,1.8vw,30px) Georgia!important;color:#b35630}
+.cafe-order:hover{color:#9d4826!important}.cafe-order:hover strong{color:#ad532e}.cafe-order:hover .cafe-order-cup{translate:0 -4px;transition:translate .25s}
+.cafe-menu-signoff{position:absolute;bottom:3%;left:0;right:0;font:8px Georgia!important;letter-spacing:.47em;text-align:center;margin:0;line-height:2}
+.cafe-menu-signoff br,.cafe-menu-signoff span{display:none}.cafe-menu-signoff:after{content:'MIGLIORI PERSONE';margin-left:10px}
+.cafe-home .cafe-free-note{position:absolute;left:80%;right:auto;top:34%;width:18%;height:31%;padding:2.8% 1.5% 2%;background:#fbf3e3 url('assets/cafe/paper-grain.svg');transform:rotate(-5deg);border:1px solid #e1d1b7;box-shadow:1px 6px 10px #563b1928;clip-path:none;text-align:center}
+.cafe-free-note strong{font:700 clamp(24px,2.6vw,45px)/1.3 'SimSun',serif;letter-spacing:0}
+.cafe-free-note>span{font-size:clamp(10px,1.1vw,18px);margin:15px 0 20px;line-height:1.7;border-bottom:1px solid #bda68b;padding-bottom:13px}
+.cafe-free-note>b{font:700 clamp(17px,1.65vw,29px)/1.5 'SimSun',serif;color:#b1552d;margin:0}
+.cafe-free-note i{width:37%;height:18px;top:-12px;left:31%;background:#d5c3a17c;transform:rotate(3deg)}
+.cafe-home .cafe-archive{left:3.2%;bottom:3.5%;top:auto;padding:4px 0;border-bottom:1px solid #3c2d22;background:none;font:clamp(12px,1vw,18px) 'Microsoft YaHei',sans-serif;color:#302016}
+
+.lab:is([data-scene=recipe],[data-scene=compare],[data-scene=gazette]){width:100%;height:100dvh;min-height:0;max-width:none;padding:0;overflow:clip;background:#f5eddf url('assets/reference-room/mixing-room.png') center/cover no-repeat;--rust:#ad5028;--serif:'SimSun','Songti SC',serif}
+.lab:before,.lab>.coffee-worktop,.lab>.coffee-atlas,.lab>.paper-grain,.lab>.still-life,.lab>.signoff,.lab>.poster-fragment{display:none!important}
+.lab .lab-header{position:absolute;top:2.5%;left:3.3%;right:3.3%;height:32px;min-height:0;padding:0;z-index:6;font-size:clamp(11px,1vw,18px)}
+.lab .lab-header>a{font-size:inherit}.lab .lab-header #shelfButton{display:none}.lab .lab-header .coffee-progress{position:absolute;left:27%;display:flex;font-size:clamp(11px,1vw,18px);gap:20px;padding:0}
+.lab .coffee-progress span{font-size:inherit;gap:20px}.lab .coffee-progress .current:after{width:7px;height:7px;bottom:-12px;left:50%;border-radius:50%;background:#ab4e26}
+.lab .coffee-progress span+span:before{width:35px;height:1px;background:#b5a58f}
+.lab .scene-layout{position:absolute;inset:0;display:block;padding:0;min-height:0;height:100%;gap:0}
+.lab .editorial{position:absolute;left:5.3%;top:9%;width:14.4%;height:42%;padding:0;min-width:0}
+.lab .editorial #headline,.lab .editorial .italian,.lab .editorial .left-note{display:none}
+.lab .paper-slip{position:relative;margin:0;width:100%;max-width:none;padding:12% 13%;background:#fbf3e5 url('assets/cafe/paper-grain.svg');box-shadow:1px 5px 9px #523a2620;transform:rotate(-2deg);clip-path:none;border:1px solid #e4d6bf}
+.lab .paper-slip:before{top:-9px;left:22%;height:18px;width:57%;background:#dfcfac79}
+.lab .paper-slip .slip-kicker{font-size:clamp(16px,1.7vw,30px);line-height:1.4;letter-spacing:0;font-weight:700;color:#ab4e27;margin:0 0 5px}
+.lab .paper-slip h2{font:700 clamp(16px,1.4vw,25px)/1.5 'SimSun',serif;margin:0 0 11px;padding-bottom:10px;border-bottom:1px solid #bda389}
+.lab .paper-slip p:not(.slip-kicker):not(.slip-foot){font-size:clamp(10px,1vw,18px);line-height:1.9}
+.lab .paper-slip .slip-foot{font:italic clamp(15px,1.6vw,25px)/1.3 Georgia,serif;letter-spacing:0;color:#b2643c;margin-top:15px!important}
+.lab .paper-slip .slip-foot i{display:block;text-align:right}
+.lab[data-scene] .hero{position:absolute;left:21.4%;top:10.8%;width:36.8%;height:56%;min-height:0;margin:0;padding:0;display:flex;flex-direction:column;justify-content:flex-start;overflow:visible}
+.lab .cup-heading{width:100%;margin:0;flex:none}.lab .cup-heading input{font:700 clamp(23px,2.3vw,40px)/1.4 'Microsoft YaHei',sans-serif;max-width:none;padding:0;width:100%}
+.lab .cup-heading p{font-size:clamp(12px,1.25vw,22px);color:#493524;margin:8px 0;letter-spacing:0}
+.lab .single-cup-art{width:100%;flex:1;min-height:0;max-width:none;display:flex;align-items:center;justify-content:center}
+.lab .single-cup-art .glass-illustration{width:100%;height:100%;max-height:none;overflow:visible;filter:drop-shadow(2px 8px 3px #45301f0b)}
+.lab .view-switch{flex:none;display:flex;gap:0;background:#e9dfcfb0;border:0;border-radius:25px;padding:0;margin:-5px 0 0;min-height:0;min-width:0;align-self:center}
+.lab .view-switch button{border:0;border-radius:25px;padding:6px 21px;font-size:clamp(10px,.95vw,16px);color:#6b5643;white-space:nowrap;min-width:0}
+.lab .view-switch [aria-pressed=true]{background:#b25930;color:#fff8ed}
+.lab .view-explanation{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0}
+.lab .details{position:absolute;left:65.2%;top:10%;width:20.2%;height:73%;padding:0;overflow:visible;min-width:0;margin:0}
+.lab .details .base-source{position:relative;display:block;min-height:29vh;padding:0;margin:0;border:0;background:none}
+.lab .source-copy{position:absolute;top:0;left:0;width:52%;z-index:2}.lab .source-copy strong{font:700 clamp(12px,1.2vw,22px)/1.5 'Microsoft YaHei',sans-serif}.lab .source-copy p{font-size:clamp(10px,1.05vw,19px);margin:4px 0;color:#32251b}
+.lab .source-copy button{display:block;padding:0;margin-top:12px;font-size:clamp(10px,1vw,17px);color:#264856;border-bottom:1px solid #557583;line-height:1.4}
+.lab .source-copy button+button{font-size:clamp(9px,.85vw,15px);margin-top:9px}
+.lab .base-source>img{position:absolute;right:-3%;top:-1%;height:29vh;width:64%;object-fit:contain;filter:drop-shadow(4px 6px 3px #3c251b20)}
+.lab .recipe-paper{padding:7% 8%;background:#fbf3e6 url('assets/cafe/paper-grain.svg');border:1px solid #e4d5bb;box-shadow:1px 3px 6px #55391626}
+.lab .recipe-paper h2{font:700 clamp(17px,1.8vw,32px)/1.5 'Microsoft YaHei',sans-serif;margin:0 0 7%;letter-spacing:0}
+.lab .recipe-amounts{gap:14px;max-height:24vh;overflow:auto}.lab .amount-row{display:flex;gap:10px;align-items:center;font-size:clamp(11px,1.1vw,19px);margin:0;padding:0}
+.lab .amount-row i{width:clamp(15px,1.7vw,29px);height:clamp(15px,1.7vw,29px);border-radius:50%;border:2px solid #f4e4cd;box-shadow:0 1px 2px #2e1c2140,inset 3px 3px 5px #fffbce70;flex:none}
+.lab .amount-row>span{flex:1}.lab .amount-row>strong{font-weight:400;white-space:nowrap;font-variant-numeric:tabular-nums}
+.lab .recipe-total{font-size:clamp(12px,1.2vw,20px);border-top:1px solid #b8a189;margin:17px 0 0;padding:12px 0 0}.lab .recipe-total strong{font:700 inherit 'Microsoft YaHei',sans-serif;white-space:nowrap}
+.lab .recipe-foot{font-size:clamp(10px,.95vw,16px);line-height:1.5;margin:17px 0 0}
+.lab .control-dock{position:absolute;left:21.5%;top:67%;width:40%;height:5%;min-height:0;margin:0;padding:0;border:0;display:flex;gap:12px;flex-wrap:nowrap;align-items:center}
+.lab .control-dock .secondary{padding:9px 18px;min-height:0;border:1px solid #a8886b;border-radius:30px;background:#fbf4e6ab;white-space:nowrap;font-size:clamp(10px,.95vw,16px);flex:1}
+.lab .control-dock .primary{min-height:0;padding:12px 22px;margin-left:6px;font-size:clamp(12px,1.35vw,22px);border-radius:35px;background:linear-gradient(130deg,#bf713d,#aa481f);color:#fff5e6;white-space:nowrap;flex:1.5;clip-path:none}
+.lab .ingredient-tray{position:absolute;left:9.6%;top:81%;width:53%;height:16%;padding:0;margin:0;z-index:5;background:none;border:0;display:block}
+.lab .ingredient-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;height:100%;margin:0}
+.lab .ingredient-card{padding:2px 5px 7px;border:1px solid transparent;border-radius:13px;background:none;box-shadow:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;min-height:0;gap:2px}
+.lab .ingredient-card.is-selected,.lab .ingredient-card:hover{background:#f7eee57c;border-color:#aa4d27;color:#302218}
+.lab .ingredient-card .ingredient-photo{display:block;width:100%;flex:1;min-height:0;background-image:url('assets/reference-room/ingredient-strip.png');background-size:600% 100%;background-position:calc(var(--ingredient-index)*20%) center;background-repeat:no-repeat;pointer-events:none}
+.lab .ingredient-card>span{font-size:clamp(10px,.95vw,17px);padding:0;line-height:1.4}
+.lab #ingredientAdjust{position:absolute;top:-48%;left:calc(var(--selected-index)*16.66% - 3%);z-index:6;width:auto;padding:0}
+.lab .ingredient-adjust{display:flex;align-items:center;gap:7px;background:#fffbf1ed;border:1px solid #b8a691;border-radius:7px;box-shadow:0 3px 5px #49311e11;padding:6px 9px;white-space:nowrap;font-size:clamp(10px,.9vw,16px);min-width:0}
+.lab .ingredient-adjust strong{display:flex;gap:5px;font-size:inherit;font-weight:600;margin:0;white-space:nowrap}
+.lab .ingredient-adjust button{width:24px;height:24px;border:1px solid #bfae98;border-radius:50%;background:none;padding:0;min-width:0;min-height:0;font-size:16px}
+.lab .ingredient-adjust input{width:50px;max-width:58px;text-align:center;border:1px solid #beaf9a;padding:3px;background:#fffdf6;border-radius:3px;font-size:inherit;margin:0}
+.lab .ingredient-adjust small{font-size:clamp(8px,.75vw,13px);margin-left:4px}.lab .ingredient-adjust:after{content:'';width:10px;height:10px;rotate:45deg;background:#fffbf1;position:absolute;bottom:-6px;left:50%;border-right:1px solid #b8a691;border-bottom:1px solid #b8a691}
+.lab .batch-record{font-size:11px;margin:6px 0}.lab .batch-record summary{cursor:pointer}.lab .batch-record[open]{position:relative;z-index:8;background:#fff8ed;padding:12px;box-shadow:0 4px 7px #43271724;max-height:160px;overflow:auto}.lab .batch-record .source-select{max-width:100%}
+
+.lab[data-scene=compare] .editorial{left:3.5%;top:27%;width:15%;height:auto}.lab[data-scene=compare] .paper-slip{background:none;box-shadow:none;border:0;padding:0;transform:none}
+.lab[data-scene=compare] .paper-slip:before{display:none}.lab[data-scene=compare] .paper-slip p{font:clamp(13px,1.3vw,23px)/1.6 'Microsoft YaHei',sans-serif!important;color:#302218}
+.lab[data-scene=compare] .hero{left:19%;top:14%;width:45%;height:61%;padding:0}.lab .two-cups{display:flex;flex:1;min-height:0;width:100%;gap:8%;margin:0;align-items:stretch;justify-content:center}
+.lab .cup-choice{display:flex;flex-direction:column;width:46%;height:100%;max-width:none;padding:0;align-items:center;min-height:0;text-align:center}
+.lab .cup-choice svg{height:70%;width:100%;flex:none}.lab .cup-choice>strong{font:700 clamp(17px,1.65vw,29px)/1.5 'Microsoft YaHei',sans-serif;margin:2px 0}
+.lab .cup-choice>small{display:block;font:clamp(10px,1vw,18px)/1.7 'Microsoft YaHei',sans-serif;margin:0;color:#47362a}
+.lab .selection-tag{font-size:clamp(10px,.85vw,15px);height:auto;margin:4px 0 0;border-bottom:2px solid transparent;width:90%;color:#8a7058}
+.lab .cup-choice[aria-pressed=true] .selection-tag{border-color:#ad4e26;color:#ad4e26}.lab .comparison-caption{font:clamp(10px,1vw,18px)/1.5 'Microsoft YaHei',sans-serif;text-align:center;margin:8px 0 0;flex:none;color:#4c3a2b}
+.lab[data-scene=compare] .details{left:68.3%;top:19.5%;width:18.8%;height:47%;padding:0}
+.lab[data-scene=compare] .recipe-paper{height:auto;padding:8% 10%;min-height:44vh;background:#fcf2de url('assets/cafe/paper-grain.svg')}
+.lab[data-scene=compare] .base-source{min-height:13vh;margin-top:20px}.lab[data-scene=compare] .base-source img{height:12vh;left:-5%;width:32%;top:0;opacity:.8}.lab[data-scene=compare] .source-copy{left:35%;width:65%;top:0}
+.lab[data-scene=compare] .source-copy button+button{display:none}
+.lab[data-scene=compare] .ingredient-tray{left:8.5%;top:80%;width:36%;height:12.7%}
+.lab[data-scene=compare] #ingredientAdjust{top:0;left:105%;width:26%}.lab[data-scene=compare] .ingredient-adjust{background:none;border:0;box-shadow:none;flex-wrap:wrap;padding:0;gap:7px;width:130px}
+.lab[data-scene=compare] .ingredient-adjust strong{width:100%;margin-bottom:6px}.lab[data-scene=compare] .ingredient-adjust small,.lab[data-scene=compare] .ingredient-adjust:after{display:none}.lab[data-scene=compare] .ingredient-adjust input{background:none;border:0;width:40px}.lab[data-scene=compare] .ingredient-adjust button{height:28px;width:28px}
+.lab[data-scene=compare] .control-dock{top:82%;left:59.5%;width:32%;height:auto;gap:8px}.lab[data-scene=compare] .control-dock .secondary{padding:9px 12px;border-radius:15px;font-size:clamp(9px,.8vw,14px)}.lab[data-scene=compare] .control-dock .primary{font-size:clamp(10px,1vw,18px);padding:13px 18px;margin:0}
+
+.lab[data-scene=compare]{background-image:url('assets/reference-room/compare-room.png')}.lab[data-scene=gazette]{background:#f5eddf url('assets/reference-room/gazette-room.png') center/cover no-repeat}
+.lab[data-scene=gazette] .coffee-progress{display:none}.lab .gazette-layout{position:absolute;inset:0;display:block;padding:0;height:100%;min-height:0;gap:0}
+.lab .gazette-aside{position:absolute;left:3.5%;top:10%;width:17%;height:82%;display:block}
+.gazette-aside h1{font:clamp(22px,2.25vw,38px)/1.4 'Segoe Script','KaiTi',cursive;rotate:-8deg;margin:0 0 20%;border-bottom:1px solid #a36e46;padding-bottom:10px}
+.gazette-aside p{font:clamp(11px,1vw,18px)/2 'SimSun',serif;letter-spacing:.24em;margin:0}
+.gazette-aside img{position:absolute;bottom:0;left:-39%;width:140%;height:58%;object-fit:contain}
+.lab .gazette-preview{position:absolute;left:22.5%;top:4%;width:33.7%;height:91%;padding:0;display:flex;align-items:center;justify-content:center}
+.lab .gazette-preview canvas{display:block;width:auto;height:100%;max-width:100%;max-height:none;aspect-ratio:2/3;border:9px solid #efdfc1;box-shadow:2px 5px 9px #45281320;transform:none}
+.lab .gazette-editor{position:absolute;top:9.8%;left:64.6%;width:23.3%;height:81%;padding:0 0 0;min-height:0;display:flex;flex-direction:column;gap:2.3vh;overflow:visible;border:0;background:none;z-index:3}
+.lab .gazette-editor>h1,.lab .gazette-editor>.gazette-intro,.lab .gazette-editor>p.fine,.lab .gazette-editor .layout-format{display:none}
+.lab .gazette-editor .field-label{display:flex;flex-direction:column;gap:8px;font:600 clamp(11px,1.05vw,18px)/1.5 'Microsoft YaHei',sans-serif;margin:0;padding:0;order:0}
+.lab .gazette-editor input{font-size:clamp(11px,1vw,18px);border:1px solid #d0c1ac;background:#fffbf173;padding:10px 13px;border-radius:8px;width:100%}
+.lab .gazette-editor fieldset{border:0;margin:0;padding:0;display:block;min-width:0}.lab .gazette-editor legend{font:600 clamp(11px,1.1vw,19px)/1.5 'Microsoft YaHei',sans-serif;margin:0 0 12px;float:none;letter-spacing:0}
+.lab .gazette-editor .composition-options{order:1}.lab .gazette-editor .plain-fieldset:not(.composition-options):not(.layout-format){order:2}
+.lab .style-options{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;height:19vh}.lab .style-options button{display:flex;flex-direction:column;padding:0;border:0;background:none;border-radius:0;min-width:0}
+.lab .style-options canvas{height:calc(100% - 25px);width:100%;max-height:none;border:4px solid #e7d7bd;border-radius:2px;object-fit:contain;background:#e9d8be;box-shadow:1px 2px 4px #40261c20}
+.lab .style-options [aria-pressed=true] canvas{outline:2px solid #aa4e27;outline-offset:3px}.lab .style-options small{font-size:clamp(9px,.85vw,15px);padding-top:7px;white-space:nowrap}
+.lab .palette-options{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;height:19vh}.lab .palette-options button{display:flex;flex-direction:column;align-items:stretch;background:none;border:0;padding:0;font-size:10px;border-radius:0;min-width:0;overflow:visible}
+.lab .palette-options canvas{width:100%;height:100%;object-fit:contain;border:3px solid #e5d5bc;border-radius:2px}.lab .palette-options [aria-pressed=true] canvas{outline:2px solid #aa4e27;outline-offset:3px}
+.lab .gazette-record{order:3;padding:0;font-size:12px;max-height:none;margin:0;border:0;min-height:0}.lab .gazette-record details{border:1px solid #cdbfae;border-radius:9px;background:#fffaf041;padding:11px 15px}.lab .gazette-record summary{font:clamp(10px,.95vw,17px)/1.5 'Microsoft YaHei',sans-serif;cursor:pointer}.lab .gazette-record details[open]{position:absolute;bottom:16%;right:0;width:100%;background:#fff7e8;box-shadow:0 4px 10px #43291925;max-height:33vh;overflow:auto;z-index:6}.lab .gazette-record h2{font-size:16px}.lab .gazette-record p{font-size:11px;line-height:1.7}
+.lab .export-actions{order:4;display:flex;gap:10px;margin:0;padding:0}.lab .export-actions button{font-size:clamp(10px,.95vw,17px);white-space:nowrap;border-radius:9px;padding:12px 16px;min-height:0;flex:1}.lab .export-actions .primary{background:#ad532e;color:#fff8eb;clip-path:none}.lab .export-actions .secondary{background:#fff9ed74;border:1px solid #cbbba4}
+.lab .gazette-return{order:5;display:flex;justify-content:flex-end;margin:0;font-size:clamp(10px,.95vw,17px)}.lab .gazette-return button{display:none}.lab .gazette-return a{border-bottom:1px solid #294650;color:#294650}
+.lab .export-link{order:6;font-size:10px}
+
+@media(orientation:landscape) and (max-height:520px){
+ .cafe-brand>span{margin-top:30px;font-size:12px}.cafe-brand p{margin-top:5px;font-size:9px}.cafe-brand h1{font-size:50px}.cafe-home .cafe-menu{padding-top:2%}.cafe-menu-heading h2{font-size:20px}.cafe-order strong{font-size:15px}.cafe-order small{font-size:8px;margin-top:3px}.cafe-order-cup{height:10vh}.cafe-home .cafe-free-note{padding-top:2%}.cafe-free-note strong{font-size:24px}.cafe-free-note>span{font-size:9px;margin:5px 0 7px;padding-bottom:5px}.cafe-free-note>b{font-size:15px}.cafe-menu-signoff{font-size:6px!important;letter-spacing:.28em}
+ .lab .lab-header{font-size:10px;top:2%;height:20px}.lab[data-scene] .hero{top:10%;height:55%;width:35%}.lab .cup-heading input{font-size:18px}.lab .cup-heading p{font-size:11px;margin:3px 0}.lab .view-switch button{font-size:8px;padding:3px 12px}.lab .details{height:74%;top:10%}.lab .recipe-paper h2{font-size:15px;margin-bottom:7px}.lab .recipe-paper{padding:6% 7%}.lab .recipe-amounts{gap:6px}.lab .amount-row{font-size:9px;gap:5px}.lab .amount-row i{width:14px;height:14px}.lab .recipe-total{font-size:10px;margin-top:9px;padding-top:7px}.lab .recipe-total strong{font-size:12px}.lab .recipe-foot{font-size:8px;margin-top:7px}.lab .paper-slip h2{font-size:12px;margin-bottom:6px;padding-bottom:6px}.lab .paper-slip .slip-kicker{font-size:16px}.lab .paper-slip .slip-foot{font-size:14px;margin-top:7px!important}.lab .paper-slip p:not(.slip-kicker):not(.slip-foot){font-size:8px}.lab .control-dock{gap:5px;top:67%;height:7%}.lab .control-dock .secondary{font-size:9px;padding:6px 9px}.lab .control-dock .primary{font-size:11px;padding:8px 15px}.lab .ingredient-adjust{font-size:9px;padding:4px 6px;gap:4px}.lab .ingredient-adjust small{font-size:7px;display:none}.lab .ingredient-adjust input{width:37px}.lab .ingredient-adjust button{height:20px;width:20px;font-size:14px}.lab .ingredient-card>span{font-size:8px}.lab #ingredientAdjust{top:-50%}
+ .lab[data-scene=compare] .hero{top:14%;height:59%;width:45%}.lab .cup-choice>strong{font-size:15px}.lab .cup-choice>small{font-size:9px;line-height:1.5}.lab .selection-tag{font-size:8px;margin-top:2px}.lab .comparison-caption{font-size:8px;margin:5px 0}.lab[data-scene=compare] .paper-slip p{font-size:12px!important}.lab[data-scene=compare] .base-source{margin-top:10px}.lab[data-scene=compare] #ingredientAdjust{top:0}.lab[data-scene=compare] .ingredient-adjust{width:95px}.lab[data-scene=compare] .ingredient-adjust strong{margin-bottom:1px}.lab[data-scene=compare] .ingredient-adjust button{width:20px;height:20px}.lab[data-scene=compare] .control-dock .secondary{font-size:8px;padding:6px}.lab[data-scene=compare] .control-dock .primary{font-size:8px;padding:8px}
+ .lab .gazette-editor{gap:1.6vh;top:9%;height:84%}.lab .gazette-editor .field-label{font-size:9px;gap:3px}.lab .gazette-editor input{font-size:9px;padding:5px 9px}.lab .gazette-editor legend{font-size:9px;margin-bottom:5px}.lab .style-options,.lab .palette-options{height:19vh;gap:7px}.lab .style-options canvas{height:calc(100% - 15px);border-width:2px}.lab .style-options small{font-size:7px;padding-top:3px}.lab .gazette-record details{padding:6px 9px}.lab .gazette-record summary{font-size:8px}.lab .export-actions{gap:6px}.lab .export-actions button{font-size:8px;padding:7px 8px}.lab .gazette-return{font-size:8px}.lab .gazette-preview canvas{border-width:5px}.gazette-aside h1{font-size:21px}.gazette-aside p{font-size:9px}
+}
+@media(orientation:portrait){
+ .studio[data-page=lobby]{height:auto;overflow:visible}.cafe-home{height:1200px!important;background-position:62% center!important;background-size:auto 1200px!important}.cafe-home .cafe-brand{left:7%;top:3%;width:80%}.cafe-brand h1{font-size:62px}.cafe-brand p{font-size:12px}.cafe-brand>span{margin-top:48px;font-size:17px}.cafe-home .cafe-menu{left:7%;top:27%;width:70%;height:42%;padding:25px}.cafe-menu-heading h2{font-size:29px}.cafe-order strong{font-size:20px}.cafe-order small{font-size:12px}.cafe-order-number{font-size:32px!important}.cafe-order-cup{height:80px}.cafe-home .cafe-free-note{left:52%;top:74%;width:43%;height:20%;padding:27px 17px}.cafe-free-note strong{font-size:29px}.cafe-free-note>span{font-size:13px;margin:10px 0;padding-bottom:10px}.cafe-free-note>b{font-size:21px}.cafe-home .cafe-archive{left:7%;bottom:2%}
+ .lab:is([data-scene=recipe],[data-scene=compare],[data-scene=gazette]){height:auto;min-height:100dvh;padding:25px 6vw 30px;background-position:70% center;background-size:auto 100%;overflow:hidden}.lab .lab-header{position:relative;inset:auto;height:75px;flex-wrap:wrap}.lab .lab-header .coffee-progress{left:18%;top:48px;font-size:12px}.lab .scene-layout,.lab .gazette-layout{position:relative;inset:auto;height:auto;display:flex;flex-direction:column;gap:20px}.lab .editorial,.lab .hero,.lab .details,.lab .control-dock,.lab .ingredient-tray,.lab[data-scene=compare] .editorial,.lab[data-scene=compare] .hero,.lab[data-scene=compare] .details,.lab[data-scene=compare] .control-dock,.lab[data-scene=compare] .ingredient-tray{position:relative;inset:auto;width:100%;height:auto}.lab .editorial{display:none}.lab[data-scene] .hero{height:510px;min-height:0}.lab .cup-heading input{font-size:26px}.lab .details{display:flex;flex-direction:column;gap:15px}.lab .base-source{min-height:160px!important}.lab .base-source img{height:160px}.lab .source-copy strong{font-size:17px}.lab .source-copy p,.lab .source-copy button{font-size:13px}.lab .recipe-paper{padding:24px}.lab .recipe-paper h2{font-size:25px}.lab .amount-row{font-size:15px}.lab .recipe-total{font-size:16px}.lab .recipe-foot{font-size:12px}.lab .recipe-amounts{max-height:none}.lab .control-dock{height:50px;gap:5px}.lab .control-dock .secondary{font-size:11px;padding:10px}.lab .control-dock .primary{font-size:13px;padding:12px}.lab .ingredient-tray{height:150px;margin-top:50px;order:5}.lab .ingredient-card>span{font-size:10px}.lab #ingredientAdjust{top:-35%;left:0}.lab .ingredient-adjust{font-size:11px}.lab .ingredient-adjust small{font-size:9px}.lab .ingredient-grid{gap:1px}.lab[data-scene=compare] .hero{height:420px}.lab .cup-choice svg{height:68%}.lab .cup-choice>strong{font-size:18px}.lab .cup-choice>small{font-size:10px}.lab .comparison-caption{font-size:11px}.lab[data-scene=compare] .base-source .source-copy{left:40%;width:60%}.lab[data-scene=compare] .base-source img{left:0;height:160px}.lab[data-scene=compare] #ingredientAdjust{top:-50%;left:0;width:100%}.lab[data-scene=compare] .ingredient-adjust{width:100%;flex-wrap:nowrap;background:#fff8ea}.lab[data-scene=compare] .ingredient-adjust strong{width:auto;margin:0}.lab[data-scene=compare] .control-dock .primary{font-size:10px}.lab[data-scene=compare] .control-dock .secondary{font-size:10px}
+ .lab .gazette-aside{position:relative;inset:auto;width:100%;height:auto}.gazette-aside h1{font-size:28px;rotate:0;margin:10px 0}.gazette-aside p,.gazette-aside img{display:none}.lab .gazette-preview{position:relative;inset:auto;width:100%;height:620px}.lab .gazette-editor{position:relative;inset:auto;width:100%;height:auto;gap:22px;overflow:visible}.lab .gazette-editor legend,.lab .gazette-editor .field-label{font-size:16px}.lab .style-options,.lab .palette-options{height:170px}.lab .style-options small{font-size:12px}.lab .export-actions button{font-size:13px}.lab .gazette-record summary{font-size:14px}.lab .gazette-return{font-size:13px}.lab .gazette-record details[open]{position:relative;inset:auto;max-height:none}
+}
+
+.lab[data-scene] .details{background:none!important;padding:0!important}.lab .ingredient-grid{align-items:stretch;justify-content:stretch}.lab .ingredient-card{width:100%;height:100%;min-width:0;max-width:none}.lab .cup-choice{border:0;background:none}.lab .lab-header .coffee-progress{translate:0;margin:0}.lab .recipe-total strong{font-family:"Microsoft YaHei",sans-serif;font-size:inherit}
+
+.lab[data-scene] .details{overflow:visible}.lab .ingredient-card .ingredient-photo{background-size:600% auto;height:100%;flex:1;display:block;background-position:calc(var(--ingredient-index)*20%) center}.lab .single-cup-art .glass-illustration{max-width:100%;width:auto}
+.lab .ingredient-card[data-ingredient=ice] .ingredient-photo{clip-path:inset(0 7% 0 0)}
+.lab .single-cup-art{pointer-events:none}
+
+.lab[data-scene=recipe] .single-cup-art .glass-illustration{transform:scale(1.14);transform-origin:50% 50%}.lab .recipe-amounts{overflow-x:hidden}
+.lab[data-scene=compare] .paper-slip{background:none!important;box-shadow:none!important;border:0!important}@media(orientation:landscape) and (max-height:520px){.lab[data-scene=compare] .comparison-caption{position:absolute;bottom:-13px;left:0;width:100%;margin:0}}
+
+/* Each thumbnail row includes its legend and caption; flex must not collapse it. */
+.lab .gazette-editor>fieldset{flex:none}
+.lab .style-options button,.lab .palette-options button{height:100%;min-height:0;gap:0}
+.lab .gazette-editor .style-options canvas{margin:0;max-height:none;min-height:0}
+.lab .gazette-editor input{margin-top:0}
+.lab .gazette-layout{max-width:none;width:100%;margin:0}
+.lab .gazette-preview{transform:none}
+.lab .gazette-preview canvas{height:min(91dvh,calc(33.7vw * 1.5));width:auto;max-width:none;object-fit:fill}
+.gazette-aside h1{white-space:nowrap;font-size:clamp(18px,2.05vw,36px)}
+@media(orientation:landscape) and (max-height:520px){
+ .lab .style-options,.lab .palette-options{height:16vh}
+ .lab .gazette-editor{gap:1.5vh}
+}
+@media(orientation:portrait){.lab .gazette-preview canvas{height:auto;max-height:100%;width:100%;max-width:100%}.gazette-aside h1{font-size:28px}}
+
+/* Keep six live ingredients on the recipe slip without an internal scrollbar. */
+.lab .recipe-amounts:has(.amount-row:nth-child(5)){gap:8px;max-height:none;overflow:visible}
+.lab .recipe-amounts:has(.amount-row:nth-child(5)) .amount-row{font-size:clamp(10px,.98vw,16px);min-height:23px}
+.lab .recipe-amounts:has(.amount-row:nth-child(5)) .amount-row i{width:23px;height:23px}
+@media(orientation:landscape) and (max-height:520px){.lab .recipe-amounts:has(.amount-row:nth-child(5)){gap:3px}.lab .recipe-amounts:has(.amount-row:nth-child(5)) .amount-row{font-size:9px;min-height:14px}.lab .recipe-amounts:has(.amount-row:nth-child(5)) .amount-row i{width:13px;height:13px}}
+@media(orientation:landscape){.lab[data-scene=recipe] #ingredientAdjust{left:clamp(0%,calc(var(--selected-index)*16.66% - 3%),52%)}}

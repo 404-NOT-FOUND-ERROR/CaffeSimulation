@@ -190,3 +190,31 @@
  .cafe-counter{inset:0}.cafe-counter>img{width:125%;left:-25%;top:486px;bottom:auto}
  .cafe-home:after{opacity:.25}
 }
+
+/* The foyer shares the landscape workbench's viewport contract. */
+@media (orientation:landscape) and (min-width:600px){
+ .studio:is([data-page=lobby],[data-page=choose]){height:100dvh;min-height:0;padding:0}
+ .cafe-home,.cafe-choose{height:100dvh;min-height:0;max-height:none;overflow:hidden}
+ .cafe-brand{left:3.2%;top:8%;max-width:35%;transform:rotate(-7deg)}
+ .cafe-brand h1{font-size:clamp(36px,min(7.5vw,12dvh),112px);padding-bottom:10px;margin-bottom:12px}
+ .cafe-menu{left:3.8%;top:32%;width:32%;padding:clamp(10px,2dvh,22px) clamp(12px,1.7vw,27px);transform:rotate(-4deg)}
+ .cafe-menu-heading{gap:8px;margin-bottom:clamp(5px,1.5dvh,13px)}.cafe-menu-heading h2{font-size:clamp(23px,4.5dvh,43px)}
+ .cafe-order{grid-template-columns:clamp(26px,3.5vw,53px) minmax(0,1fr) 20px;gap:9px;min-height:clamp(46px,10dvh,100px);padding:clamp(7px,1.6dvh,17px) 0}
+ .cafe-order-number{font-size:clamp(27px,5.5dvh,49px)}.cafe-order strong{font-size:clamp(16px,2.8dvh,27px);margin-bottom:5px}.cafe-order small{font-size:clamp(10px,1.8dvh,16px)}
+ .cafe-menu-signoff{font-size:clamp(12px,2.3dvh,20px);padding-top:8px;margin-top:4px}
+ .cafe-host{left:16.1%;width:73%;top:auto;bottom:17.4%}
+ .cafe-counter{inset:0;height:auto}.cafe-counter>img{width:100%;left:0;top:auto;bottom:0}
+ .cafe-latin{left:51%;top:17%;font-size:clamp(95px,min(17.5vw,29dvh),300px)}.cafe-disc{left:40%;top:1%;width:45%}.cafe-ribbon{left:-15%;top:43%;width:133%;height:24%}
+ .cafe-free-note{right:4.2%;top:18%;width:23.4%;padding:clamp(13px,3dvh,30px)}.cafe-free-note>strong{font-size:clamp(23px,5.7dvh,48px);margin:4px 0 8px}.cafe-free-note>span{font-size:clamp(10px,1.9dvh,16px);padding-bottom:10px}.cafe-free-note>b{font-size:clamp(16px,3dvh,25px);padding-top:10px}
+ .method-brief{position:absolute;left:3.5%;top:12%;width:23%;min-height:0;margin:0;padding:0;max-height:84%;overflow:auto;scrollbar-width:thin}
+ .method-brief h1{font-size:clamp(32px,8dvh,70px);margin-bottom:16px}.method-overline{margin-bottom:12px}.method-order-copy{font-size:12px;margin-bottom:10px}.method-order-specs{font-size:11px;padding-top:10px}.method-brief img{position:static;width:94%;height:24dvh;margin:8px 0 0}.method-cup-note{white-space:normal;margin-top:9px}
+ .method-back{left:3.5%;top:3%;}.method-heading{position:absolute;left:29%;top:9%;width:67%;margin:0}.method-heading p{margin-bottom:10px;font-size:11px}.method-heading h2{font-size:clamp(28px,6dvh,51px);margin-bottom:9px}
+ .method-choices{position:absolute;left:29%;right:3%;top:27%;bottom:5%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0}
+ .method-choice{display:flex;flex-direction:column;height:100%;min-height:0;padding:0;border:0;gap:0}.method-art{width:100%;height:auto;flex:1;min-height:0;align-self:stretch}.method-kicker{margin:8px 0;font-size:9px}.method-name{font-size:clamp(19px,3.4dvh,29px);margin-bottom:8px}.method-description{font-size:11px}.method-enter{min-height:35px;margin-top:10px;padding:10px 8px;font-size:12px}
+}
+@media (orientation:landscape) and (min-width:600px) and (max-height:500px){
+ .cafe-brand p{font-size:8px;margin-bottom:7px}.cafe-brand>span{font-size:10px}.cafe-brand h1{border-bottom-width:3px;margin-bottom:8px;padding-bottom:7px}
+ .cafe-menu{top:29%;width:34%;padding:10px 12px}.cafe-menu-heading button{font-size:9px}.cafe-menu-heading button>span{font-size:15px;margin-left:1px}.cafe-menu-signoff{font-size:11px}.cafe-order{gap:7px;grid-template-columns:32px 1fr 14px}.cafe-order strong{font-size:15px;margin-bottom:3px}.cafe-order small{font-size:9px}.cafe-order-arrow{font-size:17px}.cafe-clip{height:32px;top:-12px;width:10px}.cafe-host{left:24%;width:min(73vw,118dvh)}
+ .cafe-free-note{top:15%;right:5%;width:25%;padding:12px}.cafe-free-note>b>span{font-size:23px}.cafe-wall-poster{top:7%;right:-2%;width:13%}.cafe-counter-type{display:none}.cafe-verse{display:none}
+ .method-heading h2{font-size:25px}.method-heading>span{font-size:11px}.method-heading p{font-size:8px;margin-bottom:6px}.method-choices{top:29%;gap:10px}.method-kicker{font-size:8px;margin:4px 0}.method-kicker b{font-size:18px}.method-name{font-size:17px;margin-bottom:5px}.method-name i{font-size:17px}.method-description{font-size:9px}.method-fit{font-size:8px;margin-top:3px}.method-enter{font-size:10px;padding:7px;min-height:30px;margin-top:6px}
+}

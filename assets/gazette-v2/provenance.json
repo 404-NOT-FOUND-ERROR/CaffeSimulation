@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-11",
+  "tool": "Built-in image_gen.imagegen",
+  "purpose": "Gazette background illustration plates; live beverage, typography and recipe are rendered separately",
+  "assets": [
+    {
+      "file": "coast.png",
+      "source": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-8f71c851-68ce-4724-b47c-b25021cb8384.png"
+    },
+    {
+      "file": "person.png",
+      "source": "C:/Users/502BadGateway/.codex/generated_images/01a0ffe1-f8c3-7e73-adbb-d13d83d2a6f5/exec-bc16ca7f-d201-499d-a7dd-5d78e3037fee.png"
+    }
+  ],
+  "prompts": [
+    {
+      "key": "poster-coast-v2",
+      "prompt": "Use case: ads-marketing. Production bitmap asset for an interactive coffee gazette. Image 1 is the approved STYLE AND COMPOSITION REFERENCE. Extract and recreate ONLY the central portrait Italian coffee poster's decorative background, straight-on flat 2:3 rectangle, full bleed, no surrounding webpage, no frame. Preserve its sophisticated terracotta rust-orange lithographic paper, subtle print grain, cream and deep petrol blue Italian coastal village with dome and tiny white sailboat tucked on the RIGHT between 48% and 77% height, dark petrol olive leaves sweeping from lower-left. Leave the upper 40%, central cup area (25%-75% x,40%-80% y), and bottom 20% uncluttered terracotta paper for live lettering and a live drink. Remove ALL letters, words, numbers, cups, drinks, vessels, shadows of cups, UI controls. This is not a complete poster: it is only its polished print-quality decorative underlay; hand-painted architecture and soft ink edges, refined Italian interwar commercial illustration like the reference. Minimal aged wear, no dirt, no fake writing. Output portrait 2:3."
+    },
+    {
+      "key": "poster-person-v2",
+      "prompt": "Use case: ads-marketing. Production bitmap poster underlay. Image 1 is a STYLE reference, especially the '人物拼贴' thumbnail. Create a straight-on portrait 2:3 Italian café commercial art poster background. Elegant dark-haired Italian woman in tailored dark petrol blue blouse, warm cream skin, red lips, short wavy hair, in profile looking to the left and lifting a small blank ivory coffee cup naturally with her fingers, rendered as sophisticated 1930s-50s hand-painted lithographic cut-paper illustration, not photographic, not cartoon. Her head lies around x45%, y38%, torso reaches y78%; a bold terracotta circular field behind her on textured warm ivory paper. Leave TOP 23% empty ivory for live headline and BOTTOM 17% empty ivory for live recipe. Reserve lower RIGHT x57%-95%, y57%-82% as a relatively plain terracotta/petrol geometric area for a large composited live drinking glass. The woman's small hand-held cup is a decorative illustration only. Restrained petrol/cream/rust palette, exquisite ink texture, strong negative space, the approved screenshot's quality. No letters, no text, no numbers, no borders, no interface."
+    }
+  ]
+}

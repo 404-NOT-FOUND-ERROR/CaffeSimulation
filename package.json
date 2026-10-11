@@ -1,1 +1,11 @@
-{"name":"moka-lab-prototype","private":true,"type":"module","scripts":{"start":"node serve.cjs","test":"node qa/preparation-motion-test.mjs && node qa/workshop-controls-test.mjs && node qa/workshop-flow-audit-test.mjs && node qa/workshop-state-test.mjs && node qa/studio-model-test.mjs && node qa/studio-preparation-test.mjs && node qa/model-test.mjs"}}
+{
+  "name": "moka-lab-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node serve.cjs",
+    "build:single": "node scripts/build-single-html.mjs",
+    "test": "node qa/recipe-polish-test.mjs && node qa/hybrid-flow-test.mjs && node qa/recipe-state-test.mjs && node qa/recipe-workshop-bridge-test.mjs && node qa/poster-motion-test.mjs && node qa/preparation-motion-test.mjs && node qa/workshop-controls-test.mjs && node qa/workshop-flow-audit-test.mjs && node qa/workshop-state-test.mjs && node qa/studio-model-test.mjs && node qa/studio-preparation-test.mjs && node qa/model-test.mjs"
+  },
+  "devDependencies": {"esbuild": "0.24.0"}
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-11",
+  "checks": {
+    "npm_test": "12 test scripts passed",
+    "blender_export": "Completed with bevels and baked vertex cavity shading",
+    "model_interactions": "Part selection, bounded rotation, 0/70/100 percent explosion, reset inspected",
+    "pour": "Native-proportion cropped vessel, gravity stream, release easing inspected; test amounts undone",
+    "ice": "Tap adds a single 15 g cube; fall and settling inspected; undo restores recipe",
+    "stir": "Intermediate overlapping liquid bands and independent solid ice inspected",
+    "responsive": "Brew, mixing and gazette checked at 844 x 390 with no document overflow",
+    "gazette": "Coast and portrait compositions, palettes and local PNG export inspected",
+    "console": "No warning or error entries in final browser check"
+  },
+  "preserved_recipe_g": {"coffee":40,"water":30.9,"milk":56.8,"foam":16.5,"ice":39.6,"syrup":9.2},
+  "export": "exports/moka-f41daeeb-c0c0-4f8a-8ea4-d5fc7c0e384b.png",
+  "assets": "assets/gazette-v2/provenance.json",
+  "limitations": "Real-time WebGL/SVG material and liquid illustrations remain stylized rather than a photographic physical simulation."
+}
